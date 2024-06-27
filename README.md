@@ -1,1 +1,2 @@
-# TinyBeast
+# TinyBeast FPGA
+**TinyBeast FPGA** is a compact new processing solution that can speed up your industrial or embedded computer. Leverage the power of PolarFire FPGA technology to offload demanding tasks from your central processor for a smoother and significantly faster system experience. This translates to ideal real-time performance in industrial applications that require efficient data handling. Furthermore, its compact package opens doors for innovative solutions in space-constrained environments.
