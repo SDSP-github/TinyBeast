@@ -1,0 +1,16 @@
+define_compile_point  -comment {Automatically Inserted}  {v:work.caxi4interconnect_SlaveConvertor_Z42} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.COREAXI4INTERCONNECT_Z29} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:COREAXITOAHBL_LIB.AXItoAHBL_AXItoAHBL_0_COREAXITOAHBL_Z59} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.Core_AHBL} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.CoreDMA_Controller_CoreDMA_Controller_0_CoreAXI4DMAController_DMAController_Z84} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.CoreDMA_Controller_CoreDMA_Controller_0_COREAXI4DMACONTROLLER_Z87} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.UART_SD} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.CoreDMA_IO_CTRL} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.C0_axi_if_Z93} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.C0_write_crc_dbi_Z111} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.C0_fastinit_Z129} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.C0_freq_ratio_data_Z131} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.C0_sdram_lb_Z140} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.RDLVL_TRAIN} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.TIP_CTRL_BLK_Z145} -type {hard}
+define_compile_point  -comment {Automatically Inserted}  {v:work.caxi4interconnect_Axi4CrossBar_Z1} -type {hard}

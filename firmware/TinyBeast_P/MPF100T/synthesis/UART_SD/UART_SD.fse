@@ -1,0 +1,142 @@
+
+fsm_encoding {180125012549} onehot
+
+fsm_state_encoding {180125012549} uart_rx0 {00000000000000000000000000000001}
+
+fsm_state_encoding {180125012549} uart_tx0 {00000000000000000000000000000010}
+
+fsm_state_encoding {180125012549} uart_rx1 {00000000000000000000000000000100}
+
+fsm_state_encoding {180125012549} uart_tx1 {00000000000000000000000000001000}
+
+fsm_state_encoding {180125012549} uart_dma_init {00000000000000000000000000010000}
+
+fsm_state_encoding {180125012549} uart_dma_wait {00000000000000000000000000100000}
+
+fsm_state_encoding {180125012549} uart_clk_freq {00000000000000000000000001000000}
+
+fsm_state_encoding {180125012549} uart_clk_count {00000000000000000000000010000000}
+
+fsm_state_encoding {180125012549} uart_wait0 {00000000000000000000000100000000}
+
+fsm_state_encoding {180125012549} uart_wait1 {00000000000000000000001000000000}
+
+fsm_state_encoding {180125012549} uart_rx2 {00000000000000000000010000000000}
+
+fsm_state_encoding {180125012549} uart_mem_type {00000000000000000000100000000000}
+
+fsm_state_encoding {180125012549} uart_mem_addr {00000000000000000001000000000000}
+
+fsm_state_encoding {180125012549} uart_mem_op1 {00000000000000000010000000000000}
+
+fsm_state_encoding {180125012549} 01110 {00000000000000000100000000000000}
+
+fsm_state_encoding {180125012549} uart_mem_op2 {00000000000000001000000000000000}
+
+fsm_state_encoding {180125012549} uart_mem_done {00000000000000010000000000000000}
+
+fsm_state_encoding {180125012549} uart_mem_read {00000000000000100000000000000000}
+
+fsm_state_encoding {180125012549} uart_wait2 {00000000000001000000000000000000}
+
+fsm_state_encoding {180125012549} uart_mem_err {00000000000010000000000000000000}
+
+fsm_state_encoding {180125012549} uart_send_data {00000000000100000000000000000000}
+
+fsm_state_encoding {180125012549} uart_wait3 {00000000001000000000000000000000}
+
+fsm_state_encoding {180125012549} uart_user_data {00000000010000000000000000000000}
+
+fsm_state_encoding {180125012549} uart_rx_wait {00000000100000000000000000000000}
+
+fsm_state_encoding {180125012549} 11000 {00000001000000000000000000000000}
+
+fsm_state_encoding {180125012549} 11001 {00000010000000000000000000000000}
+
+fsm_state_encoding {180125012549} 11010 {00000100000000000000000000000000}
+
+fsm_state_encoding {180125012549} 11011 {00001000000000000000000000000000}
+
+fsm_state_encoding {180125012549} 11100 {00010000000000000000000000000000}
+
+fsm_state_encoding {180125012549} 11101 {00100000000000000000000000000000}
+
+fsm_state_encoding {180125012549} 11110 {01000000000000000000000000000000}
+
+fsm_state_encoding {180125012549} 11111 {10000000000000000000000000000000}
+
+fsm_registers {180125012549} {uart_state[31]}  {uart_state[30]}  {uart_state[29]}  {uart_state[28]}  {uart_state[27]}  {uart_state[26]}  {uart_state[25]}  {uart_state[24]}  {uart_state[23]}  {uart_state[22]}  {uart_state[21]}  {uart_state[20]}  {uart_state[19]}  {uart_state[18]}  {uart_state[17]}  {uart_state[16]}  {uart_state[15]}  {uart_state[14]}  {uart_state[13]}  {uart_state[12]}  {uart_state[11]}  {uart_state[10]}  {uart_state[9]}  {uart_state[8]}  {uart_state[7]}  {uart_state[6]}  {uart_state[5]}  {uart_state[4]}  {uart_state[3]}  {uart_state[2]}  {uart_state[1]}  {uart_state[0]} 
+
+fsm_encoding {176119011948} onehot
+
+fsm_state_encoding {176119011948} tx_idle {000001}
+
+fsm_state_encoding {176119011948} tx_load {000010}
+
+fsm_state_encoding {176119011948} start_bit {000100}
+
+fsm_state_encoding {176119011948} tx_data_bits {001000}
+
+fsm_state_encoding {176119011948} parity_bit {010000}
+
+fsm_state_encoding {176119011948} tx_stop_bit {100000}
+
+fsm_registers {176119011948} {xmit_state[5]}  {xmit_state[4]}  {xmit_state[3]}  {xmit_state[2]}  {xmit_state[1]}  {xmit_state[0]} 
+
+fsm_encoding {175286028647} sequential
+
+fsm_state_encoding {175286028647} 00 {00}
+
+fsm_state_encoding {175286028647} 01 {01}
+
+fsm_state_encoding {175286028647} 10 {10}
+
+fsm_state_encoding {175286028647} 11 {11}
+
+fsm_registers {175286028647} {rx_state[1]}  {rx_state[0]} 
+
+fsm_encoding {183210021045} sequential
+
+fsm_state_encoding {183210021045} axi_idle {00}
+
+fsm_state_encoding {183210021045} axi_valid {01}
+
+fsm_state_encoding {183210021045} axi_done {10}
+
+fsm_state_encoding {183210021045} axi_next {11}
+
+fsm_registers {183210021045} {wdata_state[1]}  {wdata_state[0]} 
+
+fsm_encoding {183426042643} sequential
+
+fsm_state_encoding {183426042643} axi_idle {00}
+
+fsm_state_encoding {183426042643} axi_valid {01}
+
+fsm_state_encoding {183426042643} axi_mem_read {10}
+
+fsm_state_encoding {183426042643} axi_pattern {11}
+
+fsm_registers {183426042643} {rdata_state[1]}  {rdata_state[0]} 
+
+fsm_encoding {183368036844} sequential
+
+fsm_state_encoding {183368036844} axi_idle {00}
+
+fsm_state_encoding {183368036844} axi_valid {01}
+
+fsm_state_encoding {183368036844} axi_done {10}
+
+fsm_registers {183368036844} {raddr_state[1]}  {raddr_state[0]} 
+
+fsm_encoding {183143014346} sequential
+
+fsm_state_encoding {183143014346} axi_idle {00}
+
+fsm_state_encoding {183143014346} axi_valid {01}
+
+fsm_state_encoding {183143014346} axi_done {10}
+
+fsm_state_encoding {183143014346} axi_next {11}
+
+fsm_registers {183143014346} {waddr_state[1]}  {waddr_state[0]} 

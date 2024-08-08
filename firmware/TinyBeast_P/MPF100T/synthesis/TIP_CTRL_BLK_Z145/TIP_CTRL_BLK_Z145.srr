@@ -1,0 +1,539 @@
+# Tue Dec  6 10:29:20 2022
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03M
+Install: D:\Microsemi\Libero_SoC_v2021.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-RDKBJ92
+
+Implementation : synthesis
+Synopsys Generic Technology Mapper, Version map202103act, Build 060R, Built Jun 17 2021 11:00:42, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 126MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 137MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 137MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 137MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 137MB)
+
+
+@N: MF104 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\rdlvl_train.v":18:7:18:17|Found compile point of type hard on View view:work.RDLVL_TRAIN_genblk1_0__RDLVL_TRAIN(verilog) 
+@N: MF104 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\rdlvl_train.v":18:7:18:17|Found compile point of type hard on View view:work.RDLVL_TRAIN_genblk1_1__RDLVL_TRAIN(verilog) 
+@N: MF104 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\tip_ctrl_blk.v":20:7:20:18|Found compile point of type hard on View view:work.TIP_CTRL_BLK_Z145(verilog) 
+
+
+@N: MF105 |Performing bottom-up mapping of Compile point view:work.TIP_CTRL_BLK_Z145(verilog) 
+
+Begin environment creation (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+
+
+Finished environment creation (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+
+
+Start loading ILMs (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 189MB peak: 189MB)
+
+
+Finished loading ILMs (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 183MB peak: 189MB)
+
+
+Begin compile point sub-process log
+
+@N: MF106 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\tip_ctrl_blk.v":20:7:20:18|Mapping Compile point view:work.TIP_CTRL_BLK_Z145(verilog) because 
+		 no database from previous run found.
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 183MB peak: 189MB)
+
+
+#### START OF SSF LOG MESSAGES ####
+
+#### END OF SSF LOG MESSAGES ####
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 186MB peak: 189MB)
+
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\coreddr_tip_int.v":1518:0:1518:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.DFI_WRLVL_RESP[1] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.DFI_WRLVL_RESP[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+Encoding state machine current_state[4:0] (in view: work.TRN_CLK_2s_1s_0s_1s_2s_3s_4s(verilog))
+original code -> new code
+   0000 -> 00001
+   0001 -> 00010
+   0010 -> 00100
+   0011 -> 01000
+   0100 -> 10000
+Encoding state machine current_state[15:0] (in view: work.trn_bclksclk(verilog))
+original code -> new code
+   00000 -> 0000000000000001
+   00001 -> 0000000000000010
+   00010 -> 0000000000000100
+   00011 -> 0000000000001000
+   00100 -> 0000000000010000
+   00101 -> 0000000000100000
+   00111 -> 0000000001000000
+   01000 -> 0000000010000000
+   01001 -> 0000000100000000
+   01010 -> 0000001000000000
+   01011 -> 0000010000000000
+   01100 -> 0000100000000000
+   01101 -> 0001000000000000
+   01110 -> 0010000000000000
+   01111 -> 0100000000000000
+   10000 -> 1000000000000000
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_bclksclk.v":274:0:274:5|Found counter in view:work.trn_bclksclk(verilog) instance dly_cnt[4:0] 
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_bclksclk.v":141:0:141:5|Found counter in view:work.trn_bclksclk(verilog) instance transition_check_counter[9:0] 
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_bclksclk.v":238:0:238:5|Found counter in view:work.trn_bclksclk(verilog) instance vcophsel_bclk[6:0] 
+Encoding state machine current_state[28:0] (in view: work.trn_cmd_addr(verilog))
+original code -> new code
+   00000000000000000000000000001 -> 00000000000000000000000000001
+   00000000000000000000000000010 -> 00000000000000000000000000010
+   00000000000000000000000000100 -> 00000000000000000000000000100
+   00000000000000000000000001000 -> 00000000000000000000000001000
+   00000000000000000000000010000 -> 00000000000000000000000010000
+   00000000000000000000000100000 -> 00000000000000000000000100000
+   00000000000000000000001000000 -> 00000000000000000000001000000
+   00000000000000000000010000000 -> 00000000000000000000010000000
+   00000000000000000000100000000 -> 00000000000000000000100000000
+   00000000000000000001000000000 -> 00000000000000000001000000000
+   00000000000000000010000000000 -> 00000000000000000010000000000
+   00000000000000000100000000000 -> 00000000000000000100000000000
+   00000000000000001000000000000 -> 00000000000000001000000000000
+   00000000000000010000000000000 -> 00000000000000010000000000000
+   00000000000000100000000000000 -> 00000000000000100000000000000
+   00000000000001000000000000000 -> 00000000000001000000000000000
+   00000000000010000000000000000 -> 00000000000010000000000000000
+   00000000000100000000000000000 -> 00000000000100000000000000000
+   00000000001000000000000000000 -> 00000000001000000000000000000
+   00000000010000000000000000000 -> 00000000010000000000000000000
+   00000000100000000000000000000 -> 00000000100000000000000000000
+   00000001000000000000000000000 -> 00000001000000000000000000000
+   00000010000000000000000000000 -> 00000010000000000000000000000
+   00000100000000000000000000000 -> 00000100000000000000000000000
+   00001000000000000000000000000 -> 00001000000000000000000000000
+   00010000000000000000000000000 -> 00010000000000000000000000000
+   00100000000000000000000000000 -> 00100000000000000000000000000
+   01000000000000000000000000000 -> 01000000000000000000000000000
+   10000000000000000000000000000 -> 10000000000000000000000000000
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_cmdaddr.v":541:0:541:5|Found counter in view:work.trn_cmd_addr(verilog) instance tap_count_cmd[7:0] 
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_cmdaddr.v":509:0:509:5|Found counter in view:work.trn_cmd_addr(verilog) instance dly_cnt[9:0] 
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_cmdaddr.v":541:0:541:5|Found counter in view:work.trn_cmd_addr(verilog) instance tap_count_refclk[7:0] 
+@W: FX107 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_cmdaddr.v":696:0:696:5|RAM outdly[7:0] (in view: work.trn_cmd_addr(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_cmdaddr.v":696:0:696:5|RAM indly[7:0] (in view: work.trn_cmd_addr(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_dqsw.v":368:0:368:5|Found counter in view:work.trn_dqsw_TIP_CTRL_BLK_Z145(verilog) instance tap_count_dqsw[7:0] 
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_dqsw.v":368:0:368:5|Found counter in view:work.trn_dqsw_TIP_CTRL_BLK_Z145(verilog) instance tap_count_dqsw270[7:0] 
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_dqsw.v":368:0:368:5|Found counter in view:work.trn_dqsw_TIP_CTRL_BLK_Z145(verilog) instance tap_offset_move_count[7:0] 
+Encoding state machine current_state[16:0] (in view: work.WRLVL_BOT_TIP_CTRL_BLK_Z145(verilog))
+original code -> new code
+   0000000000000000000 -> 00000000000000001
+   0000000000000000010 -> 00000000000000010
+   0000000000000001000 -> 00000000000000100
+   0000000000000010000 -> 00000000000001000
+   0000000000000100000 -> 00000000000010000
+   0000000000001000000 -> 00000000000100000
+   0000000000010000000 -> 00000000001000000
+   0000000000100000000 -> 00000000010000000
+   0000000001000000000 -> 00000000100000000
+   0000000010000000000 -> 00000001000000000
+   0000000100000000000 -> 00000010000000000
+   0000001000000000000 -> 00000100000000000
+   0000010000000000000 -> 00001000000000000
+   0000100000000000000 -> 00010000000000000
+   0001000000000000000 -> 00100000000000000
+   0010000000000000000 -> 01000000000000000
+   1000000000000000000 -> 10000000000000000
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\wrlvl_bot.v":194:0:194:5|Found counter in view:work.WRLVL_BOT_TIP_CTRL_BLK_Z145(verilog) instance tap_count[6:0] 
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Found counter in view:work.IOG_IF_2s_18s_0_1(verilog) instance APB_IOG_CTRL_SM.delay_cnt[7:0] 
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[1] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[2] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[3] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[4] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[5] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[6] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[7] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing sequential instance out_of_range_in[8] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[1] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[2] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[3] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[4] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[5] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[6] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[7] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[8] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[10] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[11] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[12] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[13] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[14] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[15] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[16] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance out_of_range_reg[17] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@W: MO160 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Register bit APB_IOG_CTRL_SM.csr_reg[1] (in view view:work.IOG_IF_2s_18s_0_1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Register bit APB_IOG_CTRL_SM.csr_reg[0] (in view view:work.IOG_IF_2s_18s_0_1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Register bit APB_IOG_CTRL_SM.apb_iog_on (in view view:work.IOG_IF_2s_18s_0_1(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Removing sequential instance APB_IOG_CTRL_SM.csr_reg[7] (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing sequential instance APB_IOG_CTRL_SM.oor_detected (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing sequential instance APB_IOG_CTRL_SM.reset_wr_regs (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Removing sequential instance APB_IOG_CTRL_SM.csr_reg[2] (in view: work.IOG_IF_2s_18s_0_1(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Removing sequential instance APB_IOG_CTRL_SM.csr_reg[3] (in view: work.IOG_IF_2s_18s_0_1(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Removing sequential instance APB_IOG_CTRL_SM.csr_reg[4] (in view: work.IOG_IF_2s_18s_0_1(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Removing sequential instance APB_IOG_CTRL_SM.csr_reg[5] (in view: work.IOG_IF_2s_18s_0_1(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":270:3:270:8|Removing sequential instance APB_IOG_CTRL_SM.csr_reg[6] (in view: work.IOG_IF_2s_18s_0_1(verilog)) because it does not drive other instances.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.iog_lane_sel[1] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.iog_lane_sel[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.iog_lane_sel[0] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.direction. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.iog_lane_sel[3] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.direction. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.iog_lane_sel[2] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.APB_IOG_CTRL_SM.direction. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[7] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[6] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[5] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[4] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[3] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[2] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[16] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[15] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[14] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[13] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[12] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[11] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.delay_line_sel_rd[1] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.delay_line_sel_rd[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[4] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[6] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[7] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[5] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[3] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[2] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[1] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[12] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[14] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[16] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[15] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[13] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[11] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[9] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN115 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":411:28:411:47|Removing instance APB_IOG_CTRL_SM.un2_iog_lane_sel_r_1 (in view: work.IOG_IF_2s_18s_0_1(verilog)) of type view:DECOMP.PM_top_ADD__3_4__mpf100tfcg484(DECOMP) because it does not drive other instances.
+Encoding state machine visual_trn_compl_current[9:0] (in view: work.TRN_COMPLETE_Z143(verilog))
+original code -> new code
+   0000 -> 0000000001
+   0001 -> 0000000010
+   0010 -> 0000000100
+   0011 -> 0000001000
+   0100 -> 0000010000
+   0101 -> 0000100000
+   0110 -> 0001000000
+   0111 -> 0010000000
+   1000 -> 0100000000
+   1001 -> 1000000000
+@W: MO160 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_complete.v":236:3:236:8|Register bit visual_trn_compl_current[0] (in view view:work.TRN_COMPLETE_Z143(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_complete.v":236:3:236:8|Removing sequential instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.TRN_COMPLETE.do_train_vref because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.TRN_COMPLETE.visual_trn_compl_current[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_complete.v":236:3:236:8|Removing sequential instance visual_trn_compl_current[7] (in view: work.TRN_COMPLETE_Z143(verilog)) because it does not drive other instances.
+Encoding state machine current_state[6:0] (in view: work.ddr4_vref(verilog))
+original code -> new code
+   0000 -> 0000001
+   0001 -> 0000010
+   0010 -> 0000100
+   0011 -> 0001000
+   0100 -> 0010000
+   0101 -> 0100000
+   0110 -> 1000000
+Encoding state machine current_state[13:0] (in view: work.write_callibrator_Z144(verilog))
+original code -> new code
+   0000000 -> 00000000000001
+   0000001 -> 00000000000010
+   0000010 -> 00000000000100
+   0000011 -> 00000000001000
+   0000100 -> 00000000010000
+   0000101 -> 00000000100000
+   0000110 -> 00000001000000
+   0000111 -> 00000010000000
+   0001000 -> 00000100000000
+   0001001 -> 00001000000000
+   0001010 -> 00010000000000
+   0001011 -> 00100000000000
+   0001111 -> 01000000000000
+   0010000 -> 10000000000000
+@N: MO231 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":449:0:449:5|Found counter in view:work.write_callibrator_Z144(verilog) instance write_counter[7:0] 
+@N: MF179 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":484:10:484:73|Found 16 by 16 bit equality operator ('==') data_register\.data_match32_0 (in view: work.write_callibrator_Z144(verilog))
+@N: MF179 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":484:10:484:73|Found 16 by 16 bit equality operator ('==') data_register\.data_match32_1 (in view: work.write_callibrator_Z144(verilog))
+@N: MF179 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":484:10:484:73|Found 16 by 16 bit equality operator ('==') data_register\.data_match32_2 (in view: work.write_callibrator_Z144(verilog))
+@N: MF179 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":484:10:484:73|Found 16 by 16 bit equality operator ('==') data_register\.data_match32_3 (in view: work.write_callibrator_Z144(verilog))
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 190MB)
+
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\apb_iog_ctrl_sm.v":234:3:234:8|Removing sequential instance LEVELLING.IOG_IF.APB_IOG_CTRL_SM.direction (in view: work.TIP_CTRL_BLK_Z145(verilog)) because it does not drive other instances.
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\trn_complete.v":236:3:236:8|Removing sequential instance LEVELLING.TRN_COMPLETE.visual_trn_compl_current[8] (in view: work.TIP_CTRL_BLK_Z145(verilog)) because it does not drive other instances.
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 199MB peak: 199MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: BN362 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":198:0:198:5|Removing sequential instance LEVELLING.IOG_IF.out_of_range_reg[9] (in view: work.TIP_CTRL_BLK_Z145(verilog)) because it does not drive other instances.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[10] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.direction_int[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\iog_if.v":205:0:205:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[9] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.LEVELLING.IOG_IF.load_int[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 196MB peak: 199MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 196MB peak: 199MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 196MB peak: 199MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 196MB peak: 199MB)
+
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[119] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[115]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[84] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[80]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[116] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[112]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[22] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[23] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[52] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[48]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[55] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[51]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[85] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[81]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[99] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[103]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[117] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[113]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[118] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[114]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[6] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[7] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[5] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[20] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[37] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[33]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[39] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[35]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[54] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[50]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[97] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[101]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[98] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[102]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[21] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[38] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[34]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[53] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[49]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[68] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[64]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"d:\se50p\se_50_p_bsp\libero\pcie_gen2_ep_demo_se50p_v2021.2\component\actel\directcore\coreddr_tip\2.1.101\rtl\vlog\core\write_callibrator.v":121:0:121:5|Removing instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[96] because it is equivalent to instance PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.cal_l_datain_1[100]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 196MB peak: 199MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 207MB peak: 207MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:06s		     5.28ns		2208 /      1491
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 207MB peak: 208MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 207MB peak: 208MB)
+
+
+End compile point sub-process log
+
+@W: MT420 |Found inferred clock PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock with period 10.00ns. Please declare a user-defined clock on net PF_DDR4_SS_0.CCC_0.pll_inst_0_clkint_4.
+@W: MT420 |Found inferred clock PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_hs_io_clk_11_inferred_clock with period 10.00ns. Please declare a user-defined clock on net PF_DDR4_SS_0.CCC_0.pll_inst_0_hs_io_clk_11.
+@W: MT420 |Found inferred clock PF_DDR4_SS_DDRPHY_BLK_LANE_1_CTRL_PF_LANECTRL|N_3_inferred_clock with period 10.00ns. Please declare a user-defined clock on net PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.N_3.
+@W: MT420 |Found inferred clock PF_DDR4_SS_DDRPHY_BLK_LANE_0_CTRL_PF_LANECTRL|N_3_inferred_clock with period 10.00ns. Please declare a user-defined clock on net PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.N_3.
+@W: MT420 |Found inferred clock PF_DDR4_SS_DDRPHY_BLK_LANECTRL_ADDR_CMD_0_PF_LANECTRL|N_3_inferred_clock with period 10.00ns. Please declare a user-defined clock on net PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0.N_3.
+@W: MT420 |Found inferred clock PF_CCC_C0_PF_CCC_C0_0_PF_CCC|pll_inst_0_clkint_0_inferred_clock with period 10.00ns. Please declare a user-defined clock on net PF_CCC_C0_0.PF_CCC_C0_0.pll_inst_0_clkint_0.
+@W: MT420 |Found inferred clock COREDDR_TIP_INT_Z146|VCO_PHSEL_ROTATE_inferred_clock[0] with period 10.00ns. Please declare a user-defined clock on net PF_DDR4_SS_0.CCC_0.PHASE_ROTATE_0.
+@W: MT420 |Found inferred clock top|REF_CLK_0 with period 10.00ns. Please declare a user-defined clock on port REF_CLK_0.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Tue Dec  6 10:29:27 2022
+#
+
+
+Top view:               top
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    D:\se50p\SE_50_P_BSP\Libero\PCIe_Gen2_EP_Demo_SE50p_v2021.2\designer\top\synthesis.fdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 6.237
+
+                                                                             Requested     Estimated     Requested     Estimated               Clock        Clock               
+Starting Clock                                                               Frequency     Frequency     Period        Period        Slack     Type         Group               
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+COREDDR_TIP_INT_Z146|VCO_PHSEL_ROTATE_inferred_clock[0]                      100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_11
+PF_CCC_C0_PF_CCC_C0_0_PF_CCC|pll_inst_0_clkint_0_inferred_clock              100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_10
+PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock                   100.0 MHz     265.7 MHz     10.000        3.763         6.237     inferred     Inferred_clkgroup_0 
+PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_hs_io_clk_11_inferred_clock               100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_1 
+PF_DDR4_SS_DDRPHY_BLK_LANECTRL_ADDR_CMD_0_PF_LANECTRL|N_3_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_9 
+PF_DDR4_SS_DDRPHY_BLK_LANE_0_CTRL_PF_LANECTRL|N_3_inferred_clock             100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_6 
+PF_DDR4_SS_DDRPHY_BLK_LANE_1_CTRL_PF_LANECTRL|N_3_inferred_clock             100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_2 
+top|REF_CLK_0                                                                100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_4 
+System                                                                       100.0 MHz     NA            10.000        NA            NA        system       system_clkgroup     
+================================================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                                    Ending                                                          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock  System                                                          |  10.000      8.608  |  No paths    -      |  No paths    -      |  No paths    -    
+PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock  PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock      |  10.000      6.237  |  No paths    -      |  No paths    -      |  No paths    -    
+PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock  PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_hs_io_clk_11_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                                                                                Starting                                                                                                                                                               Arrival          
+Instance                                                                                                                        Reference                                                      Type     Pin            Net                                                                             Time        Slack
+                                                                                                                                Clock                                                                                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.current_state[3]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_state[3]                                                                0.218       6.237
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.current_state[4]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_state[4]                                                                0.218       6.259
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_REF_CLK_TRAINING.I_IOD_0                                                                          PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     IOD      RX_DATA[8]     PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.REFCLK_IGEAR_RX8     1.917       6.368
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.current_lane[1]                     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_lane[1]                                                                 0.218       6.641
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.cmd_addr_trainer.current_state[2]               PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_state[2]                                                                0.201       6.660
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[1\]\.dqsw_trainer.current_state[1]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_state[1]                                                                0.201       6.673
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.current_state[1]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_state[1]                                                                0.201       6.686
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[1\]\.dqsw_trainer.current_state[0]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              dqsw_delay_line_load_1_1_fc[1]                                                  0.218       6.709
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.current_lane[2]                     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_lane[2]                                                                 0.218       6.722
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.cmd_addr_trainer.current_state[3]               PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      Q              current_state[3]                                                                0.218       6.728
+========================================================================================================================================================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                                                          Starting                                                                                            Required          
+Instance                                                                                                                  Reference                                                      Type     Pin     Net                 Time         Slack
+                                                                                                                          Clock                                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly_cnt[2]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       dly_cnt_3[2]        10.000       6.237
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly_cnt[3]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       dly_cnt_3[3]        10.000       6.277
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.cmd_addr_trainer.push_counter[0]          PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       N_145_i             10.000       6.368
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.cmd_addr_trainer.push_counter[1]          PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       N_144_i             10.000       6.368
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.cmd_addr_trainer.push_counter[3]          PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       N_142_i             10.000       6.368
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly_cnt[0]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       dly_cnt_3[0]        10.000       6.385
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly_cnt[1]     PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       dly_cnt_3[1]        10.000       6.385
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.cmd_addr_trainer.push_counter[2]          PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       N_143_i             10.000       6.454
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.data_match[0]                 PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       data_match_4[0]     10.000       6.641
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.data_match[1]                 PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock     SLE      D       data_match_4[1]     10.000       6.641
+================================================================================================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.000
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         10.000
+
+    - Propagation time:                      3.763
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     6.237
+
+    Number of logic level(s):                4
+    Starting point:                          PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.current_state[3] / Q
+    Ending point:                            PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly_cnt[2] / D
+    The start point is clocked by            PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+    The end   point is clocked by            PF_DDR4_SS_CCC_0_PF_CCC|pll_inst_0_clkint_4_inferred_clock [rising] (rise=0.000 fall=5.000 period=10.000) on pin CLK
+
+Instance / Net                                                                                                                                          Pin      Pin               Arrival     No. of    
+Name                                                                                                                                           Type     Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.current_state[3]                    SLE      Q        Out     0.218     0.218 r     -         
+current_state[3]                                                                                                                               Net      -        -       0.718     -           16        
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.move\.dqsw_flag_reg5_2_0_o2         CFG2     B        In      -         0.936 r     -         
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.move\.dqsw_flag_reg5_2_0_o2         CFG2     Y        Out     0.083     1.019 r     -         
+N_162                                                                                                                                          Net      -        -       0.650     -           10        
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dqsw_eye_monitor_clr_flags_0_a2     CFG3     B        In      -         1.669 r     -         
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dqsw_eye_monitor_clr_flags_0_a2     CFG3     Y        Out     0.088     1.756 f     -         
+dqsw_eye_monitor_clr_flags_1[0]                                                                                                                Net      -        -       0.948     -           5         
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.load_dly_cnt.m5_0                   CFG4     C        In      -         2.704 f     -         
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.load_dly_cnt.m5_0                   CFG4     Y        Out     0.145     2.850 f     -         
+m5_0                                                                                                                                           Net      -        -       0.563     -           4         
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly\.dly_cnt_3[2]                   CFG4     D        In      -         3.413 f     -         
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly\.dly_cnt_3[2]                   CFG4     Y        Out     0.232     3.645 r     -         
+dly_cnt_3[2]                                                                                                                                   Net      -        -       0.118     -           1         
+PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.TRN_CLK.genblk2\[0\]\.dqsw_trainer.dly_cnt[2]                          SLE      D        In      -         3.763 r     -         
+=========================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 3.763 is 0.766(20.4%) logic and 2.997(79.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+Writing compile point status file D:\se50p\SE_50_P_BSP\Libero\PCIe_Gen2_EP_Demo_SE50p_v2021.2\synthesis\TIP_CTRL_BLK_Z145\cpprop
+
+Summary of Compile Points :
+*************************** 
+Name                  Status     Reason     
+--------------------------------------------
+TIP_CTRL_BLK_Z145     Mapped     No database
+============================================
+
+Process took 0h:00m:07s realtime, 0h:00m:07s cputime
+# Tue Dec  6 10:29:27 2022
+
+###########################################################]

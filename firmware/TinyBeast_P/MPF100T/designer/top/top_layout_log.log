@@ -1,0 +1,93 @@
+INFO: Reading User SDC file D:\se50p\SE_50_P_BSP\Libero\PCIe_Gen2_EP_Demo_SE50p_MPF100T_v2021.2\constraint\top_derived_constraints.sdc.
+INFO: The option "Abort flow if errors are found in SDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated SDC files. Please uncheck the option to ignore the errors and continue running the tool.
+*** IMPORTANT RECOMMENDATION *** If you haven't done so, it is highly recommended to add clock jitter information for each clock domain into Libero SoC through clock uncertainty SDC timing constraints. Please refer to the Libero SoC v2021.2 release notes for more details.
+
+No errors or warnings found.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+I/O Register Combining   : OFF
+Global Pins Demotion     : ON
+Driver Replication       : OFF
+High-effort              : OFF
+Repair min-delay         : OFF
+Incremental              : OFF
+Inter-clock optimization : ON
+
+INFO: Reading User PDC file D:\se50p\SE_50_P_BSP\Libero\PCIe_Gen2_EP_Demo_SE50p_MPF100T_v2021.2\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+INFO: Reading User PDC file D:\se50p\SE_50_P_BSP\Libero\PCIe_Gen2_EP_Demo_SE50p_MPF100T_v2021.2\constraint\fp\user.pdc. 0 error(s) and 0 warning(s)
+
+ Running Timing based Global Demotion. 
+        Moved 761 async pins from global to its source 'PF_RESET_0/PF_RESET_0/dff_15_rep'.
+=== Registers Duplicated ===
+1  - PF_RESET_0/PF_RESET_0/dff_15_rep duplicated 
+   - PF_RESET_0/PF_RESET_0/dff_15_rep_GB_DEMOTE
+
+ Timing based Global Demotion completed successfully. 
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 53 fixed I/O macros, 0 unfixed I/O macros
+Info:  I/O Bank and Globals Assigner identified bank 'Bank0' as being fixed at VCCI:1.20V VCCR:0.60V
+Info:  I/O Bank and Globals Assigner identified bank 'Bank1' as being fixed at VCCI:1.20V VCCR:0.60V
+Info:  I/O Bank and Globals Assigner identified bank 'Bank2' as being fixed at VCCI:1.80V VCCR:n/a
+Info:  I/O Bank and Globals Assigner identified bank 'Bank4' as being fixed at VCCI:3.30V VCCR:n/a
+Info:  I/O Bank and Globals Assigner detected (4) out of (4) I/O Bank(s) with locked I/O technologies.
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 5 seconds
+
+Placer V5.0 - 2021.2.0 
+Design: top                             Started: Wed Jan  4 07:33:57 2023
+
+Initializing Normal-Effort Timing-Driven Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 8 seconds
+Placement                : 32 seconds
+Improvement              : 58 seconds
+
+Placer completed successfully.
+
+Design: top                             
+Finished: Wed Jan  4 07:36:27 2023
+Total CPU Time:     00:03:09            Total Elapsed Time: 00:02:30
+Total Memory Usage: 1290.6 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: D:\se50p\SE_50_P_BSP\Libero\PCIe_Gen2_EP_Demo_SE50p_MPF100T_v2021.2\designer\top\topStarted: Wed Jan  4 07:36:45 2023
+
+
+Router completed successfully.
+
+Design: D:\se50p\SE_50_P_BSP\Libero\PCIe_Gen2_EP_Demo_SE50p_MPF100T_v2021.2\designer\top\top
+Finished: Wed Jan  4 07:37:05 2023
+Total CPU Time:     00:00:31            Total Elapsed Time: 00:00:20
+Total Memory Usage: 2045.8 Mbytes
+                        o - o - o - o - o - o
+
+Resource Usage
++---------------+-------+--------+------------+
+| Type          | Used  | Total  | Percentage |
++---------------+-------+--------+------------+
+| 4LUT          | 27391 | 108600 | 25.22      |
+| DFF           | 21124 | 108600 | 19.45      |
+| I/O Register  | 0     | 282    | 0.00       |
+| Logic Element | 31953 | 108600 | 29.42      |
++---------------+-------+--------+------------+
+
+I/O Placement
++--------+-------+------------+
+| Type   | Count | Percentage |
++--------+-------+------------+
+| Locked |  56   | 100.00%    |
+| Placed |  0    | 0.00%      |
++--------+-------+------------+
+
+Completed writing pin report files.

@@ -1,0 +1,24 @@
+
+########			REPORT FOR HIGH FANOUT NETS			########
+
+CLOCK GLOBAL THRESHOLD - 2
+ASYNC GLOBAL THRESHOLD - 800
+GLOBAL THRESHOLD - 5000
+
+NET NAME                                                     CLOCK LOADS     ASYNC RST LOADS     DATA LOADS     TOTAL FANOUT     GLOBAL BUFFER PRESENT
+------------------------------------------------------------------------------------------------------------------------------------------------------
+PF_DDR4_SS_0_SYS_CLK                                         18177           0                   1              18178            YES                  
+PF_CCC_C0_0_OUT0_FABCLK_0                                    1157            0                   0              1157             YES                  
+PF_DDR4_SS_0.CCC_0_OUT2_HS_IO_CLK_0                          55              0                   0              55               YES                  
+PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0_TX_DQS_270     26              0                   0              26               YES                  
+PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL_TX_DQS                 10              0                   0              10               YES                  
+PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL_TX_DQS                 10              0                   0              10               YES                  
+PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL_RX_DQS_90[0]           9               0                   0              9                NO                   
+PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL_RX_DQS_90[0]           9               0                   0              9                NO                   
+PCIe_EP_0.PCIex4_0.PCIE_COMMON_AXI_CLK_OUT_net               3               0                   0              3                NO                   
+PF_DDR4_SS_0.CCC_0_OUT3_HS_IO_CLK_0                          2               0                   0              2                YES                  
+PF_DDR4_SS_0.reset_n_int_arst                                0               4714                0              4714             YES                  
+dff_arst                                                     0               4393                0              4393             YES                  
+PF_DDR4_SS_0.DDRCTRL_0.IeLFk51fKvqEJyb0giD6.NxK4ke7CB8u      0               4391                0              4391             YES                  
+AXI4_Interconnect_0.AXI4_Interconnect_0.sysReset             0               3725                0              3725             YES                  
+======================================================================================================================================================
