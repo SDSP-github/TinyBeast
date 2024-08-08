@@ -1,0 +1,922 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v12.6
+Microsemi Corporation - Microsemi Libero Software Release v12.6 (Version 12.900.20.24)
+Date: Tue Aug 10 07:02:26 2021
+
+
+Design: top
+Family: PolarFire
+Die: MPF300TS
+Package: FCVG484
+Temperature Range: -40 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_ht, slow_lv_lt, fast_hv_lt
+Scenario for Timing Analysis: timing_analysis
+
+
+*** IMPORTANT RECOMMENDATION *** If you haven't done so, it is highly recommended to add clock jitter information for each clock domain into Libero SoC through clock uncertainty SDC timing constraints. Please refer to the Libero SoC v12.5 release notes for more details.
+
+Path 1
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[0]:EN
+  Delay (ns):              3.459
+  Slack (ns):              1.045
+  Arrival (ns):           13.720
+  Required (ns):          14.765
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.836
+  Slack (ns):              1.117
+  Arrival (ns):           13.781
+  Required (ns):          14.898
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.731
+  Slack (ns):              1.177
+  Arrival (ns):           13.711
+  Required (ns):          14.888
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.754
+  Slack (ns):              1.204
+  Arrival (ns):           13.699
+  Required (ns):          14.903
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.701
+  Slack (ns):              1.207
+  Arrival (ns):           13.681
+  Required (ns):          14.888
+  Operating Conditions: slow_lv_ht
+
+Path 6
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[19]:EN
+  Delay (ns):              3.289
+  Slack (ns):              1.224
+  Arrival (ns):           13.550
+  Required (ns):          14.774
+  Operating Conditions: slow_lv_ht
+
+Path 7
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.775
+  Slack (ns):              1.225
+  Arrival (ns):           13.720
+  Required (ns):          14.945
+  Operating Conditions: slow_lv_ht
+
+Path 8
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.730
+  Slack (ns):              1.225
+  Arrival (ns):           13.673
+  Required (ns):          14.898
+  Operating Conditions: slow_lv_ht
+
+Path 9
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.670
+  Slack (ns):              1.231
+  Arrival (ns):           13.650
+  Required (ns):          14.881
+  Operating Conditions: slow_lv_ht
+
+Path 10
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[22]:EN
+  Delay (ns):              3.278
+  Slack (ns):              1.233
+  Arrival (ns):           13.539
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 11
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[18]:EN
+  Delay (ns):              3.278
+  Slack (ns):              1.233
+  Arrival (ns):           13.539
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 12
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[14]:EN
+  Delay (ns):              3.278
+  Slack (ns):              1.233
+  Arrival (ns):           13.539
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 13
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[7]:EN
+  Delay (ns):              3.277
+  Slack (ns):              1.234
+  Arrival (ns):           13.538
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 14
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[6]:EN
+  Delay (ns):              3.277
+  Slack (ns):              1.234
+  Arrival (ns):           13.538
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 15
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[21]:EN
+  Delay (ns):              3.277
+  Slack (ns):              1.234
+  Arrival (ns):           13.538
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 16
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[17]:EN
+  Delay (ns):              3.277
+  Slack (ns):              1.234
+  Arrival (ns):           13.538
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 17
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[12]:EN
+  Delay (ns):              3.277
+  Slack (ns):              1.234
+  Arrival (ns):           13.538
+  Required (ns):          14.772
+  Operating Conditions: slow_lv_ht
+
+Path 18
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.668
+  Slack (ns):              1.240
+  Arrival (ns):           13.648
+  Required (ns):          14.888
+  Operating Conditions: slow_lv_ht
+
+Path 19
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[11]:D
+  Delay (ns):              3.720
+  Slack (ns):              1.247
+  Arrival (ns):           13.665
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 20
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.649
+  Slack (ns):              1.250
+  Arrival (ns):           13.629
+  Required (ns):          14.879
+  Operating Conditions: slow_lv_ht
+
+Path 21
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.696
+  Slack (ns):              1.252
+  Arrival (ns):           13.646
+  Required (ns):          14.898
+  Operating Conditions: slow_lv_ht
+
+Path 22
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.647
+  Slack (ns):              1.259
+  Arrival (ns):           13.627
+  Required (ns):          14.886
+  Operating Conditions: slow_lv_ht
+
+Path 23
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.677
+  Slack (ns):              1.260
+  Arrival (ns):           13.636
+  Required (ns):          14.896
+  Operating Conditions: slow_lv_ht
+
+Path 24
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.640
+  Slack (ns):              1.261
+  Arrival (ns):           13.620
+  Required (ns):          14.881
+  Operating Conditions: slow_lv_ht
+
+Path 25
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.643
+  Slack (ns):              1.263
+  Arrival (ns):           13.623
+  Required (ns):          14.886
+  Operating Conditions: slow_lv_ht
+
+Path 26
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[1]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.670
+  Slack (ns):              1.263
+  Arrival (ns):           13.633
+  Required (ns):          14.896
+  Operating Conditions: slow_lv_ht
+
+Path 27
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.642
+  Slack (ns):              1.264
+  Arrival (ns):           13.622
+  Required (ns):          14.886
+  Operating Conditions: slow_lv_ht
+
+Path 28
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:D
+  Delay (ns):              3.693
+  Slack (ns):              1.274
+  Arrival (ns):           13.638
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 29
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.619
+  Slack (ns):              1.280
+  Arrival (ns):           13.599
+  Required (ns):          14.879
+  Operating Conditions: slow_lv_ht
+
+Path 30
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:D
+  Delay (ns):              3.686
+  Slack (ns):              1.281
+  Arrival (ns):           13.631
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 31
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:D
+  Delay (ns):              3.677
+  Slack (ns):              1.282
+  Arrival (ns):           13.622
+  Required (ns):          14.904
+  Operating Conditions: slow_lv_ht
+
+Path 32
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[2]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.652
+  Slack (ns):              1.283
+  Arrival (ns):           13.613
+  Required (ns):          14.896
+  Operating Conditions: slow_lv_ht
+
+Path 33
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[0]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.672
+  Slack (ns):              1.288
+  Arrival (ns):           13.622
+  Required (ns):          14.910
+  Operating Conditions: slow_lv_ht
+
+Path 34
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[9]:D
+  Delay (ns):              3.661
+  Slack (ns):              1.292
+  Arrival (ns):           13.606
+  Required (ns):          14.898
+  Operating Conditions: slow_lv_ht
+
+Path 35
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.669
+  Slack (ns):              1.293
+  Arrival (ns):           13.612
+  Required (ns):          14.905
+  Operating Conditions: slow_lv_ht
+
+Path 36
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.607
+  Slack (ns):              1.294
+  Arrival (ns):           13.587
+  Required (ns):          14.881
+  Operating Conditions: slow_lv_ht
+
+Path 37
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.586
+  Slack (ns):              1.313
+  Arrival (ns):           13.566
+  Required (ns):          14.879
+  Operating Conditions: slow_lv_ht
+
+Path 38
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.612
+  Slack (ns):              1.316
+  Arrival (ns):           13.592
+  Required (ns):          14.908
+  Operating Conditions: slow_lv_ht
+
+Path 39
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[3]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.320
+  Arrival (ns):           13.455
+  Required (ns):          14.775
+  Operating Conditions: slow_lv_ht
+
+Path 40
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.635
+  Slack (ns):              1.320
+  Arrival (ns):           13.585
+  Required (ns):          14.905
+  Operating Conditions: slow_lv_ht
+
+Path 41
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.608
+  Slack (ns):              1.320
+  Arrival (ns):           13.588
+  Required (ns):          14.908
+  Operating Conditions: slow_lv_ht
+
+Path 42
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[9]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.321
+  Arrival (ns):           13.455
+  Required (ns):          14.776
+  Operating Conditions: slow_lv_ht
+
+Path 43
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[8]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.321
+  Arrival (ns):           13.455
+  Required (ns):          14.776
+  Operating Conditions: slow_lv_ht
+
+Path 44
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[5]:EN
+  Delay (ns):              3.195
+  Slack (ns):              1.321
+  Arrival (ns):           13.456
+  Required (ns):          14.777
+  Operating Conditions: slow_lv_ht
+
+Path 45
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[4]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.321
+  Arrival (ns):           13.455
+  Required (ns):          14.776
+  Operating Conditions: slow_lv_ht
+
+Path 46
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[2]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.321
+  Arrival (ns):           13.455
+  Required (ns):          14.776
+  Operating Conditions: slow_lv_ht
+
+Path 47
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[20]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.321
+  Arrival (ns):           13.455
+  Required (ns):          14.776
+  Operating Conditions: slow_lv_ht
+
+Path 48
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[1]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.321
+  Arrival (ns):           13.455
+  Required (ns):          14.776
+  Operating Conditions: slow_lv_ht
+
+Path 49
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.607
+  Slack (ns):              1.321
+  Arrival (ns):           13.587
+  Required (ns):          14.908
+  Operating Conditions: slow_lv_ht
+
+Path 50
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[10]:EN
+  Delay (ns):              3.193
+  Slack (ns):              1.322
+  Arrival (ns):           13.454
+  Required (ns):          14.776
+  Operating Conditions: slow_lv_ht
+
+Path 51
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[4]:D
+  Delay (ns):              3.598
+  Slack (ns):              1.328
+  Arrival (ns):           13.578
+  Required (ns):          14.906
+  Operating Conditions: slow_lv_ht
+
+Path 52
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.608
+  Slack (ns):              1.330
+  Arrival (ns):           13.561
+  Required (ns):          14.891
+  Operating Conditions: slow_lv_ht
+
+Path 53
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[0]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.637
+  Slack (ns):              1.331
+  Arrival (ns):           13.587
+  Required (ns):          14.918
+  Operating Conditions: slow_lv_ht
+
+Path 54
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.669
+  Slack (ns):              1.331
+  Arrival (ns):           13.622
+  Required (ns):          14.953
+  Operating Conditions: slow_lv_ht
+
+Path 55
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.642
+  Slack (ns):              1.331
+  Arrival (ns):           13.601
+  Required (ns):          14.932
+  Operating Conditions: slow_lv_ht
+
+Path 56
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[4]:D
+  Delay (ns):              3.594
+  Slack (ns):              1.332
+  Arrival (ns):           13.574
+  Required (ns):          14.906
+  Operating Conditions: slow_lv_ht
+
+Path 57
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[23]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.333
+  Arrival (ns):           13.455
+  Required (ns):          14.788
+  Operating Conditions: slow_lv_ht
+
+Path 58
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[15]:EN
+  Delay (ns):              3.194
+  Slack (ns):              1.333
+  Arrival (ns):           13.455
+  Required (ns):          14.788
+  Operating Conditions: slow_lv_ht
+
+Path 59
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[4]:D
+  Delay (ns):              3.593
+  Slack (ns):              1.333
+  Arrival (ns):           13.573
+  Required (ns):          14.906
+  Operating Conditions: slow_lv_ht
+
+Path 60
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[16]:EN
+  Delay (ns):              3.193
+  Slack (ns):              1.334
+  Arrival (ns):           13.454
+  Required (ns):          14.788
+  Operating Conditions: slow_lv_ht
+
+Path 61
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[13]:EN
+  Delay (ns):              3.193
+  Slack (ns):              1.334
+  Arrival (ns):           13.454
+  Required (ns):          14.788
+  Operating Conditions: slow_lv_ht
+
+Path 62
+  From: PCIe_EP_0/PCIex4_0/PCIE_1:AXI_CLK
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/dma0_data_cnt[11]:EN
+  Delay (ns):              3.193
+  Slack (ns):              1.334
+  Arrival (ns):           13.454
+  Required (ns):          14.788
+  Operating Conditions: slow_lv_ht
+
+Path 63
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.615
+  Slack (ns):              1.334
+  Arrival (ns):           13.564
+  Required (ns):          14.898
+  Operating Conditions: slow_lv_ht
+
+Path 64
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[1]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.635
+  Slack (ns):              1.334
+  Arrival (ns):           13.598
+  Required (ns):          14.932
+  Operating Conditions: slow_lv_ht
+
+Path 65
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.614
+  Slack (ns):              1.339
+  Arrival (ns):           13.564
+  Required (ns):          14.903
+  Operating Conditions: slow_lv_ht
+
+Path 66
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.612
+  Slack (ns):              1.341
+  Arrival (ns):           13.571
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 67
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:D
+  Delay (ns):              3.572
+  Slack (ns):              1.342
+  Arrival (ns):           13.552
+  Required (ns):          14.894
+  Operating Conditions: slow_lv_ht
+
+Path 68
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[0]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[4]:D
+  Delay (ns):              3.623
+  Slack (ns):              1.343
+  Arrival (ns):           13.573
+  Required (ns):          14.916
+  Operating Conditions: slow_lv_ht
+
+Path 69
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[4]:D
+  Delay (ns):              3.628
+  Slack (ns):              1.343
+  Arrival (ns):           13.587
+  Required (ns):          14.930
+  Operating Conditions: slow_lv_ht
+
+Path 70
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[1]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[4]:D
+  Delay (ns):              3.621
+  Slack (ns):              1.346
+  Arrival (ns):           13.584
+  Required (ns):          14.930
+  Operating Conditions: slow_lv_ht
+
+Path 71
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.587
+  Slack (ns):              1.349
+  Arrival (ns):           13.540
+  Required (ns):          14.889
+  Operating Conditions: slow_lv_ht
+
+Path 72
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[0]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.597
+  Slack (ns):              1.351
+  Arrival (ns):           13.547
+  Required (ns):          14.898
+  Operating Conditions: slow_lv_ht
+
+Path 73
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[9]:D
+  Delay (ns):              3.556
+  Slack (ns):              1.352
+  Arrival (ns):           13.536
+  Required (ns):          14.888
+  Operating Conditions: slow_lv_ht
+
+Path 74
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.648
+  Slack (ns):              1.352
+  Arrival (ns):           13.591
+  Required (ns):          14.943
+  Operating Conditions: slow_lv_ht
+
+Path 75
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[2]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.617
+  Slack (ns):              1.354
+  Arrival (ns):           13.578
+  Required (ns):          14.932
+  Operating Conditions: slow_lv_ht
+
+Path 76
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[11]:D
+  Delay (ns):              3.614
+  Slack (ns):              1.355
+  Arrival (ns):           13.557
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 77
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:D
+  Delay (ns):              3.610
+  Slack (ns):              1.357
+  Arrival (ns):           13.555
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 78
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[0]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.603
+  Slack (ns):              1.357
+  Arrival (ns):           13.553
+  Required (ns):          14.910
+  Operating Conditions: slow_lv_ht
+
+Path 79
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[2]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[4]:D
+  Delay (ns):              3.603
+  Slack (ns):              1.366
+  Arrival (ns):           13.564
+  Required (ns):          14.930
+  Operating Conditions: slow_lv_ht
+
+Path 80
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[11]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[3]:D
+  Delay (ns):              3.540
+  Slack (ns):              1.366
+  Arrival (ns):           13.520
+  Required (ns):          14.886
+  Operating Conditions: slow_lv_ht
+
+Path 81
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:D
+  Delay (ns):              3.542
+  Slack (ns):              1.372
+  Arrival (ns):           13.522
+  Required (ns):          14.894
+  Operating Conditions: slow_lv_ht
+
+Path 82
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_244/MSC_i_248/raddr_int[4]:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_244/MSC_i_248/raddr_int[1]:D
+  Delay (ns):              3.572
+  Slack (ns):              1.375
+  Arrival (ns):           13.566
+  Required (ns):          14.941
+  Operating Conditions: slow_lv_ht
+
+Path 83
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_244/MSC_i_248/raddr_int[4]:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_244/MSC_i_248/raddr_int[19]:D
+  Delay (ns):              3.572
+  Slack (ns):              1.375
+  Arrival (ns):           13.566
+  Required (ns):          14.941
+  Operating Conditions: slow_lv_ht
+
+Path 84
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[11]:D
+  Delay (ns):              3.615
+  Slack (ns):              1.376
+  Arrival (ns):           13.595
+  Required (ns):          14.971
+  Operating Conditions: slow_lv_ht
+
+Path 85
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[3]:D
+  Delay (ns):              3.528
+  Slack (ns):              1.379
+  Arrival (ns):           13.508
+  Required (ns):          14.887
+  Operating Conditions: slow_lv_ht
+
+Path 86
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[3]:D
+  Delay (ns):              3.558
+  Slack (ns):              1.380
+  Arrival (ns):           13.517
+  Required (ns):          14.897
+  Operating Conditions: slow_lv_ht
+
+Path 87
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.551
+  Slack (ns):              1.381
+  Arrival (ns):           13.510
+  Required (ns):          14.891
+  Operating Conditions: slow_lv_ht
+
+Path 88
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOIOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[11]:D
+  Delay (ns):              3.580
+  Slack (ns):              1.382
+  Arrival (ns):           13.530
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 89
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:D
+  Delay (ns):              3.587
+  Slack (ns):              1.382
+  Arrival (ns):           13.530
+  Required (ns):          14.912
+  Operating Conditions: slow_lv_ht
+
+Path 90
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[9]:D
+  Delay (ns):              3.526
+  Slack (ns):              1.382
+  Arrival (ns):           13.506
+  Required (ns):          14.888
+  Operating Conditions: slow_lv_ht
+
+Path 91
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[3]:D
+  Delay (ns):              3.524
+  Slack (ns):              1.383
+  Arrival (ns):           13.504
+  Required (ns):          14.887
+  Operating Conditions: slow_lv_ht
+
+Path 92
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[1]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[3]:D
+  Delay (ns):              3.551
+  Slack (ns):              1.383
+  Arrival (ns):           13.514
+  Required (ns):          14.897
+  Operating Conditions: slow_lv_ht
+
+Path 93
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[6]:D
+  Delay (ns):              3.589
+  Slack (ns):              1.384
+  Arrival (ns):           13.534
+  Required (ns):          14.918
+  Operating Conditions: slow_lv_ht
+
+Path 94
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAlI0I[3]:D
+  Delay (ns):              3.523
+  Slack (ns):              1.384
+  Arrival (ns):           13.503
+  Required (ns):          14.887
+  Operating Conditions: slow_lv_ht
+
+Path 95
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[9]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[8]:D
+  Delay (ns):              3.607
+  Slack (ns):              1.385
+  Arrival (ns):           13.560
+  Required (ns):          14.945
+  Operating Conditions: slow_lv_ht
+
+Path 96
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[4]:D
+  Delay (ns):              3.542
+  Slack (ns):              1.385
+  Arrival (ns):           13.522
+  Required (ns):          14.907
+  Operating Conditions: slow_lv_ht
+
+Path 97
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[0]:D
+  Delay (ns):              3.522
+  Slack (ns):              1.385
+  Arrival (ns):           13.502
+  Required (ns):          14.887
+  Operating Conditions: slow_lv_ht
+
+Path 98
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[7]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[0]:D
+  Delay (ns):              3.552
+  Slack (ns):              1.386
+  Arrival (ns):           13.511
+  Required (ns):          14.897
+  Operating Conditions: slow_lv_ht
+
+Path 99
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_244/MSC_i_248/raddr_int[4]:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_244/MSC_i_248/raddr_int[28]:D
+  Delay (ns):              3.559
+  Slack (ns):              1.388
+  Arrival (ns):           13.553
+  Required (ns):          14.941
+  Operating Conditions: slow_lv_ht
+
+Path 100
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[1]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAOllI[0]:D
+  Delay (ns):              3.545
+  Slack (ns):              1.389
+  Arrival (ns):           13.508
+  Required (ns):          14.897
+  Operating Conditions: slow_lv_ht
+

@@ -1,0 +1,749 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03M
+Install: D:\Microsemi\Libero_SoC_v2021.2\SynplifyPro
+OS: Windows 6.2
+
+Hostname: DESKTOP-RDKBJ92
+
+Implementation : synthesis
+
+# Written on Tue Mar 29 05:58:27 2022
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top"
+Constraint File(s):      "D:\SoM3_test_package\SE216_SoM3\SE216_SoM3_MPF100T_Sources_w_DDR_w_FMC\designer\top\synthesis.fdc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 44 issues in 42 out of 66 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                                                            Ending                                                             |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                              PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0                            |     20.000           |     No paths         |     No paths         |     No paths                         
+System                                                                              PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                 |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                              PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2                                 |     1.250            |     No paths         |     No paths         |     No paths                         
+System                                                                              PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3                                 |     1.250            |     No paths         |     No paths         |     No paths                         
+DDR_REF                                                                             DDR_REF                                                            |     20.000           |     No paths         |     No paths         |     No paths                         
+DDR_REF                                                                             PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                 |     5.000            |     No paths         |     No paths         |     No paths                         
+PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0                                             PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0                            |     20.000           |     No paths         |     No paths         |     No paths                         
+PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT0                                             PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT1                            |     20.000           |     No paths         |     No paths         |     No paths                         
+PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT1                                             PF_CCC_C0_0/PF_CCC_C0_0/pll_inst_0/OUT1                            |     20.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                                  System                                                             |     5.000            |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                                  DDR_REF                                                            |     5.000            |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                                  PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                 |     5.000            |     No paths         |     No paths         |     2.500                            
+PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                                  PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2                                 |     1.250            |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                                  PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3                                 |     1.250            |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1                                                  COREDDR_TIP_INT_Z144_layer0|VCO_PHSEL_ROTATE_inferred_clock[0]     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2                                                  System                                                             |     1.250            |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_3_CTRL_PF_LANECTRL|TX_DQS_inferred_clock                 System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_3_CTRL_PF_LANECTRL|TX_DQS_270_inferred_clock             System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_2_CTRL_PF_LANECTRL|TX_DQS_inferred_clock                 System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_2_CTRL_PF_LANECTRL|TX_DQS_270_inferred_clock             System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_1_CTRL_PF_LANECTRL|TX_DQS_inferred_clock                 System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_1_CTRL_PF_LANECTRL|TX_DQS_270_inferred_clock             System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_0_CTRL_PF_LANECTRL|TX_DQS_inferred_clock                 System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANE_0_CTRL_PF_LANECTRL|TX_DQS_270_inferred_clock             System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+PF_DDR4_SS_DDRPHY_BLK_LANECTRL_ADDR_CMD_0_PF_LANECTRL|TX_DQS_270_inferred_clock     System                                                             |     10.000           |     No paths         |     No paths         |     No paths                         
+==================================================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:ACT_N
+p:A[0]
+p:A[1]
+p:A[2]
+p:A[3]
+p:A[4]
+p:A[5]
+p:A[6]
+p:A[7]
+p:A[8]
+p:A[9]
+p:A[10]
+p:A[11]
+p:A[12]
+p:A[13]
+p:BA[0]
+p:BA[1]
+p:BG[0]
+p:BG[1]
+p:CAS_N
+p:CK0
+p:CK0_N
+p:CKE
+p:CS_N
+p:DM_N[0]
+p:DM_N[1]
+p:DM_N[2]
+p:DM_N[3]
+p:DQS[0] (bidir end point)
+p:DQS[0] (bidir start point)
+p:DQS[1] (bidir end point)
+p:DQS[1] (bidir start point)
+p:DQS[2] (bidir end point)
+p:DQS[2] (bidir start point)
+p:DQS[3] (bidir end point)
+p:DQS[3] (bidir start point)
+p:DQS_N[0] (bidir end point)
+p:DQS_N[0] (bidir start point)
+p:DQS_N[1] (bidir end point)
+p:DQS_N[1] (bidir start point)
+p:DQS_N[2] (bidir end point)
+p:DQS_N[2] (bidir start point)
+p:DQS_N[3] (bidir end point)
+p:DQS_N[3] (bidir start point)
+p:DQ[0] (bidir end point)
+p:DQ[0] (bidir start point)
+p:DQ[1] (bidir end point)
+p:DQ[1] (bidir start point)
+p:DQ[2] (bidir end point)
+p:DQ[2] (bidir start point)
+p:DQ[3] (bidir end point)
+p:DQ[3] (bidir start point)
+p:DQ[4] (bidir end point)
+p:DQ[4] (bidir start point)
+p:DQ[5] (bidir end point)
+p:DQ[5] (bidir start point)
+p:DQ[6] (bidir end point)
+p:DQ[6] (bidir start point)
+p:DQ[7] (bidir end point)
+p:DQ[7] (bidir start point)
+p:DQ[8] (bidir end point)
+p:DQ[8] (bidir start point)
+p:DQ[9] (bidir end point)
+p:DQ[9] (bidir start point)
+p:DQ[10] (bidir end point)
+p:DQ[10] (bidir start point)
+p:DQ[11] (bidir end point)
+p:DQ[11] (bidir start point)
+p:DQ[12] (bidir end point)
+p:DQ[12] (bidir start point)
+p:DQ[13] (bidir end point)
+p:DQ[13] (bidir start point)
+p:DQ[14] (bidir end point)
+p:DQ[14] (bidir start point)
+p:DQ[15] (bidir end point)
+p:DQ[15] (bidir start point)
+p:DQ[16] (bidir end point)
+p:DQ[16] (bidir start point)
+p:DQ[17] (bidir end point)
+p:DQ[17] (bidir start point)
+p:DQ[18] (bidir end point)
+p:DQ[18] (bidir start point)
+p:DQ[19] (bidir end point)
+p:DQ[19] (bidir start point)
+p:DQ[20] (bidir end point)
+p:DQ[20] (bidir start point)
+p:DQ[21] (bidir end point)
+p:DQ[21] (bidir start point)
+p:DQ[22] (bidir end point)
+p:DQ[22] (bidir start point)
+p:DQ[23] (bidir end point)
+p:DQ[23] (bidir start point)
+p:DQ[24] (bidir end point)
+p:DQ[24] (bidir start point)
+p:DQ[25] (bidir end point)
+p:DQ[25] (bidir start point)
+p:DQ[26] (bidir end point)
+p:DQ[26] (bidir start point)
+p:DQ[27] (bidir end point)
+p:DQ[27] (bidir start point)
+p:DQ[28] (bidir end point)
+p:DQ[28] (bidir start point)
+p:DQ[29] (bidir end point)
+p:DQ[29] (bidir start point)
+p:DQ[30] (bidir end point)
+p:DQ[30] (bidir start point)
+p:DQ[31] (bidir end point)
+p:DQ[31] (bidir start point)
+p:ODT
+p:PCIESS_LANE_RXD2_N
+p:PCIESS_LANE_RXD2_P
+p:PCIESS_LANE_TXD2_N
+p:PCIESS_LANE_TXD2_P
+p:PCIe_RST_DIR
+p:RAS_N
+p:REF_CLK_PAD_N
+p:RESET_N
+p:SHIELD0
+p:SHIELD1
+p:SHIELD2
+p:SHIELD3
+p:USER_RESETN
+p:WE_N
+p:fmc_in[0]
+p:fmc_in[1]
+p:fmc_in[2]
+p:fmc_in[3]
+p:fmc_in[4]
+p:fmc_in[5]
+p:fmc_in[6]
+p:fmc_in[7]
+p:fmc_in[8]
+p:fmc_in[9]
+p:fmc_in[10]
+p:fmc_in[11]
+p:fmc_in[12]
+p:fmc_in[13]
+p:fmc_in[14]
+p:fmc_in[15]
+p:fmc_in[16]
+p:fmc_in[17]
+p:fmc_in[18]
+p:fmc_in[19]
+p:fmc_in[20]
+p:fmc_in[21]
+p:fmc_in[22]
+p:fmc_in[23]
+p:fmc_in[24]
+p:fmc_in[25]
+p:fmc_in[26]
+p:fmc_in[27]
+p:fmc_in[28]
+p:fmc_in[29]
+p:fmc_in[30]
+p:fmc_in[31]
+p:fmc_in[32]
+p:fmc_in[33]
+p:fmc_out[0]
+p:fmc_out[1]
+p:fmc_out[2]
+p:fmc_out[3]
+p:fmc_out[4]
+p:fmc_out[5]
+p:fmc_out[6]
+p:fmc_out[7]
+p:fmc_out[8]
+p:fmc_out[9]
+p:fmc_out[10]
+p:fmc_out[11]
+p:fmc_out[12]
+p:fmc_out[13]
+p:fmc_out[14]
+p:fmc_out[15]
+p:fmc_out[16]
+p:fmc_out[17]
+p:fmc_out[18]
+p:fmc_out[19]
+p:fmc_out[20]
+p:fmc_out[21]
+p:fmc_out[22]
+p:fmc_out[23]
+p:fmc_out[24]
+p:fmc_out[25]
+p:fmc_out[26]
+p:fmc_out[27]
+p:fmc_out[28]
+p:fmc_out[29]
+p:fmc_out[30]
+p:fmc_out[31]
+p:fmc_out[32]
+p:fmc_out[33]
+p:led[0]
+p:led[1]
+p:vadj_2v5
+p:vadj_en
+
+
+Inapplicable constraints
+************************
+
+set_false_path -from [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.rdGrayCounter*.cntGray* }] -to [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.rdPtr_s1* }]
+	@E::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":19:0:19:0|Timing constraint (from [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.rdGrayCounter*.cntGray* }] to [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.rdPtr_s1* }]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E:MF1039:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":19:0:19:0|collection "[get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.rdGrayCounter*.cntGray* }]" is empty
+set_false_path -from [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.wrGrayCounter*.cntGray* }] -to [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.wrPtr_s1* }]
+	@E::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":20:0:20:0|Timing constraint (from [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.wrGrayCounter*.cntGray* }] to [get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.wrPtr_s1* }]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design
+	@E:MF1039:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":20:0:20:0|collection "[get_cells { AXI4_Interconnect_0.*.SlvConvertor_loop[*].slvcnv.slvCDC.genblk1*.wrGrayCounter*.cntGray* }]" is empty
+set_false_path -from [get_pins { PCIe_EP_0.PCIex4_0.PCIE_1.TL_CLK }]
+	@E::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":23:0:23:0|Timing constraint (from [get_pins { PCIe_EP_0.PCIex4_0.PCIE_1.TL_CLK }]) (false path) was not applied to the design because the from list is incorrect: it contains no clock, primary input, sequential cell, or sequential cell clock pin
+set_multicycle_path -setup_only 2 -from [get_cells { PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_TRAINING_0.COREDDR_TIP_INT_U.TIP_CTRL_BLK.u_write_callibrator.select* }]
+	@E:MF1028:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":72:0:72:0|Parameter "-setup_only" is not valid.
+	@N:Z112:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":72:0:72:0|Constraint will be disabled.
+
+Applicable constraints with issues
+**********************************
+
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_OUT_OF_RANGE }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":29:0:29:0|Timing constraint (through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_OUT_OF_RANGE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[0] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[1] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[2] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[3] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[4] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[5] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[6] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[7] PCIe_EP_0.PCIex4_0.PCIE_1.WAKEREQ PCIe_EP_0.PCIex4_0.PCIE_1.MPERST_N }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":22:0:22:0|Timing constraint (to [get_pins { PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[0] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[1] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[2] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[3] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[4] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[5] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[6] PCIe_EP_0.PCIex4_0.PCIE_1.INTERRUPT[7] PCIe_EP_0.PCIex4_0.PCIE_1.WAKEREQ PCIe_EP_0.PCIex4_0.PCIE_1.MPERST_N }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.CCC_0.pll_inst_0.PHASE_OUT0_SEL }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":69:0:69:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.CCC_0.pll_inst_0.PHASE_OUT0_SEL }]) (false path) was not applied to the design because no matching path was synchronous
+set_false_path -to [get_pins { PF_DDR4_SS_0.CCC_0.pll_inst_0.PHASE_OUT2_SEL }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":70:0:70:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.CCC_0.pll_inst_0.PHASE_OUT2_SEL }]) (false path) was not applied to the design because no matching path was synchronous
+set_false_path -to [get_pins { PF_DDR4_SS_0.CCC_0.pll_inst_0.PHASE_OUT3_SEL }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":71:0:71:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.CCC_0.pll_inst_0.PHASE_OUT3_SEL }]) (false path) was not applied to the design because no matching path was synchronous
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.ARST_N }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":24:0:24:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.ARST_N }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_MOVE }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":28:0:28:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_MOVE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.RX_SYNC_RST* }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":27:0:27:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.RX_SYNC_RST* }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0.I_LANECTRL*.HS_IO_CLK_PAUSE }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":26:0:26:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0.I_LANECTRL*.HS_IO_CLK_PAUSE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":25:0:25:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_DIRECTION }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":32:0:32:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_DIRECTION }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_LOAD PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_SEL }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":34:0:34:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_LOAD PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_SEL }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_MOVE }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":33:0:33:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DELAY_LINE_MOVE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[0] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":37:0:37:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[0] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[1] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":38:0:38:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[1] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[2] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":39:0:39:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[2] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[3] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":40:0:40:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[3] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[4] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":41:0:41:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[4] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[5] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":42:0:42:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[5] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[6] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":43:0:43:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[6] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[7] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":44:0:44:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.DLL_CODE[7] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.READ_CLK_SEL[2] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":36:0:36:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.READ_CLK_SEL[2] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.RESET }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":31:0:31:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.RESET }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.SWITCH }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":35:0:35:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.SWITCH }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_DIRECTION }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":47:0:47:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_DIRECTION }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_LOAD PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_SEL }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":49:0:49:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_LOAD PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_SEL }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_MOVE }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":48:0:48:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DELAY_LINE_MOVE }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[0] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":52:0:52:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[0] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[1] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":53:0:53:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[1] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[2] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":54:0:54:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[2] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[3] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":55:0:55:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[3] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[4] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":56:0:56:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[4] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[5] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":57:0:57:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[5] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[6] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":58:0:58:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[6] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[7] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":59:0:59:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.DLL_CODE[7] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.READ_CLK_SEL[2] }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":51:0:51:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.READ_CLK_SEL[2] }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.RESET }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":46:0:46:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.RESET }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.SWITCH }]
+	@W::"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":50:0:50:0|Timing constraint (to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.SWITCH }]) (false path) was not applied to the design because none of the paths specified by the constraint exist in the design
+
+Constraints with matching wildcard expressions
+**********************************************
+
+set_false_path -through [get_nets { AXI4_Interconnect_0.ARESETN* }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":18:0:18:0|expression "[get_nets { AXI4_Interconnect_0.ARESETN* }]" applies to objects:
+		AXI4_Interconnect_0.ARESETN
+		AXI4_Interconnect_0.ARESETN_arst
+		AXI4_Interconnect_0.ARESETN_data
+		AXI4_Interconnect_0.ARESETN_i
+set_false_path -through [get_nets { CoreDMA_IO_CTRL_0.CoreAXI4_Lite_0.ARESETN* }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":21:0:21:0|expression "[get_nets { CoreDMA_IO_CTRL_0.CoreAXI4_Lite_0.ARESETN* }]" applies to objects:
+		CoreDMA_IO_CTRL_0.CoreAXI4_Lite_0.ARESETN
+		CoreDMA_IO_CTRL_0.CoreAXI4_Lite_0.ARESETN_arst
+		CoreDMA_IO_CTRL_0.CoreAXI4_Lite_0.ARESETN_data
+		CoreDMA_IO_CTRL_0.CoreAXI4_Lite_0.ARESETN_i
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_*FEEDBACK*.Y }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":60:0:60:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_*FEEDBACK*.Y }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DM.I_TRIBUFF_FEEDBACK_0.Y
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DM.I_TRIBUFF_FEEDBACK_0.Y
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DM.I_TRIBUFF_FEEDBACK_0.Y
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DM.I_TRIBUFF_FEEDBACK_0.Y
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF*.D }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":65:0:65:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF*.D }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_BIBUF_DIFF_DQS_0.D
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_BIBUF_DIFF_DQS_0.D
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_BIBUF_DIFF_DQS_0.D
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_BIBUF_DIFF_DQS_0.D
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF*.E }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":66:0:66:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF*.E }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_BIBUF_DIFF_DQS_0.E
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_BIBUF_DIFF_DQS_0.E
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_BIBUF_DIFF_DQS_0.E
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_BIBUF_DIFF_DQS_0.E
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF*.Y }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":67:0:67:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF*.Y }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_BIBUF_DIFF_DQS_0.Y
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_BIBUF_DIFF_DQS_0.Y
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_BIBUF_DIFF_DQS_0.Y
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_BIBUF_DIFF_DQS_0.Y
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF_DIFF_DQS_*.YN }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":68:0:68:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_BIBUF_DIFF_DQS_*.YN }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_BIBUF_DIFF_DQS_0.YN
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_BIBUF_DIFF_DQS_0.YN
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_BIBUF_DIFF_DQS_0.YN
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_BIBUF_DIFF_DQS_0.YN
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_OUT_OF_RANGE }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":29:0:29:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_OUT_OF_RANGE }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ACT_N.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_1.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_2.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_3.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_4.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_5.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_6.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_7.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_8.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_9.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_10.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_11.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_12.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_13.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_1.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BCLK_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_1.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CAS_N.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CKE.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CS_N.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ODT.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RAS_N.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_REF_CLK_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RESET_N.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_WE_N.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DM.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_1.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_2.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_3.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_4.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_5.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_6.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_7.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DM.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_1.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_2.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_3.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_4.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_5.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_6.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_7.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DM.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_1.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_2.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_3.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_4.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_5.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_6.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_7.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DM.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_1.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_2.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_3.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_4.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_5.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_6.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_7.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_OUT_OF_RANGE
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.D }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":63:0:63:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.D }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DM.I_TRIBUFF_FEEDBACK_0.D
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DM.I_TRIBUFF_FEEDBACK_0.D
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DM.I_TRIBUFF_FEEDBACK_0.D
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DM.I_TRIBUFF_FEEDBACK_0.D
+set_false_path -through [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.E }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":64:0:64:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_TRIBUFF_*.E }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DM.I_TRIBUFF_FEEDBACK_0.E
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DM.I_TRIBUFF_FEEDBACK_0.E
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DM.I_TRIBUFF_FEEDBACK_0.E
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DM.I_TRIBUFF_FEEDBACK_0.E
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.ARST_N }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":24:0:24:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.ARST_N }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ACT_N.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_1.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_2.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_3.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_4.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_5.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_6.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_7.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_8.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_9.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_10.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_11.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_12.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_13.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_1.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BCLK_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_1.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CAS_N.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CKE.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CS_N.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ODT.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RAS_N.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_REF_CLK_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RESET_N.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_WE_N.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DM.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_1.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_2.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_3.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_4.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_5.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_6.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_7.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQSW_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_READ_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DM.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_1.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_2.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_3.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_4.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_5.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_6.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_7.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQSW_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_READ_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DM.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_1.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_2.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_3.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_4.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_5.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_6.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_7.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQSW_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_READ_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DM.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_1.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_2.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_3.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_4.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_5.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_6.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_7.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQSW_TRAINING.I_IOD_0.ARST_N
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_READ_TRAINING.I_IOD_0.ARST_N
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_MOVE }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":28:0:28:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.DELAY_LINE_MOVE }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ACT_N.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_1.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_2.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_3.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_4.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_5.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_6.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_7.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_8.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_9.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_10.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_11.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_12.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_13.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_1.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BCLK_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_1.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CAS_N.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CKE.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CS_N.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ODT.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RAS_N.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_REF_CLK_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RESET_N.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_WE_N.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DM.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_1.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_2.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_3.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_4.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_5.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_6.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_7.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DM.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_1.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_2.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_3.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_4.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_5.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_6.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_7.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DM.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_1.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_2.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_3.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_4.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_5.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_6.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_7.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DM.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_1.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_2.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_3.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_4.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_5.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_6.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_7.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQSW_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_READ_TRAINING.I_IOD_0.DELAY_LINE_MOVE
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.RX_SYNC_RST* }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":27:0:27:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.*.I_IOD_*.RX_SYNC_RST* }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ACT_N.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_1.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_2.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_3.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_4.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_5.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_6.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_7.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_8.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_9.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_10.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_11_0.I_IOD_11.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_12.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_A_13.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BA.I_IOD_1.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BCLK_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_BG.I_IOD_1.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CAS_N.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CKE.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_CS_N.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_ODT.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RAS_N.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_REF_CLK_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_RESET_N.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.IOD_WE_N.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DM.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_1.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_2.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_3.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_4.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_5.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_6.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQ.I_IOD_7.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQS.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_DQSW_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_IOD_READ_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DM.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_1.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_2.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_3.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_4.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_5.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_6.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQ.I_IOD_7.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQS.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_DQSW_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_IOD_READ_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DM.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_1.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_2.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_3.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_4.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_5.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_6.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQ.I_IOD_7.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQS.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_DQSW_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_IOD_READ_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DM.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_1.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_2.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_3.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_4.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_5.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_6.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQ.I_IOD_7.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQS.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_DQSW_TRAINING.I_IOD_0.RX_SYNC_RST
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_IOD_READ_TRAINING.I_IOD_0.RX_SYNC_RST
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0.I_LANECTRL*.HS_IO_CLK_PAUSE }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":26:0:26:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0.I_LANECTRL*.HS_IO_CLK_PAUSE }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0.I_LANECTRL.HS_IO_CLK_PAUSE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANECTRL_ADDR_CMD_0.I_LANECTRL_PAUSE_SYNC.HS_IO_CLK_PAUSE
+set_false_path -to [get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE }]
+	@N:MF891:"d:/som3_test_package/se216_som3/se216_som3_mpf100t_sources_w_ddr_w_fmc/designer/top/synthesis.fdc":25:0:25:0|expression "[get_pins { PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_*_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE }]" applies to objects:
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_0_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_1_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_2_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE
+		PF_DDR4_SS_0.DDRPHY_BLK_0.LANE_3_CTRL.I_LANECTRL.HS_IO_CLK_PAUSE
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

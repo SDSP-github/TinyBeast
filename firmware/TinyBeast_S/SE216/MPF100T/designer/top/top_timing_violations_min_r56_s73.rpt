@@ -1,0 +1,921 @@
+Timing Violation Report Min Delay Analysis
+
+SmartTime Version v2021.2
+Microsemi Corporation - Microsemi Libero Software Release v2021.2 (Version 2021.2.0.11)
+Date: Tue Mar 29 06:39:21 2022
+
+
+Design: top
+Family: PolarFire
+Die: MPF100T
+Package: FCVG484
+Temperature Range: -40 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_ht, slow_lv_lt, fast_hv_lt
+
+
+*** IMPORTANT RECOMMENDATION *** If you haven't done so, it is highly recommended to add clock jitter information for each clock domain into Libero SoC through clock uncertainty SDC timing constraints. Please refer to the Libero SoC v2021.2 release notes for more details.
+
+Path 1
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:RESET
+  Delay (ns):              0.797
+  Slack (ns):             -8.190
+  Arrival (ns):            7.113
+  Required (ns):          15.303
+  Operating Conditions: slow_lv_lt
+
+Path 2
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:RESET
+  Delay (ns):              0.951
+  Slack (ns):             -8.036
+  Arrival (ns):            7.267
+  Required (ns):          15.303
+  Operating Conditions: slow_lv_lt
+
+Path 3
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[0].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.860
+  Slack (ns):             -7.408
+  Arrival (ns):            7.184
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 4
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[1]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.878
+  Slack (ns):             -7.390
+  Arrival (ns):            7.202
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 5
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[2].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.895
+  Slack (ns):             -7.373
+  Arrival (ns):            7.219
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 6
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[1].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.906
+  Slack (ns):             -7.362
+  Arrival (ns):            7.230
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 7
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[1]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.927
+  Slack (ns):             -7.351
+  Arrival (ns):            7.241
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 8
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[3]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.934
+  Slack (ns):             -7.333
+  Arrival (ns):            7.259
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 9
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[2]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.970
+  Slack (ns):             -7.308
+  Arrival (ns):            7.284
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 10
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[3]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.980
+  Slack (ns):             -7.298
+  Arrival (ns):            7.294
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 11
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[3].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.971
+  Slack (ns):             -7.297
+  Arrival (ns):            7.295
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 12
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[4]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              0.995
+  Slack (ns):             -7.273
+  Arrival (ns):            7.319
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 13
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[4]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.009
+  Slack (ns):             -7.270
+  Arrival (ns):            7.322
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 14
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[0]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.036
+  Slack (ns):             -7.242
+  Arrival (ns):            7.350
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 15
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[0]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.029
+  Slack (ns):             -7.239
+  Arrival (ns):            7.353
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 16
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[2]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.041
+  Slack (ns):             -7.227
+  Arrival (ns):            7.365
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 17
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[0].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.204
+  Slack (ns):             -7.064
+  Arrival (ns):            7.528
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 18
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[2].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.239
+  Slack (ns):             -7.029
+  Arrival (ns):            7.563
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 19
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[1].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.250
+  Slack (ns):             -7.018
+  Arrival (ns):            7.574
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 20
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[3].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.315
+  Slack (ns):             -6.953
+  Arrival (ns):            7.639
+  Required (ns):          14.592
+  Operating Conditions: slow_lv_lt
+
+Path 21
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[11]:SLn
+  Delay (ns):              0.937
+  Slack (ns):             -1.793
+  Arrival (ns):            5.101
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 22
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[9]:SLn
+  Delay (ns):              0.937
+  Slack (ns):             -1.792
+  Arrival (ns):            5.101
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 23
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[7]:SLn
+  Delay (ns):              0.937
+  Slack (ns):             -1.792
+  Arrival (ns):            5.101
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 24
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[5]:SLn
+  Delay (ns):              0.937
+  Slack (ns):             -1.792
+  Arrival (ns):            5.101
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 25
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[1]:SLn
+  Delay (ns):              0.938
+  Slack (ns):             -1.792
+  Arrival (ns):            5.102
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 26
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[8]:SLn
+  Delay (ns):              0.938
+  Slack (ns):             -1.791
+  Arrival (ns):            5.102
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 27
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[3]:SLn
+  Delay (ns):              0.938
+  Slack (ns):             -1.791
+  Arrival (ns):            5.102
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 28
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[3]:SLn
+  Delay (ns):              0.940
+  Slack (ns):             -1.790
+  Arrival (ns):            5.104
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 29
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[6]:SLn
+  Delay (ns):              0.939
+  Slack (ns):             -1.790
+  Arrival (ns):            5.103
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 30
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[4]:SLn
+  Delay (ns):              0.939
+  Slack (ns):             -1.790
+  Arrival (ns):            5.103
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 31
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[10]:SLn
+  Delay (ns):              0.939
+  Slack (ns):             -1.790
+  Arrival (ns):            5.103
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 32
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[2]:SLn
+  Delay (ns):              0.940
+  Slack (ns):             -1.789
+  Arrival (ns):            5.104
+  Required (ns):           6.893
+  Operating Conditions: fast_hv_lt
+
+Path 33
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[17]:SLn
+  Delay (ns):              1.012
+  Slack (ns):             -1.720
+  Arrival (ns):            5.176
+  Required (ns):           6.896
+  Operating Conditions: fast_hv_lt
+
+Path 34
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[21]:SLn
+  Delay (ns):              1.013
+  Slack (ns):             -1.719
+  Arrival (ns):            5.177
+  Required (ns):           6.896
+  Operating Conditions: fast_hv_lt
+
+Path 35
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[18]:SLn
+  Delay (ns):              1.013
+  Slack (ns):             -1.719
+  Arrival (ns):            5.177
+  Required (ns):           6.896
+  Operating Conditions: fast_hv_lt
+
+Path 36
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[20]:SLn
+  Delay (ns):              1.014
+  Slack (ns):             -1.718
+  Arrival (ns):            5.178
+  Required (ns):           6.896
+  Operating Conditions: fast_hv_lt
+
+Path 37
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[19]:SLn
+  Delay (ns):              1.014
+  Slack (ns):             -1.718
+  Arrival (ns):            5.178
+  Required (ns):           6.896
+  Operating Conditions: fast_hv_lt
+
+Path 38
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[9]:SLn
+  Delay (ns):              1.015
+  Slack (ns):             -1.717
+  Arrival (ns):            5.179
+  Required (ns):           6.896
+  Operating Conditions: fast_hv_lt
+
+Path 39
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[23]:SLn
+  Delay (ns):              1.081
+  Slack (ns):             -1.650
+  Arrival (ns):            5.245
+  Required (ns):           6.895
+  Operating Conditions: fast_hv_lt
+
+Path 40
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[21]:SLn
+  Delay (ns):              1.081
+  Slack (ns):             -1.649
+  Arrival (ns):            5.245
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 41
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[19]:SLn
+  Delay (ns):              1.081
+  Slack (ns):             -1.649
+  Arrival (ns):            5.245
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 42
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[17]:SLn
+  Delay (ns):              1.081
+  Slack (ns):             -1.649
+  Arrival (ns):            5.245
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 43
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[13]:SLn
+  Delay (ns):              1.082
+  Slack (ns):             -1.649
+  Arrival (ns):            5.246
+  Required (ns):           6.895
+  Operating Conditions: fast_hv_lt
+
+Path 44
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[22]:SLn
+  Delay (ns):              1.082
+  Slack (ns):             -1.648
+  Arrival (ns):            5.246
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 45
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[20]:SLn
+  Delay (ns):              1.082
+  Slack (ns):             -1.648
+  Arrival (ns):            5.246
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 46
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[18]:SLn
+  Delay (ns):              1.082
+  Slack (ns):             -1.648
+  Arrival (ns):            5.246
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 47
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[16]:SLn
+  Delay (ns):              1.082
+  Slack (ns):             -1.648
+  Arrival (ns):            5.246
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 48
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[15]:SLn
+  Delay (ns):              1.082
+  Slack (ns):             -1.648
+  Arrival (ns):            5.246
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 49
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[12]:SLn
+  Delay (ns):              1.083
+  Slack (ns):             -1.648
+  Arrival (ns):            5.247
+  Required (ns):           6.895
+  Operating Conditions: fast_hv_lt
+
+Path 50
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[14]:SLn
+  Delay (ns):              1.083
+  Slack (ns):             -1.647
+  Arrival (ns):            5.247
+  Required (ns):           6.894
+  Operating Conditions: fast_hv_lt
+
+Path 51
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[29]:SLn
+  Delay (ns):              1.117
+  Slack (ns):             -1.619
+  Arrival (ns):            5.281
+  Required (ns):           6.900
+  Operating Conditions: fast_hv_lt
+
+Path 52
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[28]:SLn
+  Delay (ns):              1.117
+  Slack (ns):             -1.618
+  Arrival (ns):            5.281
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 53
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[23]:SLn
+  Delay (ns):              1.117
+  Slack (ns):             -1.618
+  Arrival (ns):            5.281
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 54
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[11]:SLn
+  Delay (ns):              1.118
+  Slack (ns):             -1.618
+  Arrival (ns):            5.282
+  Required (ns):           6.900
+  Operating Conditions: fast_hv_lt
+
+Path 55
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[0]:SLn
+  Delay (ns):              1.117
+  Slack (ns):             -1.618
+  Arrival (ns):            5.281
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 56
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[31]:SLn
+  Delay (ns):              1.118
+  Slack (ns):             -1.617
+  Arrival (ns):            5.282
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 57
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[30]:SLn
+  Delay (ns):              1.118
+  Slack (ns):             -1.617
+  Arrival (ns):            5.282
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 58
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[26]:SLn
+  Delay (ns):              1.118
+  Slack (ns):             -1.617
+  Arrival (ns):            5.282
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 59
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[25]:SLn
+  Delay (ns):              1.118
+  Slack (ns):             -1.617
+  Arrival (ns):            5.282
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 60
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[24]:SLn
+  Delay (ns):              1.118
+  Slack (ns):             -1.617
+  Arrival (ns):            5.282
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 61
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[13]:SLn
+  Delay (ns):              1.119
+  Slack (ns):             -1.617
+  Arrival (ns):            5.283
+  Required (ns):           6.900
+  Operating Conditions: fast_hv_lt
+
+Path 62
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[22]:SLn
+  Delay (ns):              1.119
+  Slack (ns):             -1.616
+  Arrival (ns):            5.283
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 63
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[16]:SLn
+  Delay (ns):              1.257
+  Slack (ns):             -1.478
+  Arrival (ns):            5.421
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 64
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[12]:SLn
+  Delay (ns):              1.256
+  Slack (ns):             -1.478
+  Arrival (ns):            5.420
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 65
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[8]:SLn
+  Delay (ns):              1.257
+  Slack (ns):             -1.477
+  Arrival (ns):            5.421
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 66
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[4]:SLn
+  Delay (ns):              1.257
+  Slack (ns):             -1.477
+  Arrival (ns):            5.421
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 67
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[15]:SLn
+  Delay (ns):              1.258
+  Slack (ns):             -1.477
+  Arrival (ns):            5.422
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 68
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[7]:SLn
+  Delay (ns):              1.259
+  Slack (ns):             -1.476
+  Arrival (ns):            5.423
+  Required (ns):           6.899
+  Operating Conditions: fast_hv_lt
+
+Path 69
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[6]:SLn
+  Delay (ns):              1.258
+  Slack (ns):             -1.476
+  Arrival (ns):            5.422
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 70
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[2]:SLn
+  Delay (ns):              1.258
+  Slack (ns):             -1.476
+  Arrival (ns):            5.422
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 71
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[1]:SLn
+  Delay (ns):              1.258
+  Slack (ns):             -1.476
+  Arrival (ns):            5.422
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 72
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[14]:SLn
+  Delay (ns):              1.258
+  Slack (ns):             -1.476
+  Arrival (ns):            5.422
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 73
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[10]:SLn
+  Delay (ns):              1.258
+  Slack (ns):             -1.476
+  Arrival (ns):            5.422
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 74
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[5]:SLn
+  Delay (ns):              1.259
+  Slack (ns):             -1.475
+  Arrival (ns):            5.423
+  Required (ns):           6.898
+  Operating Conditions: fast_hv_lt
+
+Path 75
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/led[0]:SLn
+  Delay (ns):              1.278
+  Slack (ns):             -1.450
+  Arrival (ns):            5.442
+  Required (ns):           6.892
+  Operating Conditions: fast_hv_lt
+
+Path 76
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[32]:SLn
+  Delay (ns):              1.278
+  Slack (ns):             -1.450
+  Arrival (ns):            5.442
+  Required (ns):           6.892
+  Operating Conditions: fast_hv_lt
+
+Path 77
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[33]:SLn
+  Delay (ns):              1.278
+  Slack (ns):             -1.449
+  Arrival (ns):            5.442
+  Required (ns):           6.891
+  Operating Conditions: fast_hv_lt
+
+Path 78
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[24]:SLn
+  Delay (ns):              1.279
+  Slack (ns):             -1.449
+  Arrival (ns):            5.443
+  Required (ns):           6.892
+  Operating Conditions: fast_hv_lt
+
+Path 79
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/led[1]:SLn
+  Delay (ns):              1.279
+  Slack (ns):             -1.448
+  Arrival (ns):            5.443
+  Required (ns):           6.891
+  Operating Conditions: fast_hv_lt
+
+Path 80
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter_2[27]:SLn
+  Delay (ns):              1.280
+  Slack (ns):             -1.448
+  Arrival (ns):            5.444
+  Required (ns):           6.892
+  Operating Conditions: fast_hv_lt
+
+Path 81
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_15:CLK
+  To:   system_top_0/counter[0]:SLn
+  Delay (ns):              1.279
+  Slack (ns):             -1.448
+  Arrival (ns):            5.443
+  Required (ns):           6.891
+  Operating Conditions: fast_hv_lt
+
+Path 82
+  From: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[23]:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/holdDat[27]:D
+  Delay (ns):              0.303
+  Slack (ns):              0.045
+  Arrival (ns):            7.069
+  Required (ns):           7.024
+  Operating Conditions: slow_lv_ht
+
+Path 83
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/IiJ29bKaBKo4IEozC7KmBg9khvvFEAlCwtd23:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/IiJ29bKaBKo4IEozC7KmBg9khvvFEAmhpxk7J:D
+  Delay (ns):              0.308
+  Slack (ns):              0.047
+  Arrival (ns):            6.631
+  Required (ns):           6.584
+  Operating Conditions: slow_lv_lt
+
+Path 84
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_162/IblrpjDK5iAqgFeCA2bx0qjc5opb04Dy1DB5uzDL7J8fw517zmkdtrpDl7J:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[88]:D
+  Delay (ns):              0.202
+  Slack (ns):              0.058
+  Arrival (ns):            4.434
+  Required (ns):           4.376
+  Operating Conditions: fast_hv_lt
+
+Path 85
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_162/IblrpjDK5iAqgFeCA2bx0qjc5opb04Dy1DB5uzDL7J8fw517zmkdtrm7Hm3:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[90]:D
+  Delay (ns):              0.202
+  Slack (ns):              0.059
+  Arrival (ns):            4.434
+  Required (ns):           4.375
+  Operating Conditions: fast_hv_lt
+
+Path 86
+  From: CoreDMA_IO_CTRL_0/CoreAXI4_Lite_0/CoreAXI4_Lite_0/MstConvertor_loop[0].mstrconv/rgsl/genblk2.arrs/sDat[18]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreAXI4_Lite_0/CoreAXI4_Lite_0/SlvConvertor_loop[0].slvcnv/rgsl/genblk2.arrs/holdDat[18]:D
+  Delay (ns):              0.205
+  Slack (ns):              0.062
+  Arrival (ns):            4.425
+  Required (ns):           4.363
+  Operating Conditions: fast_hv_lt
+
+Path 87
+  From: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[18]:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[1].slvcnv/rgsl/genblk3.rrs/holdDat[22]:D
+  Delay (ns):              0.208
+  Slack (ns):              0.067
+  Arrival (ns):            4.434
+  Required (ns):           4.367
+  Operating Conditions: fast_hv_lt
+
+Path 88
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/MSC_i_250/MSC_i_251/MSC_i_266/MSC_i_268/MSC_i_276/ImCq:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/MSC_i_250/MSC_i_251/MSC_i_266/MSC_i_268/MSC_i_276/ImCr:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.371
+  Required (ns):           4.303
+  Operating Conditions: fast_hv_lt
+
+Path 89
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/Iek08fra1xD6E9AGxD23:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/IjnqbfhkaAqJsDy34mkwiyvhD23:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.366
+  Required (ns):           4.298
+  Operating Conditions: fast_hv_lt
+
+Path 90
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/Ib60s1r4hf69Ct08Emr6sKm2HtbeE4Ckkj7J:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_216/Ib60s1r4hf69Ct08Emr6sKm2HtbeE4CnrHxn:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.365
+  Required (ns):           4.297
+  Operating Conditions: fast_hv_lt
+
+Path 91
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_162/IlglEEx9E4Dbn7HmFmntJb7xF6DnLBt3kwcGEExJr1tblIjn9nG44qfI3:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[124]:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.374
+  Required (ns):           4.306
+  Operating Conditions: fast_hv_lt
+
+Path 92
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_159/IxjbK2Cg09p4xlAD5Cjgs:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.DFI_RESET_N_P0_OUT:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.368
+  Required (ns):           4.300
+  Operating Conditions: fast_hv_lt
+
+Path 93
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_159/IxjbK2BIbgpl8DpIL96rJ:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.DFI_BG_P0_OUT[1]:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.368
+  Required (ns):           4.300
+  Operating Conditions: fast_hv_lt
+
+Path 94
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_159/IbznAv5g3lbvkf8IEBosfnKqm3:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.DFI_ADDRESS_P0_OUT[2]:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.365
+  Required (ns):           4.297
+  Operating Conditions: fast_hv_lt
+
+Path 95
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_159/IbznAv5g3lbvkf8IEBosfnKqhn:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.DFI_ADDRESS_P0_OUT[1]:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.363
+  Required (ns):           4.295
+  Operating Conditions: fast_hv_lt
+
+Path 96
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_159/IDgmp42rcn5yncJGH8:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.DFI_RAS_N_P0_OUT:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.364
+  Required (ns):           4.296
+  Operating Conditions: fast_hv_lt
+
+Path 97
+  From: PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_11/IofE4bw879iG45efoqs7hyqGrxHvJbmvqav6zgwpvn7sh81w1g1BHr19bjHrtuaxJnw8gadLukiI3:CLK
+  To:   PF_DDR4_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_162/IblrpjDK5iAqgFeCA2bx0qjc5opb04Dy1DB5uzDL7J8fw517zmkdtrm67Dn:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.385
+  Required (ns):           4.317
+  Operating Conditions: fast_hv_lt
+
+Path 98
+  From: CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_13:CLK
+  To:   CORERESET_PF_C0_0/CORERESET_PF_C0_0/dff_14:D
+  Delay (ns):              0.143
+  Slack (ns):              0.068
+  Arrival (ns):            4.328
+  Required (ns):           4.260
+  Operating Conditions: fast_hv_lt
+
+Path 99
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[2].RDLVL_TRAIN/gate_training/clk_sel_out[1]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/CLK_SEL[7]:D
+  Delay (ns):              0.143
+  Slack (ns):              0.069
+  Arrival (ns):            4.356
+  Required (ns):           4.287
+  Operating Conditions: fast_hv_lt
+
+Path 100
+  From: CoreDMA_IO_CTRL_0/axi4dma_init_0/dmainit_state[5]:CLK
+  To:   CoreDMA_IO_CTRL_0/axi4dma_init_0/coredma_ch0_start_o:D
+  Delay (ns):              0.207
+  Slack (ns):              0.069
+  Arrival (ns):            4.431
+  Required (ns):           4.362
+  Operating Conditions: fast_hv_lt
+

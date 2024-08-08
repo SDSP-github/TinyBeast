@@ -1,0 +1,1536 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v12.6
+Microsemi Corporation - Microsemi Libero Software Release v12.6 (Version 12.900.20.24)
+Date: Mon Sep 13 18:50:50 2021
+
+
+Design: top
+Family: PolarFire
+Die: MPF100T
+Package: FCVG484
+Temperature Range: -40 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_ht, slow_lv_lt, fast_hv_lt
+Scenario for Timing Analysis: timing_analysis
+
+
+*** IMPORTANT RECOMMENDATION *** If you haven't done so, it is highly recommended to add clock jitter information for each clock domain into Libero SoC through clock uncertainty SDC timing constraints. Please refer to the Libero SoC v12.5 release notes for more details.
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PCIe_EP_0/PCIe_TL_CLK_0/OSC_160MHz_0/OSC_160MHz_0/I_OSC_160:CLK
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               REF_CLK_0
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+                            Input to Output
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIex4_0/PCIE_1:TL_CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 to PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV
+
+No Path 
+
+END SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 to PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: USER_RESETN
+  To:   PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N
+  Delay (ns):              7.330
+  Arrival (ns):            7.330
+  Recovery (ns):           1.395
+  External Recovery (ns):   6.452
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: USER_RESETN
+  To: PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N
+  data required time                                    N/C
+  data arrival time                          -        7.330
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        USER_RESETN (r)
+               +     0.000          net: USER_RESETN
+  0.000                        USER_RESETN_ibuf/U_IOPAD:PAD (r)
+               +     1.322          cell: ADLIB:IOPAD_IN
+  1.322                        USER_RESETN_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: USER_RESETN_ibuf/YIN
+  1.322                        USER_RESETN_ibuf/U_IOIN:YIN (r)
+               +     0.346          cell: ADLIB:IOIN_IB_E
+  1.668                        USER_RESETN_ibuf/U_IOIN:Y (r)
+               +     5.662          net: USER_RESETN_c
+  7.330                        PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N (r)
+                                    
+  7.330                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV
+               +     0.000          Clock source
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV (r)
+               +     0.000          net: PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0_CLK_OUT
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_NGMUX:CLK0 (r)
+               +     0.567          cell: ADLIB:ICB_NGMUX
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_NGMUX:Y (r)
+               +     0.000          net: PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/Y_I_NGMUX_net
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT_1:A (r)
+               +     0.176          cell: ADLIB:ICB_CLKINT
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT_1:Y (r)
+               +     0.328          net: PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT_NET
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT:A (r)
+               +     0.155          cell: ADLIB:GB
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT:Y (r)
+               +     0.327          net: PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT/U0_Y
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT/U0_RGB1:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT/U0_RGB1:Y (f)
+               +     0.671          net: PCIe_EP_0/PCIe_TL_CLK_0_TL_CLK
+  N/C                          PCIe_EP_0/PCIex4_0/PCIE_1:TL_CLK (r)
+               -     1.395          Library recovery time: ADLIB:PCIE
+  N/C                          PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N
+
+
+Operating Conditions : slow_lv_ht
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PCIe_EP_0/PCIe_TL_CLK_0/OSC_160MHz_0/OSC_160MHz_0/I_OSC_160:CLK
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:A
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIex4_0/PCIE_1:TL_CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 to PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK
+
+No Path 
+
+END SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 to PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: USER_RESETN
+  To:   PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N
+  Delay (ns):              6.804
+  Arrival (ns):            6.804
+  Recovery (ns):           1.495
+  External Recovery (ns):   2.394
+  Operating Conditions: slow_lv_lt
+
+
+Expanded Path 1
+  From: USER_RESETN
+  To: PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N
+  data required time                                    N/C
+  data arrival time                          -        6.804
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        USER_RESETN (r)
+               +     0.000          net: USER_RESETN
+  0.000                        USER_RESETN_ibuf/U_IOPAD:PAD (r)
+               +     1.147          cell: ADLIB:IOPAD_IN
+  1.147                        USER_RESETN_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: USER_RESETN_ibuf/YIN
+  1.147                        USER_RESETN_ibuf/U_IOIN:YIN (r)
+               +     0.279          cell: ADLIB:IOIN_IB_E
+  1.426                        USER_RESETN_ibuf/U_IOIN:Y (r)
+               +     5.378          net: USER_RESETN_c
+  6.804                        PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N (r)
+                                    
+  6.804                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK
+               +     0.000          Clock source
+  N/C                          PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK (r)
+               +     3.520          net: PCIe_EP_0/PCIe_TX_PLL_0_CLK_125
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_NGMUX_1:A (r)
+               +     0.000          cell: ADLIB:ICB_INT
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_NGMUX_1:Y (r)
+               +     0.180          net: PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_NGMUX_NET
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_NGMUX:CLK1 (r)
+               +     0.569          cell: ADLIB:ICB_NGMUX
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_NGMUX:Y (r)
+               +     0.000          net: PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/Y_I_NGMUX_net
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT_1:A (r)
+               +     0.176          cell: ADLIB:ICB_CLKINT
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT_1:Y (r)
+               +     0.304          net: PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT_NET
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT:A (r)
+               +     0.158          cell: ADLIB:GB
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT:Y (r)
+               +     0.308          net: PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT/U0_Y
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT/U0_RGB1:A (r)
+               +     0.048          cell: ADLIB:RGB
+  N/C                          PCIe_EP_0/PCIe_TL_CLK_0/NGMUX_0/NGMUX_0/I_CLKINT/U0_RGB1:Y (f)
+               +     0.642          net: PCIe_EP_0/PCIe_TL_CLK_0_TL_CLK
+  N/C                          PCIe_EP_0/PCIex4_0/PCIE_1:TL_CLK (r)
+               -     1.495          Library recovery time: ADLIB:PCIE
+  N/C                          PCIe_EP_0/PCIex4_0/PCIE_1:MPERST_N
+
+
+Operating Conditions : slow_lv_lt
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+
+SET Register to Register
+
+Path 1
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[7]:D
+  Delay (ns):              8.430
+  Arrival (ns):           10.288
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.517
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:D
+  Delay (ns):              8.350
+  Arrival (ns):           10.208
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.440
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[5]:D
+  Delay (ns):              8.321
+  Arrival (ns):           10.179
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.411
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[1]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[7]:D
+  Delay (ns):              8.313
+  Arrival (ns):           10.171
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.400
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[3]:D
+  Delay (ns):              8.281
+  Arrival (ns):           10.139
+  Setup (ns):              0.000
+  Minimum Period (ns):     8.368
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK
+  To: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[7]:D
+  data required time                                    N/C
+  data arrival time                          -       10.288
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+               +     0.000          Clock source
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0 (r)
+               +     0.222          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_0
+  0.222                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:A (r)
+               +     0.144          cell: ADLIB:ICB_CLKINT
+  0.366                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:Y (r)
+               +     0.363          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_NET
+  0.729                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:A (r)
+               +     0.174          cell: ADLIB:GB
+  0.903                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:Y (r)
+               +     0.362          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_Y
+  1.265                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB2:A (r)
+               +     0.058          cell: ADLIB:RGB
+  1.323                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB2:Y (f)
+               +     0.535          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB2_rgb_net_1
+  1.858                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK (r)
+               +     0.201          cell: ADLIB:SLE
+  2.059                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:Q (r)
+               +     1.509          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt_Z[0]
+  3.568                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/rdFIFOWrDataReg_d123_1:B (r)
+               +     0.051          cell: ADLIB:CFG2
+  3.619                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/rdFIFOWrDataReg_d123_1:Y (f)
+               +     0.790          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/rdFIFOWrDataReg_d123_1_Z
+  4.409                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt_RNISGPV1[3]:C (f)
+               +     0.234          cell: ADLIB:CFG4
+  4.643                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt_RNISGPV1[3]:Y (r)
+               +     0.255          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt_RNISGPV1_Z[3]
+  4.898                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_validByteCntInt_3lto7_3_i_RNINCPA3:C (r)
+               +     0.142          cell: ADLIB:CFG4
+  5.040                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_validByteCntInt_3lto7_3_i_RNINCPA3:Y (f)
+               +     0.125          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d97
+  5.165                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98:D (f)
+               +     0.091          cell: ADLIB:CFG4
+  5.256                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98:Y (r)
+               +     0.629          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98_Z
+  5.885                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_HBURSTInt_d_0_sqmuxa_2_1:B (r)
+               +     0.156          cell: ADLIB:CFG4
+  6.041                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_HBURSTInt_d_0_sqmuxa_2_1:Y (r)
+               +     0.385          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_HBURSTInt_d_0_sqmuxa_2_1_Z
+  6.426                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_HBURSTInt_d_0_sqmuxa_2_2:B (r)
+               +     0.171          cell: ADLIB:CFG4
+  6.597                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_HBURSTInt_d_0_sqmuxa_2_2:Y (r)
+               +     0.369          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_HBURSTInt_d_0_sqmuxa_2_2_Z
+  6.966                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_12:B (r)
+               +     0.156          cell: ADLIB:CFG3
+  7.122                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_12:Y (r)
+               +     0.456          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_12_Z
+  7.578                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_12_RNIIT0U4:D (r)
+               +     0.078          cell: ADLIB:CFG4
+  7.656                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_12_RNIIT0U4:Y (r)
+               +     0.284          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_rdFIFOWrData_d326_5_i
+  7.940                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f1_2[1]:D (r)
+               +     0.157          cell: ADLIB:CFG4
+  8.097                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f1_2[1]:Y (f)
+               +     0.374          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f1_2_Z[1]
+  8.471                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0[1]:C (f)
+               +     0.151          cell: ADLIB:CFG4
+  8.622                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0[1]:Y (f)
+               +     0.544          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0_Z[1]
+  9.166                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0_RNIILAHE[1]:B (f)
+               +     0.151          cell: ADLIB:ARI1_CC
+  9.317                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0_RNIILAHE[1]:P (f)
+               +     0.014          net: NET_CC_CONFIG1783
+  9.331                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_RNI4FAT7[0]_CC_1:P[0] (f)
+               +     0.336          cell: ADLIB:CC_CONFIG
+  9.667                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_RNI4FAT7[0]_CC_1:CC[6] (r)
+               +     0.000          net: NET_CC_CONFIG1810
+  9.667                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_RNO[7]:CC (r)
+               +     0.062          cell: ADLIB:ARI1_CC
+  9.729                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_RNO[7]:S (r)
+               +     0.381          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/N_1586
+  10.110                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d[7]:A (r)
+               +     0.156          cell: ADLIB:CFG3
+  10.266                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d[7]:Y (r)
+               +     0.022          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_Z[7]
+  10.288                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[7]:D (r)
+                                    
+  10.288                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0 (r)
+               +     0.202          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_0
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:A (r)
+               +     0.124          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:Y (r)
+               +     0.330          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_NET
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:A (r)
+               +     0.158          cell: ADLIB:GB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:Y (r)
+               +     0.326          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_Y
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB3:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB3:Y (f)
+               +     0.489          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB3_rgb_net_1
+  N/C                          AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[7]:CLK (r)
+               +     0.093          
+  N/C                          clock reconvergence pessimism
+               -     0.000          Library setup time: ADLIB:SLE
+  N/C                          AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[7]:D
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+
+No Path 
+
+END SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/wrLenFif/fifoRdAddr[1]:ALn
+  Delay (ns):              3.190
+  Arrival (ns):            5.062
+  Recovery (ns):           0.196
+  Minimum Period (ns):     3.491
+  Skew (ns):               0.105
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/wrLenFif/fifoRdAddr[0]:ALn
+  Delay (ns):              3.189
+  Arrival (ns):            5.061
+  Recovery (ns):           0.196
+  Minimum Period (ns):     3.491
+  Skew (ns):               0.106
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/wrLenFif/fifoRdAddr[2]:ALn
+  Delay (ns):              3.189
+  Arrival (ns):            5.061
+  Recovery (ns):           0.196
+  Minimum Period (ns):     3.490
+  Skew (ns):               0.105
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/latAWID[4]:ALn
+  Delay (ns):              3.189
+  Arrival (ns):            5.061
+  Recovery (ns):           0.196
+  Minimum Period (ns):     3.490
+  Skew (ns):               0.105
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/latAWID[1]:ALn
+  Delay (ns):              3.189
+  Arrival (ns):            5.061
+  Recovery (ns):           0.196
+  Minimum Period (ns):     3.490
+  Skew (ns):               0.105
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/wrLenFif/fifoRdAddr[1]:ALn
+  data required time                                    N/C
+  data arrival time                          -        5.062
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+               +     0.000          Clock source
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0 (r)
+               +     0.222          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_0
+  0.222                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:A (r)
+               +     0.144          cell: ADLIB:ICB_CLKINT
+  0.366                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:Y (r)
+               +     0.363          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_NET
+  0.729                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:A (r)
+               +     0.174          cell: ADLIB:GB
+  0.903                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:Y (r)
+               +     0.362          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_Y
+  1.265                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB2:A (r)
+               +     0.058          cell: ADLIB:RGB
+  1.323                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB2:Y (f)
+               +     0.549          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1_RGB2_rgb_net_1
+  1.872                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK (r)
+               +     0.201          cell: ADLIB:SLE
+  2.073                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:Q (r)
+               +     2.989          net: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/sysReset
+  5.062                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/wrLenFif/fifoRdAddr[1]:ALn (r)
+                                    
+  5.062                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0 (r)
+               +     0.202          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_0
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:A (r)
+               +     0.124          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_1:Y (r)
+               +     0.330          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0_NET
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:A (r)
+               +     0.158          cell: ADLIB:GB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0:Y (r)
+               +     0.325          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_Y
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_0/U0_RGB1:Y (f)
+               +     0.486          net: PF_CCC_C2_0_OUT0_FABCLK_0
+  N/C                          AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/wrLenFif/fifoRdAddr[1]:CLK (r)
+               +     0.093          
+  N/C                          clock reconvergence pessimism
+               -     0.196          Library recovery time: ADLIB:SLE
+  N/C                          AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/wrLenFif/fifoRdAddr[1]:ALn
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+
+SET Register to Register
+
+Path 1
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[7]:EN
+  Delay (ns):              6.053
+  Arrival (ns):            7.925
+  Setup (ns):              0.136
+  Minimum Period (ns):     6.323
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[4]:EN
+  Delay (ns):              6.052
+  Arrival (ns):            7.924
+  Setup (ns):              0.136
+  Minimum Period (ns):     6.322
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[63]:EN
+  Delay (ns):              6.118
+  Arrival (ns):            7.990
+  Setup (ns):              0.128
+  Minimum Period (ns):     6.319
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[60]:EN
+  Delay (ns):              6.119
+  Arrival (ns):            7.991
+  Setup (ns):              0.128
+  Minimum Period (ns):     6.319
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[10]:EN
+  Delay (ns):              6.036
+  Arrival (ns):            7.908
+  Setup (ns):              0.136
+  Minimum Period (ns):     6.307
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:CLK
+  To: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[7]:EN
+  data required time                                    N/C
+  data arrival time                          -        7.925
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+               +     0.000          Clock source
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 (r)
+               +     0.206          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_4
+  0.206                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:A (r)
+               +     0.143          cell: ADLIB:ICB_CLKINT
+  0.349                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:Y (r)
+               +     0.363          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_NET
+  0.712                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:A (r)
+               +     0.173          cell: ADLIB:GB
+  0.885                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:Y (r)
+               +     0.361          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_gbs_1
+  1.246                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB3:A (r)
+               +     0.058          cell: ADLIB:RGB
+  1.304                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB3:Y (f)
+               +     0.568          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB3_rgb_net_1
+  1.872                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:CLK (r)
+               +     0.190          cell: ADLIB:SLE
+  2.062                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.derr/readID[4]:Q (f)
+               +     0.658          net: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/DERR_RID[4]
+  2.720                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdFif.reqQual/slaveValidQual_1[5]:C (f)
+               +     0.091          cell: ADLIB:CFG3
+  2.811                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdFif.reqQual/slaveValidQual_1[5]:Y (r)
+               +     0.404          net: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/slaveValidQual[5]
+  3.215                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdFif.rdFif/slaveValidQual_pmux_5_2:D (r)
+               +     0.200          cell: ADLIB:CFG4
+  3.415                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdFif.rdFif/slaveValidQual_pmux_5_2:Y (r)
+               +     0.114          net: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdFif.rdFif/slaveValidQual_pmux_5_2_Z
+  3.529                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdFif.rdFif/slaveValidQual_pmux_5_2_0_RNIBR311:A (r)
+               +     0.053          cell: ADLIB:CFG3
+  3.582                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdFif.rdFif/slaveValidQual_pmux_5_2_0_RNIBR311:Y (r)
+               +     0.314          net: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/slaveValidQual_pmux
+  3.896                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdmx/arbEnable_0:B (r)
+               +     0.053          cell: ADLIB:CFG3
+  3.949                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/MD.genblk1[0].rdcon/rdmx/arbEnable_0:Y (r)
+               +     0.672          net: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/N_140
+  4.621                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/SLAVE_READY_0_a4_0[3]:C (r)
+               +     0.171          cell: ADLIB:CFG4
+  4.792                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/SLAVE_READY_0_a4_0[3]:Y (r)
+               +     0.629          net: AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/N_115
+  5.421                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/SLAVE_READY_0[3]:C (r)
+               +     0.200          cell: ADLIB:CFG4
+  5.621                        AXI4_Interconnect_0/AXI4_Interconnect_0/axicb/cb.rDCon/SLAVE_READY_0[3]:Y (r)
+               +     0.364          net: AXI4_Interconnect_0/AXI4_Interconnect_0/slaveRREADY[3]
+  5.985                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/currState_RNI28GH[1]:D (r)
+               +     0.171          cell: ADLIB:CFG4
+  6.156                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/currState_RNI28GH[1]:Y (r)
+               +     1.769          net: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/N_167_i
+  7.925                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[7]:EN (r)
+                                    
+  7.925                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 (r)
+               +     0.188          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_4
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:A (r)
+               +     0.124          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:Y (r)
+               +     0.331          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_NET
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:A (r)
+               +     0.158          cell: ADLIB:GB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:Y (r)
+               +     0.324          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_gbs_1
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB6:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB6:Y (f)
+               +     0.476          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB6_rgb_net_1
+  N/C                          AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[7]:CLK (r)
+               +     0.088          
+  N/C                          clock reconvergence pessimism
+               -     0.136          Library setup time: ADLIB:SLE
+  N/C                          AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[3].slvcnv/rgsl/genblk3.rrs/sDat[7]:EN
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+
+No Path 
+
+END SET PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:Y_DIV to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+
+----------------------------------------------------
+
+SET PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+
+No Path 
+
+END SET PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0:DIV_CLK to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+
+----------------------------------------------------
+
+SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0 to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+
+No Path 
+
+END SET PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT0 to PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAO0OIl/CAXI4DMAIIl0l[28]:ALn
+  Delay (ns):              3.919
+  Arrival (ns):            5.774
+  Recovery (ns):           0.209
+  Minimum Period (ns):     4.237
+  Skew (ns):               0.109
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAI01Ol/CAXI4DMAOOO1l_Z[31]:ALn
+  Delay (ns):              3.919
+  Arrival (ns):            5.774
+  Recovery (ns):           0.209
+  Minimum Period (ns):     4.237
+  Skew (ns):               0.109
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAO0OIl/CAXI4DMAIIl0l[31]:ALn
+  Delay (ns):              3.918
+  Arrival (ns):            5.773
+  Recovery (ns):           0.209
+  Minimum Period (ns):     4.236
+  Skew (ns):               0.109
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAI01Ol/CAXI4DMAOI10l_Z[28]:ALn
+  Delay (ns):              3.917
+  Arrival (ns):            5.772
+  Recovery (ns):           0.209
+  Minimum Period (ns):     4.235
+  Skew (ns):               0.109
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAI01Ol/CAXI4DMAOI10l_Z[26]:ALn
+  Delay (ns):              3.917
+  Arrival (ns):            5.772
+  Recovery (ns):           0.209
+  Minimum Period (ns):     4.235
+  Skew (ns):               0.109
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAO0OIl/CAXI4DMAIIl0l[28]:ALn
+  data required time                                    N/C
+  data arrival time                          -        5.774
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+               +     0.000          Clock source
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 (r)
+               +     0.206          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_4
+  0.206                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:A (r)
+               +     0.143          cell: ADLIB:ICB_CLKINT
+  0.349                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:Y (r)
+               +     0.363          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_NET
+  0.712                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:A (r)
+               +     0.173          cell: ADLIB:GB
+  0.885                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:Y (r)
+               +     0.370          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_gbs_1
+  1.255                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB2:A (r)
+               +     0.058          cell: ADLIB:RGB
+  1.313                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB2:Y (f)
+               +     0.542          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB2_rgb_net_1
+  1.855                        PF_RESET_0/PF_RESET_0/dff_15_rep:CLK (r)
+               +     0.201          cell: ADLIB:SLE
+  2.056                        PF_RESET_0/PF_RESET_0/dff_15_rep:Q (r)
+               +     2.583          net: PF_RESET_0/PF_RESET_0/dff_15_rep_Z
+  4.639                        PF_RESET_0/PF_RESET_0/dff_15_rep_RNI5GV3:A (r)
+               +     0.130          cell: ADLIB:GB
+  4.769                        PF_RESET_0/PF_RESET_0/dff_15_rep_RNI5GV3:Y (r)
+               +     0.359          net: PF_RESET_0/PF_RESET_0/dff_15_rep_RNI5GV3/U0_Y
+  5.128                        PF_RESET_0/PF_RESET_0/dff_15_rep_RNI5GV3/U0_RGB1_RGB1:A (r)
+               +     0.058          cell: ADLIB:RGB
+  5.186                        PF_RESET_0/PF_RESET_0/dff_15_rep_RNI5GV3/U0_RGB1_RGB1:Y (f)
+               +     0.588          net: PF_RESET_0/PF_RESET_0/dff_15_rep_RNI5GV3/U0_RGB1_RGB1_rgb_net_1
+  5.774                        CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAO0OIl/CAXI4DMAIIl0l[28]:ALn (r)
+                                    
+  5.774                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 (r)
+               +     0.188          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_4
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:A (r)
+               +     0.124          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:Y (r)
+               +     0.331          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_NET
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4:A (r)
+               +     0.157          cell: ADLIB:GB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4:Y (r)
+               +     0.326          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_Y
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB1:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB1:Y (f)
+               +     0.502          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB1_rgb_net_1
+  N/C                          CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAO0OIl/CAXI4DMAIIl0l[28]:CLK (r)
+               +     0.069          
+  N/C                          clock reconvergence pessimism
+               -     0.209          Library recovery time: ADLIB:SLE
+  N/C                          CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAOOlOI/CAXI4DMAOOl1I/CAXI4DMAO0OIl/CAXI4DMAIIl0l[28]:ALn
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: USER_RESETN
+  To:   PF_RESET_0/PF_RESET_0/dff_12:ALn
+  Delay (ns):              6.873
+  Arrival (ns):            6.873
+  Recovery (ns):           0.196
+  External Recovery (ns):   5.407
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: USER_RESETN
+  To:   PF_RESET_0/PF_RESET_0/dff_14:ALn
+  Delay (ns):              6.872
+  Arrival (ns):            6.872
+  Recovery (ns):           0.196
+  External Recovery (ns):   5.406
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: USER_RESETN
+  To:   PF_RESET_0/PF_RESET_0/dff_13:ALn
+  Delay (ns):              6.872
+  Arrival (ns):            6.872
+  Recovery (ns):           0.196
+  External Recovery (ns):   5.406
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: USER_RESETN
+  To:   PF_RESET_0/PF_RESET_0/dff_11:ALn
+  Delay (ns):              6.872
+  Arrival (ns):            6.872
+  Recovery (ns):           0.196
+  External Recovery (ns):   5.406
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: USER_RESETN
+  To:   PF_RESET_0/PF_RESET_0/dff_10:ALn
+  Delay (ns):              6.872
+  Arrival (ns):            6.872
+  Recovery (ns):           0.196
+  External Recovery (ns):   5.406
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: USER_RESETN
+  To: PF_RESET_0/PF_RESET_0/dff_12:ALn
+  data required time                                    N/C
+  data arrival time                          -        6.873
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        USER_RESETN (r)
+               +     0.000          net: USER_RESETN
+  0.000                        USER_RESETN_ibuf/U_IOPAD:PAD (r)
+               +     1.322          cell: ADLIB:IOPAD_IN
+  1.322                        USER_RESETN_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: USER_RESETN_ibuf/YIN
+  1.322                        USER_RESETN_ibuf/U_IOIN:YIN (r)
+               +     0.346          cell: ADLIB:IOIN_IB_E
+  1.668                        USER_RESETN_ibuf/U_IOIN:Y (r)
+               +     2.643          net: USER_RESETN_c
+  4.311                        PF_RESET_0/PF_RESET_0/un1_D:A (r)
+               +     0.090          cell: ADLIB:CFG4
+  4.401                        PF_RESET_0/PF_RESET_0/un1_D:Y (r)
+               +     2.472          net: PF_RESET_0/PF_RESET_0/un1_INTERNAL_RST_i
+  6.873                        PF_RESET_0/PF_RESET_0/dff_12:ALn (r)
+                                    
+  6.873                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT1 (r)
+               +     0.188          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_4
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:A (r)
+               +     0.124          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_1:Y (r)
+               +     0.331          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4_NET
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:A (r)
+               +     0.158          cell: ADLIB:GB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_GB0:Y (r)
+               +     0.333          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_gbs_1
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB2:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB2:Y (f)
+               +     0.479          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_4/U0_RGB1_RGB2_rgb_net_1
+  N/C                          PF_RESET_0/PF_RESET_0/dff_12:CLK (r)
+               -     0.196          Library recovery time: ADLIB:SLE
+  N/C                          PF_RESET_0/PF_RESET_0/dff_12:ALn
+
+
+Operating Conditions : slow_lv_ht
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2
+
+SET Register to Register
+
+Path 1
+  From: si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:A_CLK
+  To:   si5344a_config_0/cfg_mem_raddr[7]:EN
+  Delay (ns):              5.237
+  Arrival (ns):            7.559
+  Setup (ns):              0.034
+  Minimum Period (ns):     5.524
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:A_CLK
+  To:   si5344a_config_0/cfg_mem_raddr[5]:EN
+  Delay (ns):              5.237
+  Arrival (ns):            7.559
+  Setup (ns):              0.034
+  Minimum Period (ns):     5.524
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:A_CLK
+  To:   si5344a_config_0/cfg_mem_raddr[3]:EN
+  Delay (ns):              5.237
+  Arrival (ns):            7.559
+  Setup (ns):              0.034
+  Minimum Period (ns):     5.524
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:A_CLK
+  To:   si5344a_config_0/cfg_mem_raddr[1]:EN
+  Delay (ns):              5.237
+  Arrival (ns):            7.559
+  Setup (ns):              0.034
+  Minimum Period (ns):     5.524
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:A_CLK
+  To:   si5344a_config_0/cfg_mem_raddr[0]:EN
+  Delay (ns):              5.236
+  Arrival (ns):            7.558
+  Setup (ns):              0.034
+  Minimum Period (ns):     5.523
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:A_CLK
+  To: si5344a_config_0/cfg_mem_raddr[7]:EN
+  data required time                                    N/C
+  data arrival time                          -        7.559
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2
+               +     0.000          Clock source
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2 (r)
+               +     0.503          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_8
+  0.503                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:A (r)
+               +     0.147          cell: ADLIB:ICB_CLKINT
+  0.650                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:Y (r)
+               +     0.349          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_NET
+  0.999                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:A (r)
+               +     0.169          cell: ADLIB:GB
+  1.168                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:Y (r)
+               +     0.357          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_Y
+  1.525                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1_RGB0:A (r)
+               +     0.058          cell: ADLIB:RGB
+  1.583                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1_RGB0:Y (f)
+               +     0.739          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1_RGB0_rgb_net_1
+  2.322                        si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:A_CLK (r)
+               +     2.319          cell: ADLIB:RAM1K20_IP
+  4.641                        si5344a_config_0/cfg_mem_i/mem24x24x512_0/mem24x24x512_mem24x24x512_0_PF_TPSRAM_R0C0/INST_RAM1K20_IP:B_DOUT[1] (f)
+               +     0.689          net: si5344a_config_0/cfg_mem_rdata[1]
+  5.330                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un202_clk_11:D (f)
+               +     0.278          cell: ADLIB:CFG4
+  5.608                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un202_clk_11:Y (r)
+               +     0.353          net: si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un202_clk_11_Z
+  5.961                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un202_clk_20:A (r)
+               +     0.171          cell: ADLIB:CFG4
+  6.132                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un202_clk_20:Y (r)
+               +     0.349          net: si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un202_clk_20_Z
+  6.481                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/cfg_mem_raddr_1_sqmuxa:D (r)
+               +     0.073          cell: ADLIB:CFG4
+  6.554                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/cfg_mem_raddr_1_sqmuxa:Y (f)
+               +     0.424          net: si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/cfg_mem_raddre
+  6.978                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/cfg_mem_raddr_1_sqmuxa_RNI9VFC:A (f)
+               +     0.052          cell: ADLIB:CFG2
+  7.030                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/cfg_mem_raddr_1_sqmuxa_RNI9VFC:Y (f)
+               +     0.529          net: si5344a_config_0/cfg_mem_raddr_1_sqmuxa_RNI9VFC
+  7.559                        si5344a_config_0/cfg_mem_raddr[7]:EN (f)
+                                    
+  7.559                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2 (r)
+               +     0.458          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_8
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:Y (r)
+               +     0.317          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_NET
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:A (r)
+               +     0.154          cell: ADLIB:GB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:Y (r)
+               +     0.324          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_Y
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1_RGB0:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1_RGB0:Y (f)
+               +     0.478          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1_RGB0_rgb_net_1
+  N/C                          si5344a_config_0/cfg_mem_raddr[7]:CLK (r)
+               +     0.162          
+  N/C                          clock reconvergence pessimism
+               -     0.034          Library setup time: ADLIB:SLE
+  N/C                          si5344a_config_0/cfg_mem_raddr[7]:EN
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From: I2C_SDA
+  To:   si5344a_config_0/i2c_state[23]:D
+  Delay (ns):              2.862
+  Arrival (ns):            2.862
+  Setup (ns):              0.000
+  External Setup (ns):     0.936
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: I2C_SDA
+  To:   si5344a_config_0/rdata_shift_reg[0]:D
+  Delay (ns):              2.702
+  Arrival (ns):            2.702
+  Setup (ns):              0.000
+  External Setup (ns):     0.768
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: I2C_SDA
+  To:   si5344a_config_0/i2c_state[9]:D
+  Delay (ns):              2.662
+  Arrival (ns):            2.662
+  Setup (ns):              0.000
+  External Setup (ns):     0.737
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: I2C_SDA
+  To:   si5344a_config_0/i2c_state[11]:D
+  Delay (ns):              2.648
+  Arrival (ns):            2.648
+  Setup (ns):              0.000
+  External Setup (ns):     0.724
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: I2C_SDA
+  To:   si5344a_config_0/i2c_state[4]:D
+  Delay (ns):              2.637
+  Arrival (ns):            2.637
+  Setup (ns):              0.000
+  External Setup (ns):     0.716
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: I2C_SDA
+  To: si5344a_config_0/i2c_state[23]:D
+  data required time                                    N/C
+  data arrival time                          -        2.862
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        I2C_SDA (r)
+               +     1.322          cell: ADLIB:IOPAD_BI
+  1.322                        BIBUF_1/U_IOPAD:Y (r)
+               +     0.000          net: BIBUF_1/YIN
+  1.322                        BIBUF_1/U_IOBI:YIN (r)
+               +     0.346          cell: ADLIB:IOBI_IB_OB_EB
+  1.668                        BIBUF_1/U_IOBI:Y (r)
+               +     0.972          net: BIBUF_1_Y
+  2.640                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/memwaddr_r_4_1.i2c_state_srsts_i_0_RNIFQ551[23]:C (r)
+               +     0.200          cell: ADLIB:CFG4
+  2.840                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/memwaddr_r_4_1.i2c_state_srsts_i_0_RNIFQ551[23]:Y (r)
+               +     0.022          net: si5344a_config_0/N_567_i
+  2.862                        si5344a_config_0/i2c_state[23]:D (r)
+                                    
+  2.862                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2 (r)
+               +     0.458          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_8
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:Y (r)
+               +     0.317          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_NET
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:A (r)
+               +     0.154          cell: ADLIB:GB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:Y (r)
+               +     0.324          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_Y
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1:A (r)
+               +     0.049          cell: ADLIB:RGB
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1:Y (f)
+               +     0.497          net: PF_CCC_C2_0_OUT2_FABCLK_0
+  N/C                          si5344a_config_0/i2c_state[23]:CLK (r)
+               -     0.000          Library setup time: ADLIB:SLE
+  N/C                          si5344a_config_0/i2c_state[23]:D
+
+
+Operating Conditions : slow_lv_ht
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From: si5344a_config_0/i2c_state[12]:CLK
+  To:   I2C_SCL
+  Delay (ns):              6.588
+  Arrival (ns):            8.737
+  Clock to Out (ns):       8.737
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: si5344a_config_0/i2c_clock_divider[0]:CLK
+  To:   I2C_SCL
+  Delay (ns):              6.497
+  Arrival (ns):            8.640
+  Clock to Out (ns):       8.640
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: si5344a_config_0/i2c_clock_divider[2]:CLK
+  To:   I2C_SCL
+  Delay (ns):              6.482
+  Arrival (ns):            8.625
+  Clock to Out (ns):       8.625
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: si5344a_config_0/i2c_state[21]:CLK
+  To:   I2C_SCL
+  Delay (ns):              6.468
+  Arrival (ns):            8.617
+  Clock to Out (ns):       8.617
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: si5344a_config_0/i2c_clock_divider[1]:CLK
+  To:   I2C_SCL
+  Delay (ns):              6.355
+  Arrival (ns):            8.498
+  Clock to Out (ns):       8.498
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: si5344a_config_0/i2c_state[12]:CLK
+  To: I2C_SCL
+  data required time                                    N/C
+  data arrival time                          -        8.737
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2
+               +     0.000          Clock source
+  0.000                        PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2 (r)
+               +     0.503          net: PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0_clkint_8
+  0.503                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:A (r)
+               +     0.147          cell: ADLIB:ICB_CLKINT
+  0.650                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_1:Y (r)
+               +     0.349          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8_NET
+  0.999                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:A (r)
+               +     0.169          cell: ADLIB:GB
+  1.168                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8:Y (r)
+               +     0.356          net: PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_Y
+  1.524                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1:A (r)
+               +     0.058          cell: ADLIB:RGB
+  1.582                        PF_CCC_C2_0/PF_CCC_C2_0/clkint_8/U0_RGB1:Y (f)
+               +     0.567          net: PF_CCC_C2_0_OUT2_FABCLK_0
+  2.149                        si5344a_config_0/i2c_state[12]:CLK (r)
+               +     0.209          cell: ADLIB:SLE
+  2.358                        si5344a_config_0/i2c_state[12]:Q (r)
+               +     0.238          net: si5344a_config_0/i2c_state_Z[12]
+  2.596                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un14_si5344a_sdao_i_o2_0:A (r)
+               +     0.120          cell: ADLIB:CFG2
+  2.716                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un14_si5344a_sdao_i_o2_0:Y (r)
+               +     0.471          net: si5344a_config_0.N_600_i
+  3.187                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un14_si5344a_sdao_i_o2_0_RNIV6VK:D (r)
+               +     0.156          cell: ADLIB:CFG4
+  3.343                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un14_si5344a_sdao_i_o2_0_RNIV6VK:Y (r)
+               +     0.139          net: si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/N_604_1
+  3.482                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un14_si5344a_sdao_i_o2_0_RNI4D6S:B (r)
+               +     0.156          cell: ADLIB:CFG3
+  3.638                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un14_si5344a_sdao_i_o2_0_RNI4D6S:Y (r)
+               +     0.364          net: si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/N_604
+  4.002                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/memwaddr_r_4_1.un27_si5344a_scl:D (r)
+               +     0.200          cell: ADLIB:CFG4
+  4.202                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/memwaddr_r_4_1.un27_si5344a_scl:Y (r)
+               +     0.127          net: si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/un27_si5344a_scl
+  4.329                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/memwaddr_r_4_1.un45_si5344a_scl_RNILA1T:B (r)
+               +     0.142          cell: ADLIB:CFG4
+  4.471                        si5344a_config_0/i2c_rdata_buf_i/fifo8x8x16_0/genblk18.fifo_corefifo_sync_scntr/memwaddr_r_4_1.un45_si5344a_scl_RNILA1T:Y (f)
+               +     0.125          net: si5344a_config_0.un31_si5344a_scl_i
+  4.596                        INV_0:A (f)
+               +     0.091          cell: ADLIB:CFG1
+  4.687                        INV_0:Y (r)
+               +     0.601          net: INV_0_Y
+  5.288                        BIBUF_0/U_IOBI:E (r)
+               +     0.210          cell: ADLIB:IOBI_IB_OB_EB
+  5.498                        BIBUF_0/U_IOBI:EOUT (r)
+               +     0.000          net: BIBUF_0/EOUT
+  5.498                        BIBUF_0/U_IOPAD:E (r)
+               +     3.239          cell: ADLIB:IOPAD_BI
+  8.737                        BIBUF_0/U_IOPAD:PAD (r)
+                                    
+  8.737                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2
+               +     0.000          Clock source
+  N/C                          PF_CCC_C2_0/PF_CCC_C2_0/pll_inst_0:OUT2 (r)
+                                    
+  N/C                          I2C_SCL (r)
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain REF_CLK_0
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin REF_CLK_0_ibuf/U_IOPAD:PAD
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path 
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

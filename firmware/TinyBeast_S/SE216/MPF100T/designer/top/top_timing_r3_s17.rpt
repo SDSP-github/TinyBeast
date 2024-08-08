@@ -1,0 +1,6780 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v12.6
+Microsemi Corporation - Microsemi Libero Software Release v12.6 (Version 12.900.20.24)
+Date: Fri Feb  5 10:01:22 2021
+
+
+Design: top
+Family: PolarFire
+Die: MPF300TS
+Package: FCG1152
+Temperature Range: -40 - 100 C
+Voltage Range: 1.0185 - 1.0815 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_ht, slow_lv_lt, fast_hv_lt
+Scenario for Timing Analysis: timing_analysis
+
+
+*** IMPORTANT RECOMMENDATION *** If you haven't done so, it is highly recommended to add clock jitter information for each clock domain into Libero SoC through clock uncertainty SDC timing constraints. Please refer to the Libero SoC v12.5 release notes for more details.
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               CCC_111MHz_0/CCC_111MHz_0/pll_inst_0/OUT0
+Required Period (ns):       9.000
+Required Frequency (MHz):   111.111
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               DQS[0]
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               DQS[1]
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               DQS[2]
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               DQS[3]
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               DQS_0[0]
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               DQS_0[1]
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD/Y_DIV
+Required Period (ns):       12.500
+Required Frequency (MHz):   80.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PCIe_EP_0/PCIe_TL_CLK_0/OSC_160MHz_0/OSC_160MHz_0/I_OSC_160/CLK
+Required Period (ns):       6.250
+Required Frequency (MHz):   160.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0/DIV_CLK
+Required Period (ns):       8.000
+Required Frequency (MHz):   125.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+Required Period (ns):       6.000
+Required Frequency (MHz):   166.667
+Worst Slack (ns):           1.991
+Operating Conditions:       slow_lv_ht
+
+Clock Domain:               PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+Required Period (ns):       1.500
+Required Frequency (MHz):   666.667
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+Required Period (ns):       1.500
+Required Frequency (MHz):   666.667
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+Required Period (ns):       5.000
+Required Frequency (MHz):   200.000
+Worst Slack (ns):           1.031
+Operating Conditions:       slow_lv_ht
+
+Clock Domain:               PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+Required Period (ns):       1.250
+Required Frequency (MHz):   800.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+Required Period (ns):       1.250
+Required Frequency (MHz):   800.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[2]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[3]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[18]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[19]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[20]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[21]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[22]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[23]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[24]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[25]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[26]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[27]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[28]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[29]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[30]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[31]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[32]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[33]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[34]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[35]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               REF_CLK_0
+Required Period (ns):       20.000
+Required Frequency (MHz):   50.000
+Worst Slack (ns):           13.786
+Operating Conditions:       slow_lv_ht
+
+Clock Domain:               REF_CLK_PAD_P
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT0
+Required Period (ns):       1.500
+Required Frequency (MHz):   666.667
+Worst Slack (ns):           
+Operating Conditions:       
+
+Clock Domain:               PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT0
+Required Period (ns):       1.250
+Required Frequency (MHz):   800.000
+Worst Slack (ns):           
+Operating Conditions:       
+
+                            Input to Output
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain CCC_111MHz_0/CCC_111MHz_0/pll_inst_0/OUT0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin CCC_111MHz_0/CCC_111MHz_0/clkint_0/U0_RGB1:A
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain DQS[0]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[0]
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[0]
+
+----------------------------------------------------
+
+Clock Domain DQS[1]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[1]
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[1]
+
+----------------------------------------------------
+
+Clock Domain DQS[2]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[2]
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[2]
+
+----------------------------------------------------
+
+Clock Domain DQS[3]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[3]
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to DQS[3]
+
+----------------------------------------------------
+
+Clock Domain DQS_0[0]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to DQS_0[0]
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to DQS_0[0]
+
+----------------------------------------------------
+
+Clock Domain DQS_0[1]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to DQS_0[1]
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to DQS_0[1]
+
+----------------------------------------------------
+
+Clock Domain PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD/Y_DIV
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIex4_0/PCIE_1:TL_CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD/Y_DIV
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD/Y_DIV
+
+----------------------------------------------------
+
+Clock Domain PCIe_EP_0/PCIe_TL_CLK_0/OSC_160MHz_0/OSC_160MHz_0/I_OSC_160/CLK
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD:A
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0/DIV_CLK
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIex4_0/PCIE_1:TL_CLK
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0/DIV_CLK
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0/DIV_CLK
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+SET Register to Register
+
+Path 1
+  From: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_9/data_shifter_gen[1].data_shifter[1][0]:CLK
+  To:   PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_delayed[2]:EN
+  Delay (ns):              3.849
+  Slack (ns):              1.991
+  Arrival (ns):           10.328
+  Required (ns):          12.319
+  Setup (ns):              0.121
+  Minimum Period (ns):     4.009
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_139/MSC_i_140/wr_ack[1]:CLK
+  To:   PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/read_count_early[10]:D
+  Delay (ns):              3.601
+  Slack (ns):              2.254
+  Arrival (ns):           10.117
+  Required (ns):          12.371
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.746
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_10/MSC_i_106/MSC_i_107/MSC_i_108/rd_valid:CLK
+  To:   PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_10/MSC_i_106/MSC_i_107/MSC_i_108/wr_level[1]:D
+  Delay (ns):              3.652
+  Slack (ns):              2.272
+  Arrival (ns):           10.139
+  Required (ns):          12.411
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.728
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_139/MSC_i_140/wr_ack[1]:CLK
+  To:   PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/read_count_early[7]:D
+  Delay (ns):              3.556
+  Slack (ns):              2.299
+  Arrival (ns):           10.072
+  Required (ns):          12.371
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.701
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_139/MSC_i_140/dowrite:CLK
+  To:   PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_delayed[2]:EN
+  Delay (ns):              3.485
+  Slack (ns):              2.300
+  Arrival (ns):            9.983
+  Required (ns):          12.283
+  Setup (ns):              0.121
+  Minimum Period (ns):     3.700
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_9/data_shifter_gen[1].data_shifter[1][0]:CLK
+  To: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_delayed[2]:EN
+  data required time                                 12.319
+  data arrival time                          -       10.328
+  slack                                               1.991
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  0.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     4.395          Clock generation
+  4.395                        
+               +     0.206          net: PF_DDR3_SS_0/CCC_0/pll_inst_0_clkint_4
+  4.601                        PF_DDR3_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  4.728                        PF_DDR3_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.591          net: PF_DDR3_SS_0/CCC_0/clkint_4_NET
+  5.319                        PF_DDR3_SS_0/CCC_0/clkint_4:A (r)
+               +     0.158          cell: ADLIB:GB
+  5.477                        PF_DDR3_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.388          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_Y
+  5.865                        PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2:A (r)
+               +     0.052          cell: ADLIB:RGB
+  5.917                        PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2:Y (f)
+               +     0.562          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2_rgb_net_1
+  6.479                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_9/data_shifter_gen[1].data_shifter[1][0]:CLK (r)
+               +     0.175          cell: ADLIB:SLE
+  6.654                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_9/data_shifter_gen[1].data_shifter[1][0]:Q (r)
+               +     0.888          net: PF_DDR3_SS_0/DDRCTRL_0_dfi_rddata_cs_n_p3_ext[0]
+  7.542                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_139/MSC_i_140/MSC_i_154/MSC_i_157/m54_0_1:C (r)
+               +     0.046          cell: ADLIB:CFG4
+  7.588                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_139/MSC_i_140/MSC_i_154/MSC_i_157/m54_0_1:Y (f)
+               +     0.406          net: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_net_2101
+  7.994                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/un1_wrtq_wr_count_s_0_2145:C (f)
+               +     0.122          cell: ADLIB:ARI1_CC
+  8.116                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/un1_wrtq_wr_count_s_0_2145:Y (r)
+               +     0.588          net: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_net_2239
+  8.704                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/un1_rmw_w_req_63:D (r)
+               +     0.048          cell: ADLIB:CFG4
+  8.752                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/un1_rmw_w_req_63:Y (r)
+               +     0.464          net: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/MSC_net_2567
+  9.216                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_1_sqmuxa:C (r)
+               +     0.081          cell: ADLIB:CFG4
+  9.297                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_1_sqmuxa:Y (r)
+               +     0.356          net: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/MSC_net_2619
+  9.653                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/un1_rmw_w_req_1_sqmuxa:C (r)
+               +     0.066          cell: ADLIB:CFG3
+  9.719                        PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/un1_rmw_w_req_1_sqmuxa:Y (r)
+               +     0.609          net: PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/MSC_net_2084
+  10.328                       PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_delayed[2]:EN (r)
+                                    
+  10.328                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  6.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  6.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     3.987          Clock generation
+  9.987                        
+               +     0.187          net: PF_DDR3_SS_0/CCC_0/pll_inst_0_clkint_4
+  10.174                       PF_DDR3_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.110          cell: ADLIB:ICB_CLKINT
+  10.284                       PF_DDR3_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.537          net: PF_DDR3_SS_0/CCC_0/clkint_4_NET
+  10.821                       PF_DDR3_SS_0/CCC_0/clkint_4:A (r)
+               +     0.144          cell: ADLIB:GB
+  10.965                       PF_DDR3_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.352          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_Y
+  11.317                       PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2:A (r)
+               +     0.047          cell: ADLIB:RGB
+  11.364                       PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2:Y (f)
+               +     0.523          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2_rgb_net_1
+  11.887                       PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_delayed[2]:CLK (r)
+               +     0.553          
+  12.440                       clock reconvergence pessimism
+               -     0.121          Library setup time: ADLIB:SLE
+  12.319                       PF_DDR3_SS_0/MSC_i_0/MSC_i_1/MSC_i_8/MSC_i_199/rmw_w_req_delayed[2]:EN
+                                    
+  12.319                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:CLK
+  To:   CTRLR_READY_DDR3
+  Delay (ns):             12.186
+  Arrival (ns):           18.625
+  Clock to Out (ns):      18.625
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:CLK
+  To: CTRLR_READY_DDR3
+  data required time                                    N/C
+  data arrival time                          -       18.625
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  0.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     4.395          Clock generation
+  4.395                        
+               +     0.206          net: PF_DDR3_SS_0/CCC_0/pll_inst_0_clkint_4
+  4.601                        PF_DDR3_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  4.728                        PF_DDR3_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.591          net: PF_DDR3_SS_0/CCC_0/clkint_4_NET
+  5.319                        PF_DDR3_SS_0/CCC_0/clkint_4:A (r)
+               +     0.158          cell: ADLIB:GB
+  5.477                        PF_DDR3_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.388          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_Y
+  5.865                        PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2:A (r)
+               +     0.052          cell: ADLIB:RGB
+  5.917                        PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2:Y (f)
+               +     0.522          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB2_rgb_net_1
+  6.439                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:CLK (r)
+               +     0.166          cell: ADLIB:SLE
+  6.605                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:Q (f)
+               +     8.072          net: CTRLR_READY_DDR3_c
+  14.677                       CTRLR_READY_DDR3_obuf/U_IOTRI:D (f)
+               +     0.918          cell: ADLIB:IOTRI_OB_EB
+  15.595                       CTRLR_READY_DDR3_obuf/U_IOTRI:DOUT (f)
+               +     0.000          net: CTRLR_READY_DDR3_obuf/DOUT
+  15.595                       CTRLR_READY_DDR3_obuf/U_IOPAD:D (f)
+               +     3.030          cell: ADLIB:IOPAD_TRI
+  18.625                       CTRLR_READY_DDR3_obuf/U_IOPAD:PAD (f)
+               +     0.000          net: CTRLR_READY_DDR3
+  18.625                       CTRLR_READY_DDR3 (f)
+                                    
+  18.625                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  N/C                          PF_DDR3_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     3.987          Clock generation
+  N/C                          
+                                    
+  N/C                          CTRLR_READY_DDR3 (f)
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_last[4]:ALn
+  Delay (ns):              3.143
+  Slack (ns):              2.622
+  Arrival (ns):            9.582
+  Required (ns):          12.204
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.378
+  Skew (ns):               0.052
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_first[0]:ALn
+  Delay (ns):              3.143
+  Slack (ns):              2.622
+  Arrival (ns):            9.582
+  Required (ns):          12.204
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.378
+  Skew (ns):               0.052
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_last[0]:ALn
+  Delay (ns):              3.142
+  Slack (ns):              2.623
+  Arrival (ns):            9.581
+  Required (ns):          12.204
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.377
+  Skew (ns):               0.052
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_first[5]:ALn
+  Delay (ns):              3.142
+  Slack (ns):              2.623
+  Arrival (ns):            9.581
+  Required (ns):          12.204
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.377
+  Skew (ns):               0.052
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_first[2]:ALn
+  Delay (ns):              3.142
+  Slack (ns):              2.623
+  Arrival (ns):            9.581
+  Required (ns):          12.204
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.377
+  Skew (ns):               0.052
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_last[4]:ALn
+  data required time                                 12.204
+  data arrival time                          -        9.582
+  slack                                               2.622
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  0.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     4.395          Clock generation
+  4.395                        
+               +     0.206          net: PF_DDR3_SS_0/CCC_0/pll_inst_0_clkint_4
+  4.601                        PF_DDR3_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  4.728                        PF_DDR3_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.591          net: PF_DDR3_SS_0/CCC_0/clkint_4_NET
+  5.319                        PF_DDR3_SS_0/CCC_0/clkint_4:A (r)
+               +     0.158          cell: ADLIB:GB
+  5.477                        PF_DDR3_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.376          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_Y
+  5.853                        PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB7:A (r)
+               +     0.052          cell: ADLIB:RGB
+  5.905                        PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB7:Y (f)
+               +     0.534          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB7_rgb_net_1
+  6.439                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK (r)
+               +     0.175          cell: ADLIB:SLE
+  6.614                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:Q (r)
+               +     1.828          net: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_Z
+  8.442                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI2L47:A (r)
+               +     0.115          cell: ADLIB:GB
+  8.557                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI2L47:Y (r)
+               +     0.386          net: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI2L47/U0_Y
+  8.943                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI2L47/U0_RGB1_RGB0:A (r)
+               +     0.052          cell: ADLIB:RGB
+  8.995                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI2L47/U0_RGB1_RGB0:Y (f)
+               +     0.587          net: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI2L47/U0_RGB1_RGB0_rgb_net_1
+  9.582                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_last[4]:ALn (r)
+                                    
+  9.582                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  6.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  6.000                        PF_DDR3_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     3.987          Clock generation
+  9.987                        
+               +     0.187          net: PF_DDR3_SS_0/CCC_0/pll_inst_0_clkint_4
+  10.174                       PF_DDR3_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.110          cell: ADLIB:ICB_CLKINT
+  10.284                       PF_DDR3_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.537          net: PF_DDR3_SS_0/CCC_0/clkint_4_NET
+  10.821                       PF_DDR3_SS_0/CCC_0/clkint_4:A (r)
+               +     0.144          cell: ADLIB:GB
+  10.965                       PF_DDR3_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.352          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_Y
+  11.317                       PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB0:A (r)
+               +     0.047          cell: ADLIB:RGB
+  11.364                       PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB0:Y (f)
+               +     0.506          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB0_rgb_net_1
+  11.870                       PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_last[4]:CLK (r)
+               +     0.517          
+  12.387                       clock reconvergence pessimism
+               -     0.183          Library recovery time: ADLIB:SLE
+  12.204                       PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/cmd_addr_trainer/tap_count_last[4]:ALn
+                                    
+  12.204                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: USER_RESETN
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:ALn
+  Delay (ns):              9.234
+  Arrival (ns):            9.234
+  Recovery (ns):           0.170
+  External Recovery (ns):   3.580
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: USER_RESETN
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/ddr_init_iterator/timeout_counter[4]:ALn
+  Delay (ns):              8.751
+  Arrival (ns):            8.751
+  Recovery (ns):           0.170
+  External Recovery (ns):   3.071
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: USER_RESETN
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/ddr_init_iterator/timeout_counter[3]:ALn
+  Delay (ns):              8.752
+  Arrival (ns):            8.752
+  Recovery (ns):           0.170
+  External Recovery (ns):   3.071
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: USER_RESETN
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/ddr_init_iterator/timeout_counter[2]:ALn
+  Delay (ns):              8.752
+  Arrival (ns):            8.752
+  Recovery (ns):           0.170
+  External Recovery (ns):   3.071
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: USER_RESETN
+  To:   PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/ddr_init_iterator/timeout_counter[1]:ALn
+  Delay (ns):              8.752
+  Arrival (ns):            8.752
+  Recovery (ns):           0.170
+  External Recovery (ns):   3.071
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: USER_RESETN
+  To: PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:ALn
+  data required time                                    N/C
+  data arrival time                          -        9.234
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        USER_RESETN (r)
+               +     0.000          net: USER_RESETN
+  0.000                        USER_RESETN_ibuf/U_IOPAD:PAD (r)
+               +     0.599          cell: ADLIB:IOPAD_IN
+  0.599                        USER_RESETN_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: USER_RESETN_ibuf/YIN
+  0.599                        USER_RESETN_ibuf/U_IOIN:YIN (r)
+               +     0.336          cell: ADLIB:IOIN_IB_E
+  0.935                        USER_RESETN_ibuf/U_IOIN:Y (r)
+               +     0.987          net: USER_RESETN_c
+  1.922                        AND3_0:C (r)
+               +     0.105          cell: ADLIB:CFG3
+  2.027                        AND3_0:Y (r)
+               +     7.207          net: AND3_0_Y
+  9.234                        PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:ALn (r)
+                                    
+  9.234                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  N/C                          PF_DDR3_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     3.987          Clock generation
+  N/C                          
+               +     0.187          net: PF_DDR3_SS_0/CCC_0/pll_inst_0_clkint_4
+  N/C                          PF_DDR3_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.110          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_DDR3_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.537          net: PF_DDR3_SS_0/CCC_0/clkint_4_NET
+  N/C                          PF_DDR3_SS_0/CCC_0/clkint_4:A (r)
+               +     0.144          cell: ADLIB:GB
+  N/C                          PF_DDR3_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.341          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_Y
+  N/C                          PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB7:A (r)
+               +     0.047          cell: ADLIB:RGB
+  N/C                          PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB7:Y (f)
+               +     0.471          net: PF_DDR3_SS_0/CCC_0/clkint_4/U0_RGB1_RGB7_rgb_net_1
+  N/C                          PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK (r)
+               -     0.170          Library recovery time: ADLIB:SLE
+  N/C                          PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:ALn
+
+
+Operating Conditions : slow_lv_ht
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CCC_111MHz_0/CCC_111MHz_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET CCC_111MHz_0/CCC_111MHz_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_A_11_0/I_IOD_8:HS_IO_CLK[0]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET CCC_111MHz_0/CCC_111MHz_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET CCC_111MHz_0/CCC_111MHz_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR3_SS_0/DDRPHY_BLK_0/LANE_1_IOD_DQ/I_IOD_4:RX_DQS_90[0]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET DQS_0[0] to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET DQS_0[0] to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+SET DQS_0[1] to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET DQS_0[1] to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR3_SS_0/DDRPHY_BLK_0/LANE_1_CTRL/I_LANECTRL:DELAY_LINE_MOVE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR3_SS_0/DDRPHY_BLK_0/LANE_0_CTRL/I_LANECTRL:DELAY_LINE_MOVE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin PF_DDR3_SS_0/CCC_0/pll_inst_0:PHASE_ROTATE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR3_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIex4_0/PCIESS_LANE3_Pipe_AXI0:AXI_CLK
+
+SET Register to Register
+
+Path 1
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  Delay (ns):              3.903
+  Slack (ns):              1.031
+  Arrival (ns):           18.408
+  Required (ns):          19.439
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.969
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[6]:D
+  Delay (ns):              3.894
+  Slack (ns):              1.040
+  Arrival (ns):           18.399
+  Required (ns):          19.439
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.960
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[5]:D
+  Delay (ns):              3.884
+  Slack (ns):              1.050
+  Arrival (ns):           18.389
+  Required (ns):          19.439
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.950
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[11]:D
+  Delay (ns):              3.937
+  Slack (ns):              1.055
+  Arrival (ns):           18.442
+  Required (ns):          19.497
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.945
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To:   CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[3]:D
+  Delay (ns):              3.862
+  Slack (ns):              1.072
+  Arrival (ns):           18.367
+  Required (ns):          19.439
+  Setup (ns):              0.000
+  Minimum Period (ns):     3.928
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK
+  To: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+  data required time                                 19.439
+  data arrival time                          -       18.408
+  slack                                               1.031
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  0.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +    12.449          Clock generation
+  12.449                       
+               +     0.183          net: PF_DDR4_SS_0/CCC_0/pll_inst_0_clkint_4
+  12.632                       PF_DDR4_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  12.759                       PF_DDR4_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.589          net: PF_DDR4_SS_0/CCC_0/clkint_4_NET
+  13.348                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:A (r)
+               +     0.160          cell: ADLIB:GB
+  13.508                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:Y (r)
+               +     0.381          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_gbs_1
+  13.889                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB11:A (r)
+               +     0.052          cell: ADLIB:RGB
+  13.941                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB11:Y (f)
+               +     0.564          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB11_rgb_net_1
+  14.505                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:CLK (r)
+               +     0.170          cell: ADLIB:SLE
+  14.675                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[10]:Q (f)
+               +     0.176          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl_Z[10]
+  14.851                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_axb_12_i_1:A (f)
+               +     0.240          cell: ADLIB:CFG4
+  15.091                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_axb_12_i_1:Y (r)
+               +     0.502          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_axb_12_i_1_Z
+  15.593                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_12:C (r)
+               +     0.086          cell: ADLIB:ARI1_CC
+  15.679                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_12:P (f)
+               +     0.015          net: NET_CC_CONFIG23751
+  15.694                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_0_CC_1:P[1] (f)
+               +     0.331          cell: ADLIB:CC_CONFIG
+  16.025                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_0_CC_1:CO (f)
+               +     0.000          net: CI_TO_CO23702
+  16.025                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_0_CC_2:CI (f)
+               +     0.103          cell: ADLIB:CC_CONFIG
+  16.128                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_0_CC_2:CC[1] (f)
+               +     0.000          net: NET_CC_CONFIG23802
+  16.128                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_23_FCINST1:CC (f)
+               +     0.044          cell: ADLIB:FCEND_BUFF_CC
+  16.172                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_23_FCINST1:CO (f)
+               +     0.214          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAIlOl_cry_23_Z
+  16.386                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAllOl_1_sqmuxa_1:D (f)
+               +     0.045          cell: ADLIB:CFG4
+  16.431                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAllOl_1_sqmuxa_1:Y (r)
+               +     0.420          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAllOl_1_sqmuxa_1_Z
+  16.851                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAllOl_0_sqmuxa_1:D (r)
+               +     0.066          cell: ADLIB:CFG4
+  16.917                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAllOl_0_sqmuxa_1:Y (r)
+               +     0.124          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAllOl_0_sqmuxa_1_sn
+  17.041                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAOIOl_1[0]:B (r)
+               +     0.105          cell: ADLIB:CFG3
+  17.146                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAOIOl_1[0]:Y (r)
+               +     0.332          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAOIOl_1_Z[0]
+  17.478                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAOIOl_1_RNI1Q4V[0]:B (r)
+               +     0.086          cell: ADLIB:ARI1_CC
+  17.564                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAOIOl_1_RNI1Q4V[0]:P (f)
+               +     0.013          net: NET_CC_CONFIG9430
+  17.577                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAOIOl_1_RNI1Q4V[0]_CC_0:P[0] (f)
+               +     0.317          cell: ADLIB:CC_CONFIG
+  17.894                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/un1_CAXI4DMAOIOl_1_RNI1Q4V[0]_CC_0:CC[4] (r)
+               +     0.000          net: NET_CC_CONFIG9449
+  17.894                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl_RNIEJ9Q4[4]:CC (r)
+               +     0.055          cell: ADLIB:ARI1_CC
+  17.949                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl_RNIEJ9Q4[4]:S (r)
+               +     0.388          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/N_1487
+  18.337                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAllOl[4]:A (r)
+               +     0.048          cell: ADLIB:CFG2
+  18.385                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAllOl[4]:Y (r)
+               +     0.023          net: CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAllOl_Z[4]
+  18.408                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D (r)
+                                    
+  18.408                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  5.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  5.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +    10.247          Clock generation
+  15.247                       
+               +     0.167          net: PF_DDR4_SS_0/CCC_0/pll_inst_0_clkint_4
+  15.414                       PF_DDR4_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.110          cell: ADLIB:ICB_CLKINT
+  15.524                       PF_DDR4_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.537          net: PF_DDR4_SS_0/CCC_0/clkint_4_NET
+  16.061                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:A (r)
+               +     0.145          cell: ADLIB:GB
+  16.206                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:Y (r)
+               +     0.344          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_gbs_1
+  16.550                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB11:A (r)
+               +     0.047          cell: ADLIB:RGB
+  16.597                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB11:Y (f)
+               +     0.484          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB11_rgb_net_1
+  17.081                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:CLK (r)
+               +     2.358          
+  19.439                       clock reconvergence pessimism
+               -     0.000          Library setup time: ADLIB:SLE
+  19.439                       CoreDMA_IO_CTRL_0/CoreDMA_Controller_0/CoreDMA_Controller_0/CAXI4DMAI00OI/CAXI4DMAIlOl[4]:D
+                                    
+  19.439                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From: dip_switch_o[1]
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[1]:D
+  Delay (ns):              3.793
+  Arrival (ns):            3.793
+  Setup (ns):              0.000
+  External Setup (ns):    -4.073
+  Operating Conditions: fast_hv_lt
+
+Path 2
+  From: dip_switch_o[3]
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[3]:D
+  Delay (ns):              3.722
+  Arrival (ns):            3.722
+  Setup (ns):              0.000
+  External Setup (ns):    -4.142
+  Operating Conditions: fast_hv_lt
+
+Path 3
+  From: dip_switch_o[2]
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[2]:D
+  Delay (ns):              3.721
+  Arrival (ns):            3.721
+  Setup (ns):              0.000
+  External Setup (ns):    -4.145
+  Operating Conditions: fast_hv_lt
+
+Path 4
+  From: RX
+  To:   CoreDMA_IO_CTRL_0/UART_SD_0/CORE_UART_0/Core_UART_0/make_RX/samples[2]:D
+  Delay (ns):              3.625
+  Arrival (ns):            3.625
+  Setup (ns):              0.000
+  External Setup (ns):    -4.239
+  Operating Conditions: fast_hv_lt
+
+Path 5
+  From: dip_switch_o[0]
+  To:   CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[0]:D
+  Delay (ns):              3.566
+  Arrival (ns):            3.566
+  Setup (ns):              0.000
+  External Setup (ns):    -4.295
+  Operating Conditions: fast_hv_lt
+
+
+Expanded Path 1
+  From: dip_switch_o[1]
+  To: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[1]:D
+  data required time                                    N/C
+  data arrival time                          -        3.793
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        dip_switch_o[1] (f)
+               +     0.000          net: dip_switch_o[1]
+  0.000                        dip_switch_o_ibuf[1]/U_IOPAD:PAD (f)
+               +     0.619          cell: ADLIB:IOPAD_IN
+  0.619                        dip_switch_o_ibuf[1]/U_IOPAD:Y (f)
+               +     0.000          net: dip_switch_o_ibuf[1]/YIN
+  0.619                        dip_switch_o_ibuf[1]/U_IOIN:YIN (f)
+               +     0.131          cell: ADLIB:IOIN_IB_E
+  0.750                        dip_switch_o_ibuf[1]/U_IOIN:Y (f)
+               +     2.772          net: dip_switch_o_c[1]
+  3.522                        CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o_7_0_iv_0_0[1]:C (f)
+               +     0.093          cell: ADLIB:CFG4
+  3.615                        CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o_7_0_iv_0_0[1]:Y (f)
+               +     0.125          net: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o_7_0_iv_0_0_Z[1]
+  3.740                        CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o_7_0_iv_0[1]:A (f)
+               +     0.040          cell: ADLIB:CFG4
+  3.780                        CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o_7_0_iv_0[1]:Y (f)
+               +     0.013          net: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o_7[1]
+  3.793                        CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[1]:D (f)
+                                    
+  3.793                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  N/C                          PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     6.658          Clock generation
+  N/C                          
+               +     0.102          net: PF_DDR4_SS_0/CCC_0/pll_inst_0_clkint_4
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.075          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.354          net: PF_DDR4_SS_0/CCC_0/clkint_4_NET
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:A (r)
+               +     0.107          cell: ADLIB:GB
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:Y (r)
+               +     0.230          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_gbs_1
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB16:A (r)
+               +     0.034          cell: ADLIB:RGB
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB16:Y (f)
+               +     0.306          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB16_rgb_net_1
+  N/C                          CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[1]:CLK (r)
+               -     0.000          Library setup time: ADLIB:SLE
+  N/C                          CoreDMA_IO_CTRL_0/axi_io_ctrl_0/rdata_o[1]:D
+
+
+Operating Conditions : fast_hv_lt
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:CLK
+  To:   CTRLR_READY_DDR4
+  Delay (ns):             11.562
+  Arrival (ns):           26.064
+  Clock to Out (ns):      26.064
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/led_o[7]:CLK
+  To:   led_o[7]
+  Delay (ns):              8.077
+  Arrival (ns):           22.564
+  Clock to Out (ns):      22.564
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/led_o[3]:CLK
+  To:   led_o[3]
+  Delay (ns):              7.135
+  Arrival (ns):           21.630
+  Clock to Out (ns):      21.630
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: CoreDMA_IO_CTRL_0/UART_SD_0/CORE_UART_0/Core_UART_0/make_TX/tx:CLK
+  To:   TX
+  Delay (ns):              7.121
+  Arrival (ns):           21.619
+  Clock to Out (ns):      21.619
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: CoreDMA_IO_CTRL_0/axi_io_ctrl_0/led_o[1]:CLK
+  To:   led_o[1]
+  Delay (ns):              7.086
+  Arrival (ns):           21.598
+  Clock to Out (ns):      21.598
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:CLK
+  To: CTRLR_READY_DDR4
+  data required time                                    N/C
+  data arrival time                          -       26.064
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  0.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +    12.449          Clock generation
+  12.449                       
+               +     0.183          net: PF_DDR4_SS_0/CCC_0/pll_inst_0_clkint_4
+  12.632                       PF_DDR4_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  12.759                       PF_DDR4_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.589          net: PF_DDR4_SS_0/CCC_0/clkint_4_NET
+  13.348                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:A (r)
+               +     0.160          cell: ADLIB:GB
+  13.508                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:Y (r)
+               +     0.386          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_gbs_1
+  13.894                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB4:A (r)
+               +     0.052          cell: ADLIB:RGB
+  13.946                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB4:Y (f)
+               +     0.556          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB4_rgb_net_1
+  14.502                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:CLK (r)
+               +     0.170          cell: ADLIB:SLE
+  14.672                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/u_write_callibrator/current_state[13]:Q (f)
+               +     7.439          net: CTRLR_READY_DDR4_c
+  22.111                       CTRLR_READY_DDR4_obuf/U_IOTRI:D (f)
+               +     0.918          cell: ADLIB:IOTRI_OB_EB
+  23.029                       CTRLR_READY_DDR4_obuf/U_IOTRI:DOUT (f)
+               +     0.000          net: CTRLR_READY_DDR4_obuf/DOUT
+  23.029                       CTRLR_READY_DDR4_obuf/U_IOPAD:D (f)
+               +     3.035          cell: ADLIB:IOPAD_TRI
+  26.064                       CTRLR_READY_DDR4_obuf/U_IOPAD:PAD (f)
+               +     0.000          net: CTRLR_READY_DDR4
+  26.064                       CTRLR_READY_DDR4 (f)
+                                    
+  26.064                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  N/C                          PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +    10.247          Clock generation
+  N/C                          
+                                    
+  N/C                          CTRLR_READY_DDR4 (f)
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d2[95]:ALn
+  Delay (ns):              2.801
+  Slack (ns):              1.914
+  Arrival (ns):           17.304
+  Required (ns):          19.218
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.086
+  Skew (ns):               0.102
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d2[43]:ALn
+  Delay (ns):              2.794
+  Slack (ns):              1.914
+  Arrival (ns):           17.297
+  Required (ns):          19.211
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.086
+  Skew (ns):               0.109
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d2[25]:ALn
+  Delay (ns):              2.801
+  Slack (ns):              1.914
+  Arrival (ns):           17.304
+  Required (ns):          19.218
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.086
+  Skew (ns):               0.102
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d0[187]:ALn
+  Delay (ns):              2.794
+  Slack (ns):              1.914
+  Arrival (ns):           17.297
+  Required (ns):          19.211
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.086
+  Skew (ns):               0.109
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To:   PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d0[95]:ALn
+  Delay (ns):              2.800
+  Slack (ns):              1.915
+  Arrival (ns):           17.303
+  Required (ns):          19.218
+  Recovery (ns):           0.183
+  Minimum Period (ns):     3.085
+  Skew (ns):               0.102
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK
+  To: PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d2[95]:ALn
+  data required time                                 19.218
+  data arrival time                          -       17.304
+  slack                                               1.914
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  0.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +    12.449          Clock generation
+  12.449                       
+               +     0.183          net: PF_DDR4_SS_0/CCC_0/pll_inst_0_clkint_4
+  12.632                       PF_DDR4_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.127          cell: ADLIB:ICB_CLKINT
+  12.759                       PF_DDR4_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.589          net: PF_DDR4_SS_0/CCC_0/clkint_4_NET
+  13.348                       PF_DDR4_SS_0/CCC_0/clkint_4:A (r)
+               +     0.159          cell: ADLIB:GB
+  13.507                       PF_DDR4_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.382          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_Y
+  13.889                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB12:A (r)
+               +     0.052          cell: ADLIB:RGB
+  13.941                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB12:Y (f)
+               +     0.562          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB12_rgb_net_1
+  14.503                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:CLK (r)
+               +     0.175          cell: ADLIB:SLE
+  14.678                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep:Q (r)
+               +     1.476          net: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_Z
+  16.154                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI3QGA/U0_GB0:A (r)
+               +     0.115          cell: ADLIB:GB
+  16.269                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI3QGA/U0_GB0:Y (r)
+               +     0.388          net: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI3QGA/U0_gbs_1
+  16.657                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI3QGA/U0_RGB1_RGB4:A (r)
+               +     0.052          cell: ADLIB:RGB
+  16.709                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI3QGA/U0_RGB1_RGB4:Y (f)
+               +     0.595          net: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/reset_n_int_0_rep_RNI3QGA/U0_RGB1_RGB4_rgb_net_1
+  17.304                       PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d2[95]:ALn (r)
+                                    
+  17.304                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  5.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  5.000                        PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +    10.247          Clock generation
+  15.247                       
+               +     0.167          net: PF_DDR4_SS_0/CCC_0/pll_inst_0_clkint_4
+  15.414                       PF_DDR4_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.110          cell: ADLIB:ICB_CLKINT
+  15.524                       PF_DDR4_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.537          net: PF_DDR4_SS_0/CCC_0/clkint_4_NET
+  16.061                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:A (r)
+               +     0.145          cell: ADLIB:GB
+  16.206                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_GB0:Y (r)
+               +     0.350          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_gbs_1
+  16.556                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB4:A (r)
+               +     0.047          cell: ADLIB:RGB
+  16.603                       PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB4:Y (f)
+               +     0.511          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB4_rgb_net_1
+  17.114                       PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d2[95]:CLK (r)
+               +     2.287          
+  19.401                       clock reconvergence pessimism
+               -     0.183          Library recovery time: ADLIB:SLE
+  19.218                       PF_DDR4_SS_0/MSC_i_229/MSC_i_230/MSC_i_233/MSC_i_235/MSC_i_236/MSC_i_237/MSC_i_238/d2[95]:ALn
+                                    
+  19.218                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From: USER_RESETN
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[225]:ALn
+  Delay (ns):             13.564
+  Arrival (ns):           13.564
+  Recovery (ns):           0.166
+  External Recovery (ns):   3.224
+  Operating Conditions: slow_lv_lt
+
+Path 2
+  From: USER_RESETN
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[231]:ALn
+  Delay (ns):             13.563
+  Arrival (ns):           13.563
+  Recovery (ns):           0.166
+  External Recovery (ns):   3.223
+  Operating Conditions: slow_lv_lt
+
+Path 3
+  From: USER_RESETN
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[229]:ALn
+  Delay (ns):             13.563
+  Arrival (ns):           13.563
+  Recovery (ns):           0.166
+  External Recovery (ns):   3.223
+  Operating Conditions: slow_lv_lt
+
+Path 4
+  From: USER_RESETN
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[227]:ALn
+  Delay (ns):             13.563
+  Arrival (ns):           13.563
+  Recovery (ns):           0.166
+  External Recovery (ns):   3.223
+  Operating Conditions: slow_lv_lt
+
+Path 5
+  From: USER_RESETN
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[3]:ALn
+  Delay (ns):             13.438
+  Arrival (ns):           13.438
+  Recovery (ns):           0.179
+  External Recovery (ns):   3.129
+  Operating Conditions: slow_lv_lt
+
+
+Expanded Path 1
+  From: USER_RESETN
+  To: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[225]:ALn
+  data required time                                    N/C
+  data arrival time                          -       13.564
+  slack                                                 N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        USER_RESETN (r)
+               +     0.000          net: USER_RESETN
+  0.000                        USER_RESETN_ibuf/U_IOPAD:PAD (r)
+               +     0.507          cell: ADLIB:IOPAD_IN
+  0.507                        USER_RESETN_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: USER_RESETN_ibuf/YIN
+  0.507                        USER_RESETN_ibuf/U_IOIN:YIN (r)
+               +     0.274          cell: ADLIB:IOIN_IB_E
+  0.781                        USER_RESETN_ibuf/U_IOIN:Y (r)
+               +     0.951          net: USER_RESETN_c
+  1.732                        AND3_0:C (r)
+               +     0.104          cell: ADLIB:CFG3
+  1.836                        AND3_0:Y (r)
+               +    11.728          net: AND3_0_Y
+  13.564                       PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[225]:ALn (r)
+                                    
+  13.564                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+               +     0.000          Clock source
+  N/C                          PF_DDR4_SS_0/CCC_0/pll_inst_0:OUT1 (r)
+               +     8.812          Clock generation
+  N/C                          
+               +     0.164          net: PF_DDR4_SS_0/CCC_0/pll_inst_0_clkint_4
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4_1:A (r)
+               +     0.105          cell: ADLIB:ICB_CLKINT
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4_1:Y (r)
+               +     0.465          net: PF_DDR4_SS_0/CCC_0/clkint_4_NET
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4:A (r)
+               +     0.147          cell: ADLIB:GB
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4:Y (r)
+               +     0.320          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_Y
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB3:A (r)
+               +     0.047          cell: ADLIB:RGB
+  N/C                          PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB3:Y (f)
+               +     0.446          net: PF_DDR4_SS_0/CCC_0/clkint_4/U0_RGB1_RGB3_rgb_net_1
+  N/C                          PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[225]:CLK (r)
+               -     0.166          Library recovery time: ADLIB:SLE
+  N/C                          PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/u_register_bank/pipelined_generate_block.IOG_DQ_TXDATA_OUT[225]:ALn
+
+
+Operating Conditions : slow_lv_lt
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD/Y_DIV to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PCIe_EP_0/PCIe_TL_CLK_0/CLK_DIV2_0/CLK_DIV2_0/I_CD/Y_DIV to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0/DIV_CLK to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PCIe_EP_0/PCIe_TX_PLL_0/PCIe_TX_PLL_0/txpll_isnt_0/DIV_CLK to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[2]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[2]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[3]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[3]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[18]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[18]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[19]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[19]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[20]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[20]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[21]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[21]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[22]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[22]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[23]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[23]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[24]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[24]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[25]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[25]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[26]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[26]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[27]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[27]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[28]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[28]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[29]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[29]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[30]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[30]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[31]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[31]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[32]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[32]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[33]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[33]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[34]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[34]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[35]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[35]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET REF_CLK_0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET REF_CLK_0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_IOD_DQ/I_IOD_3:HS_IO_CLK[0]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+SET REF_CLK_0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET REF_CLK_0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT0 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT2
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_IOD_DQ/I_IOD_3:RX_DQS_90[0]
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET DQS[0] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET DQS[0] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+SET DQS[1] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET DQS[1] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+SET DQS[2] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET DQS[2] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+SET DQS[3] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET DQS[3] to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT3
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[0]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[1]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[2]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/DQSW270_DELAY_LINE_MOVE[3]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[0]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[10]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[11]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[12]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[13]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[14]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[15]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[16]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[17]:Q
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_1_CTRL/I_LANECTRL:DELAY_LINE_MOVE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[18]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[19]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[1]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[20]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[21]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[22]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[23]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[24]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[25]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[26]:Q
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:DELAY_LINE_MOVE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[27]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[28]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[29]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[2]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[30]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[31]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[32]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[33]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[34]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[35]:Q
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:DELAY_LINE_MOVE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[3]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[4]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[5]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[6]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[7]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[8]:Q
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_0_CTRL/I_LANECTRL:DELAY_LINE_MOVE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/MOVE[9]:Q
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+
+Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin PF_DDR4_SS_0/CCC_0/pll_inst_0:PHASE_ROTATE
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/VCO_PHSEL_ROTATE[0]:Q
+
+----------------------------------------------------
+
+Clock Domain REF_CLK_0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin PCIe_EP_0/PCIex4_0/pcie_apblink_inst:S_CLK
+
+SET Register to Register
+
+Path 1
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:D
+  Delay (ns):              6.086
+  Slack (ns):             13.786
+  Arrival (ns):           13.064
+  Required (ns):          26.850
+  Setup (ns):              0.000
+  Minimum Period (ns):     6.214
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: AXItoAPB_0/Core_AHBL_0/Core_AHBL_0/matrix4x16/masterstage_0/SDATASELInt[6]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_rdFIFORAM/wrDataReg[39]:D
+  Delay (ns):              6.065
+  Slack (ns):             13.849
+  Arrival (ns):           13.036
+  Required (ns):          26.885
+  Setup (ns):              0.000
+  Minimum Period (ns):     6.151
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: AXItoAPB_0/Core_AHBL_0/Core_AHBL_0/matrix4x16/masterstage_0/SDATASELInt[3]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_rdFIFORAM/wrDataReg[39]:D
+  Delay (ns):              6.041
+  Slack (ns):             13.873
+  Arrival (ns):           13.012
+  Required (ns):          26.885
+  Setup (ns):              0.000
+  Minimum Period (ns):     6.127
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: AXItoAPB_0/Core_AHBL_0/Core_AHBL_0/matrix4x16/masterstage_0/SDATASELInt[6]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_rdFIFORAM/wrDataReg[49]:D
+  Delay (ns):              6.034
+  Slack (ns):             13.879
+  Arrival (ns):           13.005
+  Required (ns):          26.884
+  Setup (ns):              0.000
+  Minimum Period (ns):     6.121
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[1]:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:D
+  Delay (ns):              5.991
+  Slack (ns):             13.881
+  Arrival (ns):           12.969
+  Required (ns):          26.850
+  Setup (ns):              0.000
+  Minimum Period (ns):     6.119
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK
+  To: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:D
+  data required time                                 26.850
+  data arrival time                          -       13.064
+  slack                                              13.786
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        REF_CLK_0
+               +     0.000          Clock source
+  0.000                        REF_CLK_0 (r)
+               +     0.000          net: REF_CLK_0
+  0.000                        REF_CLK_0_ibuf/U_IOPAD:PAD (r)
+               +     0.599          cell: ADLIB:IOPAD_IN
+  0.599                        REF_CLK_0_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: REF_CLK_0_c
+  0.599                        REF_CLK_0_ibuf/U_IOIN:YIN (r)
+               +     0.336          cell: ADLIB:IOIN_IB_E
+  0.935                        REF_CLK_0_ibuf/U_IOIN:Y (r)
+               +     4.972          net: REF_CLK_0_c_FAB
+  5.907                        CLKINT_0:A (r)
+               +     0.115          cell: ADLIB:GB
+  6.022                        CLKINT_0:Y (r)
+               +     0.373          net: CLKINT_0/U0_Y
+  6.395                        CLKINT_0/U0_RGB1_RGB1:A (r)
+               +     0.052          cell: ADLIB:RGB
+  6.447                        CLKINT_0/U0_RGB1_RGB1:Y (f)
+               +     0.531          net: CLKINT_0/U0_RGB1_RGB1_rgb_net_1
+  6.978                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:CLK (r)
+               +     0.166          cell: ADLIB:SLE
+  7.144                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:Q (f)
+               +     0.792          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt_Z[0]
+  7.936                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un50lto1_i_o2:A (f)
+               +     0.100          cell: ADLIB:CFG2
+  8.036                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un50lto1_i_o2:Y (f)
+               +     0.123          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/N_1709
+  8.159                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/rdFIFOWrDataReg_d123:A (f)
+               +     0.106          cell: ADLIB:CFG2
+  8.265                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/rdFIFOWrDataReg_d123:Y (r)
+               +     0.597          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/rdFIFOWrDataReg_d123_Z
+  8.862                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98_0_a2_0:D (r)
+               +     0.048          cell: ADLIB:CFG4
+  8.910                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98_0_a2_0:Y (r)
+               +     0.327          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/N_131
+  9.237                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98_0_a2:A (r)
+               +     0.066          cell: ADLIB:CFG2
+  9.303                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98_0_a2:Y (r)
+               +     0.163          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HBURSTInt_d98
+  9.466                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HSIZEInt_d105_0_a2_0_o2_RNI6UMM1:D (r)
+               +     0.204          cell: ADLIB:CFG4
+  9.670                        AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HSIZEInt_d105_0_a2_0_o2_RNI6UMM1:Y (r)
+               +     0.454          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/N_1702_i
+  10.124                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_validByteCntInt_d_3_sqmuxa_1_0_a3_0:A (r)
+               +     0.140          cell: ADLIB:CFG2
+  10.264                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_validByteCntInt_d_3_sqmuxa_1_0_a3_0:Y (r)
+               +     0.122          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/N_210
+  10.386                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_validByteCntInt_d_3_sqmuxa_1_0_0:B (r)
+               +     0.048          cell: ADLIB:CFG4
+  10.434                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_validByteCntInt_d_3_sqmuxa_1_0_0:Y (r)
+               +     0.323          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un1_validByteCntInt_d_3_sqmuxa_1_i
+  10.757                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_15:A (r)
+               +     0.081          cell: ADLIB:CFG2
+  10.838                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_15:Y (r)
+               +     0.151          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_0_sqmuxa_15_Z
+  10.989                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f1_2[1]:C (r)
+               +     0.185          cell: ADLIB:CFG4
+  11.174                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f1_2[1]:Y (r)
+               +     0.149          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f1_2_Z[1]
+  11.323                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0[1]:C (r)
+               +     0.185          cell: ADLIB:CFG4
+  11.508                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0[1]:Y (r)
+               +     0.436          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0_Z[1]
+  11.944                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0_RNIG6S56[1]:B (r)
+               +     0.228          cell: ADLIB:ARI1_CC
+  12.172                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/un61_f0_RNIG6S56[1]:P (f)
+               +     0.015          net: NET_CC_CONFIG24904
+  12.187                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_RNI01KD2[0]_CC_0:P[1] (f)
+               +     0.344          cell: ADLIB:CC_CONFIG
+  12.531                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_RNI01KD2[0]_CC_0:CC[6] (r)
+               +     0.000          net: NET_CC_CONFIG24927
+  12.531                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_RNI8C18G9[6]:CC (r)
+               +     0.055          cell: ADLIB:ARI1_CC
+  12.586                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_RNI8C18G9[6]:S (r)
+               +     0.315          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/N_1799
+  12.901                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d[6]:A (r)
+               +     0.140          cell: ADLIB:CFG3
+  13.041                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d[6]:Y (r)
+               +     0.023          net: AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt_d_Z[6]
+  13.064                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:D (r)
+                                    
+  13.064                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  20.000                       REF_CLK_0
+               +     0.000          Clock source
+  20.000                       REF_CLK_0 (r)
+               +     0.000          net: REF_CLK_0
+  20.000                       REF_CLK_0_ibuf/U_IOPAD:PAD (r)
+               +     0.519          cell: ADLIB:IOPAD_IN
+  20.519                       REF_CLK_0_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: REF_CLK_0_c
+  20.519                       REF_CLK_0_ibuf/U_IOIN:YIN (r)
+               +     0.302          cell: ADLIB:IOIN_IB_E
+  20.821                       REF_CLK_0_ibuf/U_IOIN:Y (r)
+               +     4.009          net: REF_CLK_0_c_FAB
+  24.830                       CLKINT_0:A (r)
+               +     0.104          cell: ADLIB:GB
+  24.934                       CLKINT_0:Y (r)
+               +     0.332          net: CLKINT_0/U0_Y
+  25.266                       CLKINT_0/U0_RGB1_RGB3:A (r)
+               +     0.047          cell: ADLIB:RGB
+  25.313                       CLKINT_0/U0_RGB1_RGB3:Y (f)
+               +     0.444          net: CLKINT_0/U0_RGB1_RGB3_rgb_net_1
+  25.757                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:CLK (r)
+               +     1.093          
+  26.850                       clock reconvergence pessimism
+               -     0.000          Library setup time: ADLIB:SLE
+  26.850                       AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:D
+                                    
+  26.850                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/latBID[3]:ALn
+  Delay (ns):              2.362
+  Slack (ns):             17.374
+  Arrival (ns):            9.330
+  Required (ns):          26.704
+  Recovery (ns):           0.170
+  Minimum Period (ns):     2.626
+  Skew (ns):               0.094
+  Operating Conditions: slow_lv_ht
+
+Path 2
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvCDC/genblk1.cdc_BChan/wrGrayCounter/cntGray[0]:ALn
+  Delay (ns):              2.362
+  Slack (ns):             17.374
+  Arrival (ns):            9.330
+  Required (ns):          26.704
+  Recovery (ns):           0.170
+  Minimum Period (ns):     2.626
+  Skew (ns):               0.094
+  Operating Conditions: slow_lv_ht
+
+Path 3
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvCDC/genblk1.cdc_BChan/wrGrayCounter/cntBinary_Z[1]:ALn
+  Delay (ns):              2.362
+  Slack (ns):             17.374
+  Arrival (ns):            9.330
+  Required (ns):          26.704
+  Recovery (ns):           0.170
+  Minimum Period (ns):     2.626
+  Skew (ns):               0.094
+  Operating Conditions: slow_lv_ht
+
+Path 4
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvCDC/genblk1.cdc_BChan/rdPtr_s1[1]:ALn
+  Delay (ns):              2.362
+  Slack (ns):             17.374
+  Arrival (ns):            9.330
+  Required (ns):          26.704
+  Recovery (ns):           0.170
+  Minimum Period (ns):     2.626
+  Skew (ns):               0.094
+  Operating Conditions: slow_lv_ht
+
+Path 5
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To:   AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvCDC/genblk1.cdc_BChan/rdPtr_s1[0]:ALn
+  Delay (ns):              2.362
+  Slack (ns):             17.374
+  Arrival (ns):            9.330
+  Required (ns):          26.704
+  Recovery (ns):           0.170
+  Minimum Period (ns):     2.626
+  Skew (ns):               0.094
+  Operating Conditions: slow_lv_ht
+
+
+Expanded Path 1
+  From: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK
+  To: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/latBID[3]:ALn
+  data required time                                 26.704
+  data arrival time                          -        9.330
+  slack                                              17.374
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        REF_CLK_0
+               +     0.000          Clock source
+  0.000                        REF_CLK_0 (r)
+               +     0.000          net: REF_CLK_0
+  0.000                        REF_CLK_0_ibuf/U_IOPAD:PAD (r)
+               +     0.599          cell: ADLIB:IOPAD_IN
+  0.599                        REF_CLK_0_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: REF_CLK_0_c
+  0.599                        REF_CLK_0_ibuf/U_IOIN:YIN (r)
+               +     0.336          cell: ADLIB:IOIN_IB_E
+  0.935                        REF_CLK_0_ibuf/U_IOIN:Y (r)
+               +     4.972          net: REF_CLK_0_c_FAB
+  5.907                        CLKINT_0:A (r)
+               +     0.115          cell: ADLIB:GB
+  6.022                        CLKINT_0:Y (r)
+               +     0.379          net: CLKINT_0/U0_Y
+  6.401                        CLKINT_0/U0_RGB1_RGB2:A (r)
+               +     0.052          cell: ADLIB:RGB
+  6.453                        CLKINT_0/U0_RGB1_RGB2:Y (f)
+               +     0.515          net: CLKINT_0/U0_RGB1_RGB2_rgb_net_1
+  6.968                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:CLK (r)
+               +     0.179          cell: ADLIB:SLE
+  7.147                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/genblk1.rsync/sysReset:Q (r)
+               +     2.183          net: AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/sysReset
+  9.330                        AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/latBID[3]:ALn (r)
+                                    
+  9.330                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  20.000                       REF_CLK_0
+               +     0.000          Clock source
+  20.000                       REF_CLK_0 (r)
+               +     0.000          net: REF_CLK_0
+  20.000                       REF_CLK_0_ibuf/U_IOPAD:PAD (r)
+               +     0.519          cell: ADLIB:IOPAD_IN
+  20.519                       REF_CLK_0_ibuf/U_IOPAD:Y (r)
+               +     0.000          net: REF_CLK_0_c
+  20.519                       REF_CLK_0_ibuf/U_IOIN:YIN (r)
+               +     0.302          cell: ADLIB:IOIN_IB_E
+  20.821                       REF_CLK_0_ibuf/U_IOIN:Y (r)
+               +     4.009          net: REF_CLK_0_c_FAB
+  24.830                       CLKINT_0:A (r)
+               +     0.104          cell: ADLIB:GB
+  24.934                       CLKINT_0:Y (r)
+               +     0.343          net: CLKINT_0/U0_Y
+  25.277                       CLKINT_0/U0_RGB1_RGB0:A (r)
+               +     0.047          cell: ADLIB:RGB
+  25.324                       CLKINT_0/U0_RGB1_RGB0:Y (f)
+               +     0.457          net: CLKINT_0/U0_RGB1_RGB0_rgb_net_1
+  25.781                       AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/latBID[3]:CLK (r)
+               +     1.093          
+  26.874                       clock reconvergence pessimism
+               -     0.170          Library recovery time: ADLIB:SLE
+  26.704                       AXI4_Interconnect_0/AXI4_Interconnect_0/SlvConvertor_loop[0].slvcnv/slvProtConv/genblk1.u_AXI3ProtConv/SlvPCWr/latBID[3]:ALn
+                                    
+  26.704                       data required time
+
+
+Operating Conditions : slow_lv_ht
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to REF_CLK_0
+
+No Path 
+
+END SET PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT1 to REF_CLK_0
+
+----------------------------------------------------
+
+Clock Domain REF_CLK_PAD_P
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR3_SS_0/CCC_0/pll_inst_0/OUT0
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain PF_DDR4_SS_0/CCC_0/pll_inst_0/OUT0
+
+SET Register to Register
+
+No Path 
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path 
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path 
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path 
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path 
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path 
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path 
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

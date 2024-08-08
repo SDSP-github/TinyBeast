@@ -1,0 +1,921 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v2021.2
+Microsemi Corporation - Microsemi Libero Software Release v2021.2 (Version 2021.2.0.11)
+Date: Tue Mar 29 06:24:47 2022
+
+
+Design: top
+Family: PolarFire
+Die: MPF100T
+Package: FCVG484
+Temperature Range: -40 - 100 C
+Voltage Range: 0.97 - 1.03 V
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Production
+Multi Corner Report Operating Conditions: slow_lv_ht, slow_lv_lt, fast_hv_lt
+
+
+*** IMPORTANT RECOMMENDATION *** If you haven't done so, it is highly recommended to add clock jitter information for each clock domain into Libero SoC through clock uncertainty SDC timing constraints. Please refer to the Libero SoC v2021.2 release notes for more details.
+
+Path 1
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[3].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.817
+  Slack (ns):             -5.674
+  Arrival (ns):            9.593
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 2
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[1].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.769
+  Slack (ns):             -5.626
+  Arrival (ns):            9.545
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 3
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[2].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.760
+  Slack (ns):             -5.617
+  Arrival (ns):            9.536
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 4
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[0].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.696
+  Slack (ns):             -5.554
+  Arrival (ns):            9.473
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 5
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[0]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.644
+  Slack (ns):             -5.501
+  Arrival (ns):            9.420
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 6
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[0]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.629
+  Slack (ns):             -5.486
+  Arrival (ns):            9.405
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 7
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[3]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.610
+  Slack (ns):             -5.467
+  Arrival (ns):            9.386
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 8
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[4]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.610
+  Slack (ns):             -5.466
+  Arrival (ns):            9.385
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 9
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[3].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.591
+  Slack (ns):             -5.448
+  Arrival (ns):            9.367
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 10
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[2]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.572
+  Slack (ns):             -5.429
+  Arrival (ns):            9.348
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 11
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[1].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.543
+  Slack (ns):             -5.400
+  Arrival (ns):            9.319
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 12
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[2].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.534
+  Slack (ns):             -5.391
+  Arrival (ns):            9.310
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 13
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[4]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.500
+  Slack (ns):             -5.357
+  Arrival (ns):            9.276
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 14
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[3]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.494
+  Slack (ns):             -5.351
+  Arrival (ns):            9.270
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 15
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/LEVELLING/RDLVL/RDLVL_SMS/genblk1[0].RDLVL_TRAIN/gate_training/select_rank_1_gt:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.470
+  Slack (ns):             -5.328
+  Arrival (ns):            9.247
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 16
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[2]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.456
+  Slack (ns):             -5.313
+  Arrival (ns):            9.232
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 17
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[2].dqsw_trainer/current_state_Z[1]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_2_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.456
+  Slack (ns):             -5.312
+  Arrival (ns):            9.231
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 18
+  From: PF_DDR4_SS_0/DDRPHY_BLK_0/IOD_TRAINING_0/COREDDR_TIP_INT_U/TIP_CTRL_BLK/TRN_CLK/genblk2[3].dqsw_trainer/current_state_Z[1]:CLK
+  To:   PF_DDR4_SS_0/DDRPHY_BLK_0/LANE_3_CTRL/I_LANECTRL:SWITCH
+  Delay (ns):              1.439
+  Slack (ns):             -5.296
+  Arrival (ns):            9.215
+  Required (ns):           3.919
+  Operating Conditions: slow_lv_lt
+
+Path 19
+  From: PF_RESET_0/PF_RESET_0/dff_15:CLK
+  To:   PCIe_EP_0/PCIex4_0/pcie_apblink_inst:S_ARST_N
+  Delay (ns):              0.970
+  Slack (ns):             -2.660
+  Arrival (ns):            9.078
+  Required (ns):           6.418
+  Operating Conditions: slow_lv_ht
+
+Path 20
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/LENReg[2]:ALn
+  Delay (ns):              1.345
+  Slack (ns):             -2.228
+  Arrival (ns):            9.453
+  Required (ns):           7.225
+  Operating Conditions: slow_lv_ht
+
+Path 21
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/LENReg[1]:ALn
+  Delay (ns):              1.345
+  Slack (ns):             -2.228
+  Arrival (ns):            9.453
+  Required (ns):           7.225
+  Operating Conditions: slow_lv_ht
+
+Path 22
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/SIZEReg[2]:ALn
+  Delay (ns):              1.345
+  Slack (ns):             -2.227
+  Arrival (ns):            9.453
+  Required (ns):           7.226
+  Operating Conditions: slow_lv_ht
+
+Path 23
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/LENReg[3]:ALn
+  Delay (ns):              1.345
+  Slack (ns):             -2.227
+  Arrival (ns):            9.453
+  Required (ns):           7.226
+  Operating Conditions: slow_lv_ht
+
+Path 24
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/BURSTReg[1]:ALn
+  Delay (ns):              1.344
+  Slack (ns):             -2.226
+  Arrival (ns):            9.452
+  Required (ns):           7.226
+  Operating Conditions: slow_lv_ht
+
+Path 25
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[8]:ALn
+  Delay (ns):              1.371
+  Slack (ns):             -2.211
+  Arrival (ns):            9.479
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 26
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[5]:ALn
+  Delay (ns):              1.371
+  Slack (ns):             -2.211
+  Arrival (ns):            9.479
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 27
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[4]:ALn
+  Delay (ns):              1.371
+  Slack (ns):             -2.211
+  Arrival (ns):            9.479
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 28
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[3]:ALn
+  Delay (ns):              1.371
+  Slack (ns):             -2.211
+  Arrival (ns):            9.479
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 29
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[0]:ALn
+  Delay (ns):              1.371
+  Slack (ns):             -2.211
+  Arrival (ns):            9.479
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 30
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[9]:ALn
+  Delay (ns):              1.370
+  Slack (ns):             -2.210
+  Arrival (ns):            9.478
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 31
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[6]:ALn
+  Delay (ns):              1.370
+  Slack (ns):             -2.210
+  Arrival (ns):            9.478
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 32
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[1]:ALn
+  Delay (ns):              1.370
+  Slack (ns):             -2.210
+  Arrival (ns):            9.478
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 33
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[11]:ALn
+  Delay (ns):              1.370
+  Slack (ns):             -2.210
+  Arrival (ns):            9.478
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 34
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[10]:ALn
+  Delay (ns):              1.370
+  Slack (ns):             -2.210
+  Arrival (ns):            9.478
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 35
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[1]:ALn
+  Delay (ns):              1.370
+  Slack (ns):             -2.210
+  Arrival (ns):            9.478
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 36
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[0]:ALn
+  Delay (ns):              1.370
+  Slack (ns):             -2.210
+  Arrival (ns):            9.478
+  Required (ns):           7.268
+  Operating Conditions: slow_lv_ht
+
+Path 37
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[20]:ALn
+  Delay (ns):              1.323
+  Slack (ns):             -2.203
+  Arrival (ns):            9.431
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 38
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[19]:ALn
+  Delay (ns):              1.323
+  Slack (ns):             -2.203
+  Arrival (ns):            9.431
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 39
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[13]:ALn
+  Delay (ns):              1.323
+  Slack (ns):             -2.203
+  Arrival (ns):            9.431
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 40
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[17]:ALn
+  Delay (ns):              1.322
+  Slack (ns):             -2.202
+  Arrival (ns):            9.430
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 41
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[23]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 42
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[22]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 43
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[21]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 44
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[18]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 45
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[16]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 46
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[15]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 47
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[14]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 48
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[12]:ALn
+  Delay (ns):              1.321
+  Slack (ns):             -2.201
+  Arrival (ns):            9.429
+  Required (ns):           7.228
+  Operating Conditions: slow_lv_ht
+
+Path 49
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[5]:ALn
+  Delay (ns):              1.356
+  Slack (ns):             -2.197
+  Arrival (ns):            9.464
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 50
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[4]:ALn
+  Delay (ns):              1.356
+  Slack (ns):             -2.197
+  Arrival (ns):            9.464
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 51
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[3]:ALn
+  Delay (ns):              1.356
+  Slack (ns):             -2.197
+  Arrival (ns):            9.464
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 52
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[2]:ALn
+  Delay (ns):              1.356
+  Slack (ns):             -2.197
+  Arrival (ns):            9.464
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 53
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[6]:ALn
+  Delay (ns):              1.336
+  Slack (ns):             -2.196
+  Arrival (ns):            9.444
+  Required (ns):           7.248
+  Operating Conditions: slow_lv_ht
+
+Path 54
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[2]:ALn
+  Delay (ns):              1.336
+  Slack (ns):             -2.196
+  Arrival (ns):            9.444
+  Required (ns):           7.248
+  Operating Conditions: slow_lv_ht
+
+Path 55
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[1]:ALn
+  Delay (ns):              1.336
+  Slack (ns):             -2.196
+  Arrival (ns):            9.444
+  Required (ns):           7.248
+  Operating Conditions: slow_lv_ht
+
+Path 56
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[9]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 57
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[8]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 58
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[7]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 59
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[6]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 60
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[13]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 61
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[12]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 62
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[11]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 63
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/HADDRInt[10]:ALn
+  Delay (ns):              1.355
+  Slack (ns):             -2.196
+  Arrival (ns):            9.463
+  Required (ns):           7.267
+  Operating Conditions: slow_lv_ht
+
+Path 64
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/validByteCntInt[5]:ALn
+  Delay (ns):              1.335
+  Slack (ns):             -2.195
+  Arrival (ns):            9.443
+  Required (ns):           7.248
+  Operating Conditions: slow_lv_ht
+
+Path 65
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/U_readByteCnt/validBytes_1_00_dreg[1]:ALn
+  Delay (ns):              1.300
+  Slack (ns):             -2.172
+  Arrival (ns):            9.408
+  Required (ns):           7.236
+  Operating Conditions: slow_lv_ht
+
+Path 66
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/U_readByteCnt/validBytes_1_00_0_dreg[6]:ALn
+  Delay (ns):              1.300
+  Slack (ns):             -2.172
+  Arrival (ns):            9.408
+  Required (ns):           7.236
+  Operating Conditions: slow_lv_ht
+
+Path 67
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/U_readByteCnt/validBytes_1_00_0_dreg[5]:ALn
+  Delay (ns):              1.300
+  Slack (ns):             -2.172
+  Arrival (ns):            9.408
+  Required (ns):           7.236
+  Operating Conditions: slow_lv_ht
+
+Path 68
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/U_readByteCnt/validBytes_1_00_0_dreg[4]:ALn
+  Delay (ns):              1.300
+  Slack (ns):             -2.172
+  Arrival (ns):            9.408
+  Required (ns):           7.236
+  Operating Conditions: slow_lv_ht
+
+Path 69
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/U_readByteCnt/validBytes_1_00_0_dreg[1]:ALn
+  Delay (ns):              1.300
+  Slack (ns):             -2.172
+  Arrival (ns):            9.408
+  Required (ns):           7.236
+  Operating Conditions: slow_lv_ht
+
+Path 70
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_6:ALn
+  Delay (ns):              1.312
+  Slack (ns):             -2.159
+  Arrival (ns):            9.420
+  Required (ns):           7.261
+  Operating Conditions: slow_lv_ht
+
+Path 71
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_23:ALn
+  Delay (ns):              1.312
+  Slack (ns):             -2.159
+  Arrival (ns):            9.420
+  Required (ns):           7.261
+  Operating Conditions: slow_lv_ht
+
+Path 72
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_10:ALn
+  Delay (ns):              1.312
+  Slack (ns):             -2.159
+  Arrival (ns):            9.420
+  Required (ns):           7.261
+  Operating Conditions: slow_lv_ht
+
+Path 73
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_8:ALn
+  Delay (ns):              1.311
+  Slack (ns):             -2.158
+  Arrival (ns):            9.419
+  Required (ns):           7.261
+  Operating Conditions: slow_lv_ht
+
+Path 74
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_21:ALn
+  Delay (ns):              1.311
+  Slack (ns):             -2.158
+  Arrival (ns):            9.419
+  Required (ns):           7.261
+  Operating Conditions: slow_lv_ht
+
+Path 75
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_19:ALn
+  Delay (ns):              1.311
+  Slack (ns):             -2.158
+  Arrival (ns):            9.419
+  Required (ns):           7.261
+  Operating Conditions: slow_lv_ht
+
+Path 76
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_17:ALn
+  Delay (ns):              1.311
+  Slack (ns):             -2.158
+  Arrival (ns):            9.419
+  Required (ns):           7.261
+  Operating Conditions: slow_lv_ht
+
+Path 77
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_15:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.113
+  Arrival (ns):            9.350
+  Required (ns):           7.237
+  Operating Conditions: slow_lv_ht
+
+Path 78
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_22:ALn
+  Delay (ns):              1.241
+  Slack (ns):             -2.112
+  Arrival (ns):            9.349
+  Required (ns):           7.237
+  Operating Conditions: slow_lv_ht
+
+Path 79
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_20:ALn
+  Delay (ns):              1.241
+  Slack (ns):             -2.112
+  Arrival (ns):            9.349
+  Required (ns):           7.237
+  Operating Conditions: slow_lv_ht
+
+Path 80
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_18:ALn
+  Delay (ns):              1.241
+  Slack (ns):             -2.112
+  Arrival (ns):            9.349
+  Required (ns):           7.237
+  Operating Conditions: slow_lv_ht
+
+Path 81
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_16:ALn
+  Delay (ns):              1.241
+  Slack (ns):             -2.112
+  Arrival (ns):            9.349
+  Required (ns):           7.237
+  Operating Conditions: slow_lv_ht
+
+Path 82
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_14:ALn
+  Delay (ns):              1.241
+  Slack (ns):             -2.112
+  Arrival (ns):            9.349
+  Required (ns):           7.237
+  Operating Conditions: slow_lv_ht
+
+Path 83
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_12:ALn
+  Delay (ns):              1.241
+  Slack (ns):             -2.112
+  Arrival (ns):            9.349
+  Required (ns):           7.237
+  Operating Conditions: slow_lv_ht
+
+Path 84
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/validByteCnt_ret_24:ALn
+  Delay (ns):              1.241
+  Slack (ns):             -2.111
+  Arrival (ns):            9.349
+  Required (ns):           7.238
+  Operating Conditions: slow_lv_ht
+
+Path 85
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[29]:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.111
+  Arrival (ns):            9.350
+  Required (ns):           7.239
+  Operating Conditions: slow_lv_ht
+
+Path 86
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[28]:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.111
+  Arrival (ns):            9.350
+  Required (ns):           7.239
+  Operating Conditions: slow_lv_ht
+
+Path 87
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[26]:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.111
+  Arrival (ns):            9.350
+  Required (ns):           7.239
+  Operating Conditions: slow_lv_ht
+
+Path 88
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/beatCnt[3]:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.111
+  Arrival (ns):            9.350
+  Required (ns):           7.239
+  Operating Conditions: slow_lv_ht
+
+Path 89
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/beatCnt[2]:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.111
+  Arrival (ns):            9.350
+  Required (ns):           7.239
+  Operating Conditions: slow_lv_ht
+
+Path 90
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/beatCnt[1]:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.111
+  Arrival (ns):            9.350
+  Required (ns):           7.239
+  Operating Conditions: slow_lv_ht
+
+Path 91
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AHBMasterCtrl/beatCnt[0]:ALn
+  Delay (ns):              1.242
+  Slack (ns):             -2.111
+  Arrival (ns):            9.350
+  Required (ns):           7.239
+  Operating Conditions: slow_lv_ht
+
+Path 92
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[31]:ALn
+  Delay (ns):              1.237
+  Slack (ns):             -2.110
+  Arrival (ns):            9.345
+  Required (ns):           7.235
+  Operating Conditions: slow_lv_ht
+
+Path 93
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[30]:ALn
+  Delay (ns):              1.237
+  Slack (ns):             -2.110
+  Arrival (ns):            9.345
+  Required (ns):           7.235
+  Operating Conditions: slow_lv_ht
+
+Path 94
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[25]:ALn
+  Delay (ns):              1.237
+  Slack (ns):             -2.110
+  Arrival (ns):            9.345
+  Required (ns):           7.235
+  Operating Conditions: slow_lv_ht
+
+Path 95
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/ADDRReg[24]:ALn
+  Delay (ns):              1.237
+  Slack (ns):             -2.110
+  Arrival (ns):            9.345
+  Required (ns):           7.235
+  Operating Conditions: slow_lv_ht
+
+Path 96
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/currState[7]:ALn
+  Delay (ns):              1.228
+  Slack (ns):             -2.103
+  Arrival (ns):            9.336
+  Required (ns):           7.233
+  Operating Conditions: slow_lv_ht
+
+Path 97
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/currState[1]:ALn
+  Delay (ns):              1.229
+  Slack (ns):             -2.103
+  Arrival (ns):            9.337
+  Required (ns):           7.234
+  Operating Conditions: slow_lv_ht
+
+Path 98
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/currState[0]:ALn
+  Delay (ns):              1.228
+  Slack (ns):             -2.103
+  Arrival (ns):            9.336
+  Required (ns):           7.233
+  Operating Conditions: slow_lv_ht
+
+Path 99
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXIOutReg/ARREADY:ALn
+  Delay (ns):              1.228
+  Slack (ns):             -2.102
+  Arrival (ns):            9.336
+  Required (ns):           7.234
+  Operating Conditions: slow_lv_ht
+
+Path 100
+  From: PF_RESET_0/PF_RESET_0/dff_15_rep:CLK
+  To:   AXItoAPB_0/AXItoAHBL_0/AXItoAHBL_0/U_AXISlaveCtrl/beatCnt[0]:ALn
+  Delay (ns):              1.223
+  Slack (ns):             -2.085
+  Arrival (ns):            9.331
+  Required (ns):           7.246
+  Operating Conditions: slow_lv_ht
+

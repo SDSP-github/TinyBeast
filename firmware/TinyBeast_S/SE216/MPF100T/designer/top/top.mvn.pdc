@@ -1,0 +1,37 @@
+# Microsemi Physical design constraints file
+
+# Version: v2021.2 2021.2.0.11
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: PolarFire , Die: MPF100T , Package: FCVG484 , Speed grade: -1 
+
+# Date generated: Tue Mar 29 06:03:21 2022 
+
+
+#
+# IO banks setting
+#
+
+set_iobank -bank_name Bank3 -vcci 3.30 -fixed true
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io -port_name PCIESS_LANE_RXD2_N -DIRECTION INPUT -pin_name M22
+set_io -port_name PCIESS_LANE_RXD2_P -DIRECTION INPUT -pin_name M21
+set_io -port_name PCIESS_LANE_TXD2_N -DIRECTION OUTPUT -pin_name P21
+set_io -port_name PCIESS_LANE_TXD2_P -DIRECTION OUTPUT -pin_name P22
+
+#
+# Core cell constraints
+#
+

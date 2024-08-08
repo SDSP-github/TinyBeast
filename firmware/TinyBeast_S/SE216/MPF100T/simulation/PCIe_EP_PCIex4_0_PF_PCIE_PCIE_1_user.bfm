@@ -1,0 +1,207 @@
+#===========================================================
+# Enter your BFM commands in this file. 
+#
+# Syntax: 
+# ------- 
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+#
+#===========================================================
+
+memmap PCIe  0x00000000;
+memmap IOREG 0x10000000;
+memmap DDR3  0x20000000;
+memmap LSRAM 0x30000000;
+memmap DDR4  0x40000000;
+
+procedure main;
+
+# add your BFM commands below:
+int v1;
+int v2;
+int v3;
+int v4;
+int addr;
+int dma_size;
+
+set dma_size 0x100; //256 byte of dma size
+
+timeout 10000;
+
+print "***************************************************************"
+print " ***********************IO/REG testing*************************"
+print "***************************************************************"
+
+write w IOREG 0x00 0x12345678;//RW_REG
+wait 1us;
+write w IOREG 0x08 0xFF;//ON LEDs
+wait 1us;
+write w IOREG 0x08 0x00;//OFF LEDs
+wait 1us;
+write w IOREG 0x08 0xAA;//Alternate LED ON&OFF
+wait 1us;
+
+readcheck w IOREG 0x00 0x12345678;//RW_REG
+wait 1us;
+readcheck w IOREG 0x10 0x0;//DIP SW
+wait 1us;
+readcheck w IOREG 0x100 0x332211;//demo type reg to driver
+wait 1us;
+readcheck w IOREG 0x20 0x0;//default CLK count is zero
+wait 1us;
+
+print "***************************************************************"
+print "************************* PCIe to RAM *************************"
+print "***************************************************************"
+    set v1 0x12345678;
+    set v2 0x3456789a;
+    set v3 0x56789abc;
+    set v4 0x789abcde;
+
+loop addr 0 dma_size 16
+
+    writemult64 x LSRAM addr v1 v2 v3 v4 ;
+
+    set v1 v1 + 0x1;
+    set v2 v2 + 0x1;
+    set v3 v3 + 0x1;
+    set v4 v4 + 0x1;
+endloop
+
+print "***************************************************************"
+print "**************************CoreDMA Test*************************"
+print "***************************************************************"
+
+//Setting CoreDMA size
+write w IOREG 0x40 dma_size;
+wait 1us;
+//LSRAM to DDR3 using CoreDMA
+write w IOREG 0x18 0xB2;
+
+waitus 2;
+//corrupt LSRAM data before starting DDR3 to LSRAM DMA - to test
+writemult64 x LSRAM addr 0x0 0x0 0x0 0x0 ;
+
+//DDR3 to LSRAM using CoreDMA
+write w IOREG 0x18 0xB1;
+waitus 2;
+
+print "***************************************************************"
+print "*****************RAM memory check using PCIe*******************"
+print "***************************************************************"
+
+    set v1 0x12345678;
+    set v2 0x3456789a;
+    set v3 0x56789abc;
+    set v4 0x789abcde;
+
+loop addr 0 dma_size 16
+    
+    readmultchk64 x LSRAM addr v1 v2 v3 v4 ;
+
+    set v1 v1 + 0x1;
+    set v2 v2 + 0x1;
+    set v3 v3 + 0x1;
+    set v4 v4 + 0x1;
+endloop
+
+print "***************************************************************"
+print "*************************PCIe DMA test*************************"
+print "***************************************************************"
+
+#===========================================================
+# set source and destination address
+# setup 0x8 <source address> <destination address> #========
+#===========================================================
+# set DMA data source
+# setup 0xA <data>
+# <DATA> =0  ==> data increment by 1 starting from 0x1 
+# <DATA> =1  ==> random data 
+# <DATA> =2  ==> data from DMADATA.vec file #================
+#setup 0xA 0x2 data_in.vec
+#===========================================================
+# DMA control
+# setup 0x9 <DMA_Lenght> <Control>
+# set control bit0 to '1' => start DMA
+# set control bit1 to '1' => sets transfer from PCIe domain to Fabric domain 
+# set control bit2 to '1' => sets transfer from Fabric domain to PCIe domain 
+# That is, when control =  0x3 start dma transfer from PCIe to FABRIC 
+# and when control = 0x5 bfm starts dma transfers from Fabric to PCIe. 
+#===========================================================
+
+#incremental pattern data source
+setup 0xA 0x0;
+
+print "**********************DMA from PCIe to DDR3*************************"
+#====================
+####PCIe --> DDR3####
+#====================
+#address setup
+setup 0x8 PCIe DDR3
+
+#start DMA of 256 bytes
+setup 0x9 dma_size 0x3 
+
+print "**********************DMA from DDR3 to PCIe*************************"
+#====================
+####PCIe <-- DDR3####
+#====================
+
+#address setup
+setup 0x8 DDR3 PCIe
+
+#start DMA of 512 bytes
+setup 0x9 dma_size 0x5
+
+print "**********************DMA from PCIe to DDR4*************************"
+#====================
+####PCIe --> DDR4####
+#====================
+
+#address setup
+setup 0x8 PCIe DDR4
+
+#start DMA of 512 bytes
+setup 0x9 dma_size 0x3
+
+print "**********************DMA from DDR4 to PCIe*************************"
+#====================
+####PCIe <-- DDR4####
+#====================
+
+#address setup
+setup 0x8 DDR4 PCIe
+
+#start DMA of 512 bytes
+setup 0x9 dma_size 0x5
+
+print "**********************DMA from PCIe to LSRAM*************************"
+#=====================
+####PCIe --> LSRAM####
+#=====================
+
+#address setup
+setup 0x8 PCIe LSRAM
+
+#start DMA of 512 bytes
+setup 0x9 dma_size 0x3
+
+print "**********************DMA from LSRAM to PCIe*************************"
+#=====================
+####PCIe <-- LSRAM####
+#=====================
+
+#address setup
+setup 0x8 LSRAM PCIe
+
+#start DMA of 512 bytes
+setup 0x9 dma_size 0x5
+
+wait 1us;
+
+print " *****************************End of PCIe BFM Simulation**********************************"
+return
