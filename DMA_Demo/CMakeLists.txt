@@ -1,0 +1,44 @@
+cmake_minimum_required(VERSION 3.24 FATAL_ERROR )
+
+if (DEFINED ENV{VCPKG_ROOT})
+	File(TO_CMAKE_PATH $ENV{VCPKG_ROOT} VCPKG_ROOT)
+	message(STATUS ${VCPKG_ROOT})
+	if(WIN32)
+		set(CMAKE_TOOLCHAIN_FILE "${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "")
+		set(VCPKG_TARGET_TRIPLET "x64-windows-static" CACHE STRING "")
+	else(WIN32)
+		set(CMAKE_TOOLCHAIN_FILE "${VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "" FORCE)
+		set(VCPKG_TARGET_TRIPLET "x64-linux" CACHE STRING "")
+	endif(WIN32)
+else (DEFINED ENV{VCPKG_ROOT})
+	message(WARNING "VCPKG_ROOT is not defined, To use this package manager set it to the root of VCPKG isntalation")
+endif()
+
+project(TinyBeast_DMA)
+
+if (MSVC)
+    add_definitions (-D_USE_MATH_DEFINES)
+	add_definitions(/MP)
+	set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Ot /openmp" )
+	add_compile_definitions(UNICODE _UNICODE)
+	set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+	set(CMAKE_CXX_FLAGS_RELEASE "-O3")
+else (MSVC)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+endif (MSVC)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+set(Boost_USE_STATIC_LIBS ON) 
+set(Boost_USE_MULTITHREADED ON)  
+set(Boost_USE_STATIC_RUNTIME ON) 
+find_package(Boost COMPONENTS program_options REQUIRED) 
+
+file(GLOB DEMO_FILES src/*.cpp src/*.hpp src/*.h src/*.c)
+
+
+
+add_executable(TinyBeastDemo ${DEMO_FILES})
+target_link_libraries(TinyBeastDemo PUBLIC setupapi.lib  Boost::boost ${Boost_LIBRARIES})
