@@ -31,11 +31,6 @@ TinyBeast FPGA is ideally suited for a wide range of industrial and embedded app
 **AI at the Edge:** Predictive maintenance, anomaly detection, and image recognition.
 ## Hardware Specifications
 
-| Column 1 | Column 2 | Column 3 |
-|---|---|---|
-| Row 1, Col 1 | Row 1, Col 2 | Row 1, Col 3 |
-| Row 2, Col 1 | Row 2, Col 2 | Row 2, Col 3 |
-
 |Feature|	TinyBeast FPGA P|	TinyBeast FPGA S |
 |---|---|---|
 |FPGA|	Microchip MPF300T	|Microchip MPF300T|

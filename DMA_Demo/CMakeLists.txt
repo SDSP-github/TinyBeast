@@ -36,9 +36,8 @@ set(Boost_USE_MULTITHREADED ON)
 set(Boost_USE_STATIC_RUNTIME ON) 
 find_package(Boost COMPONENTS program_options REQUIRED) 
 
-file(GLOB DEMO_FILES src/*.cpp src/*.hpp src/*.h src/*.c)
+file(GLOB Lib_FILES src/lib/*.hpp )
 
-
-
-add_executable(TinyBeastDemo ${DEMO_FILES})
+add_executable(TinyBeastDemo src/main.cpp ${Lib_FILES})
 target_link_libraries(TinyBeastDemo PUBLIC setupapi.lib  Boost::boost ${Boost_LIBRARIES})
+target_include_directories(TinyBeastDemo PRIVATE src/lib)

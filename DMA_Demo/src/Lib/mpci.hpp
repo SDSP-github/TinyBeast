@@ -1,5 +1,4 @@
 #pragma once
-
 #include <windows.h>
 #include <cstdint>
 #include <vector>
@@ -7,24 +6,104 @@
 #include <iomanip>
 #include <setupapi.h>
 #include <initguid.h>
-//#include "mpci_class.h"
-
 
 namespace SDSP
 {
-	constexpr ULONG PFBASE_MEMTEST_LSRAM = 0x30000000;
-	constexpr ULONG PFBASE_MEMTEST_DDR4 = 0x40000000;
-	// Address Offset Register for BAR2
-	constexpr ULONG PFREG_BASEADDR = (0x8648 >> 2);
-	constexpr ULONG PFBASE_IO_CTRL = 0x10000000;
+	DEFINE_GUID(GUID_MPCI_INTERFACE, 0xcfbc8bc3, 0x500e, 0x4a6a, 0x84, 0xfe, 0x26, 0x90, 0xf1, 0x7d, 0xd9, 0xef);
+	// Defines
+#define PFBASE_MEMTEST_LSRAM	(0x30000000)
+#define PFBASE_MEMTEST_DDR4		(0x40000000)
+// Address Offset Register for BAR2
+#define PFREG_BASEADDR			(0x8648 >> 2)
+#define PFBASE_IO_CTRL			(0x10000000)
+#define PCI_TYPE0_ADDRESSES     (6)
+#define G5_DEVICE_DETECT		(0x40)
+#define BAR0					(0)
+#define BAR1					(1)
+#define BAR2					(2)
+#define MICRO_PCI_TYPE			(50001)
 
-	
+
+#define IOCTL_PCI_CONFIG_SPACE_ALL_READ CTL_CODE( MICRO_PCI_TYPE, 0x900, METHOD_BUFFERED, FILE_ANY_ACCESS  )
+
+#define IOCTL_PCI_LED_CONTROL CTL_CODE( MICRO_PCI_TYPE, 0x901, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_PCI_INTERRUPT_CONTROL CTL_CODE( MICRO_PCI_TYPE, 0x902, METHOD_BUFFERED, FILE_ANY_ACCESS  )
+
+#define IOCTL_DEVICE_INFO CTL_CODE( MICRO_PCI_TYPE, 0x903, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_SRAM_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x904, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_SRAM_READ CTL_CODE( MICRO_PCI_TYPE, 0x905, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DIP_SWITCH CTL_CODE( MICRO_PCI_TYPE, 0x906, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_PCI_CONFIG_SPACE_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x907, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_ISR_COUNT CTL_CODE( MICRO_PCI_TYPE, 0x908, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_PCI_CONFIG_READ_OFFSET CTL_CODE( MICRO_PCI_TYPE, 0x909, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DMA_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x90A, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DMA_READ CTL_CODE( MICRO_PCI_TYPE, 0x90B, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_SG_DMA_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x90C, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_SG_DMA_READ CTL_CODE( MICRO_PCI_TYPE, 0x90D, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_SG_DMA_WRITE_READ CTL_CODE( MICRO_PCI_TYPE, 0x90E, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BAR0_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x90F, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BAR0_READ CTL_CODE( MICRO_PCI_TYPE, 0x910, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BAR1_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x911, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BAR1_READ CTL_CODE( MICRO_PCI_TYPE, 0x912, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DMA_OPERAION CTL_CODE( MICRO_PCI_TYPE, 0x913, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DMA_WOFFSET CTL_CODE( MICRO_PCI_TYPE, 0x914, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DMA_CONFIGURATION CTL_CODE( MICRO_PCI_TYPE, 0x915, METHOD_BUFFERED , FILE_ANY_ACCESS  )	
+
+
+#define IOCTL_DMA_WRITE_READ CTL_CODE( MICRO_PCI_TYPE, 0x916, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DMA_ROFFSET CTL_CODE( MICRO_PCI_TYPE, 0x917, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_DMA_TYPE CTL_CODE( MICRO_PCI_TYPE, 0x918, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BAR_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x919, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BAR_READ CTL_CODE( MICRO_PCI_TYPE, 0x920, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_G5_SG_DMA_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x921, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_G5_SG_DMA_READ CTL_CODE( MICRO_PCI_TYPE, 0x922, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_G5_CN_DMA_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x923, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_G5_CN_DMA_READ CTL_CODE( MICRO_PCI_TYPE, 0x924, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_G5_CN_FDMA_WRITE CTL_CODE( MICRO_PCI_TYPE, 0x925, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_G5_CN_FDMA_READ CTL_CODE( MICRO_PCI_TYPE, 0x926, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BAR_INFO CTL_CODE( MICRO_PCI_TYPE, 0x927, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_ISR_COUNT_ALL CTL_CODE( MICRO_PCI_TYPE, 0x928, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_BD_COUNT CTL_CODE( MICRO_PCI_TYPE, 0x929, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+#define IOCTL_G5_DMA_CONFIG CTL_CODE( MICRO_PCI_TYPE, 0x930, METHOD_BUFFERED , FILE_ANY_ACCESS  )
+
+	//typedefs
 	typedef PVOID HDEVINFO;
-	DEFINE_GUID(GUID_MPCI_INTERFACE,
-		0xcfbc8bc3, 0x500e, 0x4a6a, 0x84, 0xfe, 0x26, 0x90, 0xf1, 0x7d, 0xd9, 0xef);
-#define PCI_TYPE0_ADDRESSES             6
-	/** Structure used in IOCTL to get PCIe state from driver */
-	typedef struct {
+
+	// Structure 
+	struct PCIState {
 
 		USHORT  VendorID;
 		USHORT  DeviceID;
@@ -85,20 +164,19 @@ namespace SDSP
 		USHORT Device_control_register;
 		USHORT Device_status_register;
 
-	} PCIState;
+	};
 	struct device_info
 	{
 		const char* device_status;
 		const char* device_type;
-		const char* driver_version;
-		const char* driver_timestamp;
+		//const char* driver_version;
+		//const char* driver_timestamp;
 		const char* demo_type;
 		const char* support_width;
 		const char* n_width;
 		const char* support_speed;
 		const char* n_speed;
 		int device_type_id;
-		int demo_type_id;
 		int num_bar;
 		int bar0_add;
 		int bar0_size;
@@ -115,7 +193,7 @@ namespace SDSP
 		int bar6_add;
 		int bar6_size;
 	};
-	typedef struct
+	struct bar_info
 	{
 
 		ULONG bar0_addr;
@@ -130,140 +208,20 @@ namespace SDSP
 		ULONG bar4_size;
 		ULONG bar5_addr;
 		ULONG bar5_size;
-	} bar_info;
-	//#define BAR0                  0
-//#define BAR1                  1
-#define BAR2				  2
-#define MICRO_PCI_TYPE 50001
-
-#define IOCTL_PCI_CONFIG_SPACE_ALL_READ \
-    CTL_CODE( MICRO_PCI_TYPE, 0x900, METHOD_BUFFERED, FILE_ANY_ACCESS  )
-
-#define IOCTL_PCI_LED_CONTROL \
-    CTL_CODE( MICRO_PCI_TYPE, 0x901, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_PCI_INTERRUPT_CONTROL \
-    CTL_CODE( MICRO_PCI_TYPE, 0x902, METHOD_BUFFERED, FILE_ANY_ACCESS  )
-
-#define IOCTL_DEVICE_INFO \
-    CTL_CODE( MICRO_PCI_TYPE, 0x903, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_SRAM_WRITE \
-    CTL_CODE( MICRO_PCI_TYPE, 0x904, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_SRAM_READ \
-    CTL_CODE( MICRO_PCI_TYPE, 0x905, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DIP_SWITCH \
-	CTL_CODE( MICRO_PCI_TYPE, 0x906, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_PCI_CONFIG_SPACE_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x907, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_ISR_COUNT \
-	CTL_CODE( MICRO_PCI_TYPE, 0x908, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_PCI_CONFIG_READ_OFFSET \
-	CTL_CODE( MICRO_PCI_TYPE, 0x909, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DMA_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x90A, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DMA_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x90B, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_SG_DMA_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x90C, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_SG_DMA_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x90D, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_SG_DMA_WRITE_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x90E, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BAR0_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x90F, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BAR0_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x910, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BAR1_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x911, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BAR1_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x912, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DMA_OPERAION \
-	CTL_CODE( MICRO_PCI_TYPE, 0x913, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DMA_WOFFSET \
-	CTL_CODE( MICRO_PCI_TYPE, 0x914, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DMA_CONFIGURATION \
-	CTL_CODE( MICRO_PCI_TYPE, 0x915, METHOD_BUFFERED , FILE_ANY_ACCESS  )	
-
-
-#define IOCTL_DMA_WRITE_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x916, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DMA_ROFFSET \
-	CTL_CODE( MICRO_PCI_TYPE, 0x917, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_DMA_TYPE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x918, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BAR_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x919, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BAR_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x920, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_G5_SG_DMA_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x921, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_G5_SG_DMA_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x922, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_G5_CN_DMA_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x923, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_G5_CN_DMA_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x924, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_G5_CN_FDMA_WRITE \
-	CTL_CODE( MICRO_PCI_TYPE, 0x925, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_G5_CN_FDMA_READ \
-	CTL_CODE( MICRO_PCI_TYPE, 0x926, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BAR_INFO \
-	CTL_CODE( MICRO_PCI_TYPE, 0x927, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_ISR_COUNT_ALL \
-	CTL_CODE( MICRO_PCI_TYPE, 0x928, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_BD_COUNT \
-	CTL_CODE( MICRO_PCI_TYPE, 0x929, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-#define IOCTL_G5_DMA_CONFIG \
-	CTL_CODE( MICRO_PCI_TYPE, 0x930, METHOD_BUFFERED , FILE_ANY_ACCESS  )
-
-	typedef struct {
+	};
+	struct G5_DmaRegisters {
 		unsigned int       Dma_Srcaddr32;
 		unsigned int       Dma_Srcaddr64;
 		unsigned int       Dma_Destaddr32;
 		unsigned int       Dma_Destaddr64;
 		unsigned int       Dma_length;
 		unsigned int       Dma_Status;
-	}G5_DmaRegisters;
-
-#define G5_DEVICE_DETECT  0x40
-
-	typedef struct {
+	};
+	struct config_write_read {
 		ULONG offset;
 		ULONG data;
 		ULONG bar;
-	}config_write_read;
+	};
 
 	class mpci
 	{
@@ -276,6 +234,7 @@ namespace SDSP
 			hDevice = INVALID_HANDLE_VALUE;
 			console = TRUE;
 			device = FALSE;
+			m_initialized = FALSE;
 		}
 		~mpci()
 		{
@@ -300,30 +259,20 @@ namespace SDSP
 			{
 				return TRUE;
 			}
-			BOOL retValue = GetDevicePath();
-			if ((retValue == TRUE) && (hDevice == INVALID_HANDLE_VALUE)) {
-				retValue = GetDeviceHandle();
-			}
-			if (retValue == FALSE)
-			{
-				return false;
-			}
-			else
+			if (GetDevicePath() == TRUE && GetDeviceHandle() == TRUE)
 			{
 				m_initialized = true;
-
 				return true;
 			}
+			return false;
 		}
 		int GetDeviceinfo(device_info& devInfo)
 		{
 			int status = 1;
 			int bar = 0, i = 0, j = 0;
-			int device = 0, device_dma = 0;
-
-
-
-			PCIState* pcistate = new PCIState();
+			ULONG device = 0;
+			int device_dma = 0;
+			PCIState* pcistate;
 
 			bar_info lbar_info = { 0,0,0,0,0,0 };
 			if (IsInitialized())
@@ -333,22 +282,16 @@ namespace SDSP
 			else
 			{
 				devInfo.device_status = "Device not found";
-				delete pcistate;
 				return FALSE;
 			}
 
-			devInfo.demo_type_id = 0;  // NEED TO DEFINE THESE!
 			devInfo.demo_type = "PolarFire PCIe Demo";
-			device = mpci_bar_read(BAR2, G5_DEVICE_DETECT);
+			mpci_bar_read(BAR2, G5_DEVICE_DETECT, device);
 			devInfo.device_type_id = device;
 
 			if (device == 0x332211)
 			{
-				devInfo.device_type = "PolarFire Evaluation kit";
-			}
-			else if (device == 0x332222)
-			{
-				devInfo.device_type = "PolarFire Splash kit";
+				devInfo.device_type = "PolarFire kit";
 			}
 			else
 			{
@@ -438,10 +381,7 @@ namespace SDSP
 			}
 			devInfo.num_bar = j;
 
-			devInfo.driver_version = "6.1.7600.16385";
-			devInfo.driver_timestamp = "03:13:01 14/11/2017";
-			status = mpci_bar_info(&lbar_info);
-			if (status == FALSE)
+			if (mpci_bar_info(&lbar_info) == FALSE)
 			{
 				return FALSE;
 			}
@@ -484,7 +424,7 @@ namespace SDSP
 			{
 				return false;
 			}
-			if (DeviceIoControl(hDevice,
+			if (!DeviceIoControl(hDevice,
 				(DWORD)IOCTL_G5_CN_DMA_WRITE,
 				buffer,
 				ldma_config.Dma_length,
@@ -536,7 +476,7 @@ namespace SDSP
 			int ret = mpci_bar_write(0, PFREG_BASEADDR, baseAddress);
 			for (ULONG pos = 0; pos < numberOfItems; pos++)
 			{
-				buffer[pos] = mpci_bar_read(2, (offset + pos));
+				mpci_bar_read(2, (offset + pos), buffer[pos]);
 			}
 
 			ret = mpci_bar_write(0, PFREG_BASEADDR, PFBASE_IO_CTRL);
@@ -557,39 +497,20 @@ namespace SDSP
 	private:
 		int mpci_bar_info(bar_info* pbar)
 		{
-
-			ULONG bytes = 0;
-			mpci Mpci;
-			BOOL status = TRUE;
-			BOOL retValue = TRUE;
+			//ULONG bytes = 0;
 			ULONG bytesReturned;
 			bar_info lbar = { 0,0,0,0,0,0,0,0,0,0,0,0 };
 
-			retValue = Mpci.Initialize();
-
-			if (!retValue) {
-				return retValue;
-			}
-
-			if ((status == TRUE) && (Mpci.hDevice == INVALID_HANDLE_VALUE)) {
-				status = Mpci.GetDeviceHandle();
-			}
-
-
-			if (status)
+			if (!DeviceIoControl(hDevice,
+				(DWORD)IOCTL_BAR_INFO,
+				NULL,
+				NULL,
+				&lbar,
+				sizeof(lbar),
+				&bytesReturned,
+				NULL))
 			{
-				DeviceIoControl(Mpci.hDevice,
-					(DWORD)IOCTL_BAR_INFO,
-					NULL,
-					NULL,
-					&lbar,
-					sizeof(lbar),
-					&bytesReturned,
-					NULL);
-			}
-			if (Mpci.hDevice != INVALID_HANDLE_VALUE) {
-				CloseHandle(Mpci.hDevice);
-				Mpci.hDevice = INVALID_HANDLE_VALUE;
+				return FALSE;
 			}
 
 			pbar->bar0_addr = lbar.bar0_addr;
@@ -605,23 +526,17 @@ namespace SDSP
 			pbar->bar5_addr = lbar.bar5_addr;
 			pbar->bar5_size = lbar.bar5_size;
 
-			if (status)
-			{
-				return TRUE;
-			}
-			else
-			{
-				return FALSE;
-			}
-		}
-		int mpci_bar_read(ULONG bar, ULONG offset)
-		{
-			ULONG bytes = 0;
 
-			BOOL status = TRUE;
-			BOOL retValue = TRUE;
+			return TRUE;
+
+		}
+		int mpci_bar_read(ULONG bar, ULONG offset, ULONG& data)
+		{
+
+
+
 			ULONG bytesReturned;
-			ULONG data = 0, useroffset = 0;
+			ULONG  useroffset = 0;
 			DWORD IoctlTpye = IOCTL_BAR_READ;
 			config_write_read info;
 			IoctlTpye = IOCTL_BAR_READ;
@@ -631,27 +546,19 @@ namespace SDSP
 			info.data = data;
 			info.bar = bar;
 
-			if (status)
+			if (!DeviceIoControl(hDevice,
+				IoctlTpye,
+				&info,
+				sizeof(info),
+				&data,
+				sizeof(data),
+				&bytesReturned,
+				NULL))
 			{
-				DeviceIoControl(hDevice,
-					IoctlTpye,
-					&info,
-					sizeof(info),
-					&data,
-					sizeof(data),
-					&bytesReturned,
-					NULL);
+				return FALSE;
 			}
 
-			if (status)
-			{
-				return data;
 
-			}
-			else
-			{
-				return status;
-			}
 
 
 		}
@@ -971,7 +878,7 @@ namespace SDSP
 
 			return status;
 		}
-		
+
 		HDEVINFO hDevInfo;
 		PSP_DEVICE_INTERFACE_DETAIL_DATA pDeviceInterfaceDetail;
 		HANDLE hDevice;
@@ -981,135 +888,7 @@ namespace SDSP
 		BOOL console;
 		bool m_initialized = false;
 
-		
-	
-	};
-
-	class PolarFireSDK
-	{
 
 
-	public:
-		bool Init()
-		{
-			m_mpci.Initialize();
-			int result = m_mpci.GetDeviceinfo(m_devInfo);
-			m_deviceFound = (result != 0);
-			return IsInit();
-
-		}
-		bool IsInit()
-		{
-			return m_deviceFound;
-		}
-		void PrintDeviceInfo()
-		{
-			std::ios_base::fmtflags old_flags = std::cout.flags();
-			std::cout << std::setw(20) << "---------------------" << "\n";
-			std::cout << std::setw(20) << "Printing Device info" << std::endl;
-			std::cout << std::setw(20) << "demo_type  = " << "0x" << std::hex << m_devInfo.demo_type_id << " -> "
-				<< m_devInfo.demo_type << std::endl;
-			std::cout << std::setw(20) << "device_status = " << m_devInfo.device_status << std::endl;
-			std::cout << std::setw(20) << "device_type = " << "0x" << std::hex << m_devInfo.device_type_id << " -> "
-				<< m_devInfo.device_type << std::endl;
-			std::cout << std::setw(20) << "driver_timestamp = " << m_devInfo.driver_timestamp << std::endl;
-			std::cout << std::setw(20) << "driver_version = " << m_devInfo.driver_version << std::endl;
-			std::cout << std::setw(20) << "support_width = " << m_devInfo.support_width << std::endl;
-			std::cout << std::setw(20) << "n_width = " << m_devInfo.n_width << std::endl;
-			std::cout << std::setw(20) << "support_speed = " << m_devInfo.support_speed << std::endl;
-			std::cout << std::setw(20) << "n_speed = " << m_devInfo.n_speed << std::endl;
-			std::cout << std::setw(20) << "num_bar = " << m_devInfo.num_bar << std::endl;
-
-			std::cout << std::setw(20) << "BAR0 info = " << ((m_devInfo.bar0_add & 6) ? "64-bit" : "32-bit") << ", Prefetchable: " << ((m_devInfo.bar0_add & 8) ? "Yes" : "No") << std::endl;
-
-			if ((m_devInfo.bar0_add & 6) == 4) { // A 64-bit BAR, which also consumes BAR1
-				std::cout << std::setw(20) << "bar0_add = " << "0x" << std::hex << std::noshowbase << std::setw(8) << std::setfill('0') << m_devInfo.bar1_add
-					<< ":" << std::setw(8) << (m_devInfo.bar0_add & 0xFFFFFFF0) << std::endl << std::setfill(' ');
-				std::cout << std::setw(20) << "bar0_size = " << std::showbase << m_devInfo.bar0_size << std::endl;
-			}
-			else {  // 32-bit BAR, BAR1 is independent
-
-				std::cout << std::setw(20) << "bar0_add = " << std::hex << std::showbase << (m_devInfo.bar0_add & 0xFFFFFFF0) << std::endl;
-				std::cout << std::setw(20) << "bar0_size = " << m_devInfo.bar0_size << std::endl;
-
-				if (m_devInfo.num_bar > 1) {
-					std::cout << std::setw(20) << "bar1 info = " << "32-bit, Prefetchable: " << ((m_devInfo.bar1_add & 8) ? "Yes" : "No") << std::endl;
-					std::cout << std::setw(20) << "bar1_add = " << std::hex << std::showbase << (m_devInfo.bar1_add & 0xFFFFFFF0) << std::endl;
-					std::cout << std::setw(20) << "bar1_size = " << m_devInfo.bar1_size << std::endl;
-				}
-			}
-
-			if (m_devInfo.num_bar > 2) {
-
-				std::cout << std::setw(20) << "BAR2 info = " << ((m_devInfo.bar2_add & 6) ? "64-bit" : "32-bit") << ", Prefetchable: " << ((m_devInfo.bar2_add & 8) ? "Yes" : "No") << std::endl;
-
-				if ((m_devInfo.bar2_add & 6) == 4) { // a 64-bit BAR, which also consumes BAR3
-					std::cout << std::setw(20) << "bar2_add = " << "0x" << std::hex << std::noshowbase << std::setw(8) << std::setfill('0') << m_devInfo.bar3_add
-						<< ":" << std::setw(8) << (m_devInfo.bar2_add & 0xFFFFFFF0) << std::endl << std::setfill(' ');
-					std::cout << std::setw(20) << "bar2_size = " << std::showbase << m_devInfo.bar2_size << std::endl;
-				}
-				else {  // 32-bit BAR, BAR3 is independent
-
-					std::cout << std::setw(20) << "bar2_add = " << std::hex << std::showbase << (m_devInfo.bar2_add & 0xFFFFFFF0) << std::endl;
-					std::cout << std::setw(20) << "bar2_size = " << m_devInfo.bar2_size << std::endl;
-
-					if (m_devInfo.num_bar > 3) {
-						std::cout << std::setw(20) << "bar3 info = " << "32-bit, Prefetchable: " << ((m_devInfo.bar3_add & 8) ? "Yes" : "No") << std::endl;
-						std::cout << std::setw(20) << "bar3_add = " << std::hex << std::showbase << (m_devInfo.bar3_add & 0xFFFFFFF0) << std::endl;
-						std::cout << std::setw(20) << "bar3_size = " << m_devInfo.bar3_size << std::endl;
-					}
-				}
-			}
-			std::cout.flags(old_flags);
-			std::cout << std::dec;
-		}
-
-		bool WriteDMA(std::vector<ULONG>& buffer, ULONG offset, ULONG baseAddress)
-		{
-			return WriteDMA(buffer.data(), buffer.size(), offset, baseAddress);
-
-		}
-		bool WriteDMA(ULONG* buffer, ULONG NumberOfItems, ULONG offset, ULONG baseAddress)
-		{
-			return m_mpci.WriteDMA(buffer, NumberOfItems, offset, baseAddress);
-
-		}
-		bool ReadDMA(std::vector<ULONG>& buffer, ULONG offset, ULONG baseAddress)
-		{
-			return ReadDMA(buffer.data(), buffer.size(), offset, baseAddress);
-
-		}
-		bool ReadDMA(ULONG* buffer, ULONG NumberOfItems, ULONG offset, ULONG baseAddress)
-		{
-			return m_mpci.ReadDMA(buffer, NumberOfItems, offset, baseAddress);
-		}
-
-		// read/write
-		bool ReadDirect(ULONG* buffer, ULONG numberOfItems, ULONG offset, ULONG baseAddress)
-		{
-			return m_mpci.ReadDirect(buffer, numberOfItems, offset, baseAddress);
-
-		}
-
-		bool ReadDirect(std::vector<ULONG>& buffer, ULONG offset, ULONG baseAddress)
-		{
-			return ReadDirect(buffer.data(), buffer.size(), offset, baseAddress);
-		}
-
-		bool WriteDirect(ULONG* buffer, ULONG numberOfItems, ULONG offset, ULONG baseAddress)
-		{
-			return m_mpci.WriteDirect(buffer, numberOfItems, offset, baseAddress);
-		}
-
-		bool WriteDirect(std::vector<ULONG>& buffer, ULONG offset, ULONG baseAddress)
-		{
-			return WriteDirect(buffer.data(), buffer.size(), offset, baseAddress);
-		}
-
-	private:
-
-		struct device_info m_devInfo;
-		bool m_deviceFound = false;
-		mpci m_mpci;
 	};
 }
